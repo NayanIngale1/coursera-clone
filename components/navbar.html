@@ -34,7 +34,7 @@
         padding: 1px 5px;
         margin: auto 0px;
         height: 30px;
-        width: 400px;
+        width: 350px;
     }
     #jnavbar p a{
         margin: 6px;
@@ -50,13 +50,13 @@
     #log_in_text {
         color: rgb(107, 107, 236);
     }
-    #explore{
+    #explore_button{
         border-color:rgb(0,86,210);
         margin: auto 7px;
         padding:0 13px;
         font-weight: bold;
     }
-    #explore:hover{
+    #explore_button:hover{
         background-color: white;
         color: rgb(0,86,210);
     }
@@ -71,13 +71,143 @@
         margin: auto;
         padding: 0 20px;
     }
+    #explore_option{
+        display: none;
+    }
+    #explore_option .left_explore_option{
+        position: absolute;
+        top: 61px;
+        left: 50px;
+        z-index: 5;
+        background-color: rgb(242, 242, 246);
+        width: 24.5%;
+        height: 585px;
+        overflow-y: scroll;
+        padding:16px 0px ;
+    }
+    .faltu_div_on_navbar{
+        width: 24.5%;
+        height:14px;
+        position: absolute;
+        top: 48px;
+        left: 50px;
+        z-index: 5;
 
+    }
+    #explore:hover #explore_option {
+        display: block;
+    }
+    /* #explore:hover body {
+        background: linear-gradient(grey,black);
+    } */
+    #explore_option .left_explore_option ul {
+        width: 90%;
+        padding: 0;
+    }
+    #explore_option .left_explore_option ul li{
+        width: 97%;
+        padding:0 20px;
+        list-style: none;
+        line-height: 30px;
+    }
+    #explore_option .left_explore_option ul li:hover{
+        background-color: white;
+        color: rgb(129, 129, 231);
+        cursor: context-menu;
+        line-height: 30px;
+        box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    }
+    #explore_option .left_explore_option ul li:first-child{
+        color: rgb(39, 38, 38);
+        font-size: large;
+        font-weight: bolder;
+        margin: 20px 0;
+    }
+    #explore_option .left_explore_option ul li:first-child:hover {
+        background-color: rgb(242, 242, 246);
+        cursor: auto;
+        line-height: 30px;
+        box-shadow: none;
+    }
+    #explore_option .left_explore_option ul li p {
+        margin: 0;
+    }
+    #explore_option .left_explore_option button {
+        border-color:rgb(0,86,210);
+        margin: 30px 20px 100px;
+        padding:0 12px;
+        font-weight: bold;
+        height: 36px;
+        background-color: white;
+        color: rgb(0,86,210);
+        font-size: 16px;
+    }
+    #explore_option .left_explore_option button:hover{
+        background-color:rgb(0,86,210) ;
+        color: white;
+    }
+    .right_explore_option {
+        width: 600px;
+        height: 585px;
+        border: 1px solid red;
+        position: absolute;
+        /* left: 100%; */
+        top: 0;
+        z-index: 5;
+        /* opacity: 0; */
+        transition: opacity 0.1s ease-in-out;
+        overflow-y: scroll;
+        padding:16px 0px ;
+    }
+    li .iconify{
+        float: right;
+        margin-top: -25px;
+    }
 </style>
 <body>
     <div id="jnavbar">
         <a href="index.html"><img src="./icons/download.svg" alt=""></a>
-        <button id="explore">Explore <span class="iconify" data-icon="dashicons:arrow-left-alt2" style="font-size: 12px;" data-rotate="270deg"></span></button>
-        <input type="text" placeholder="What do you want to learn?">
+        <div id="explore">
+            <button id="explore_button">Explore <span class="iconify" data-icon="dashicons:arrow-left-alt2" style="font-size: 12px;" data-rotate="270deg"></span></button>
+            
+            <div id="explore_option">
+                <div class="faltu_div_on_navbar"></div>
+                <div class="left_explore_option">
+                    <ul>
+                        <li>Goals</li>
+                        <li>Take a free course</li>
+                        <li><p>Earn a Degree</p><span class="iconify" data-icon="dashicons:arrow-left-alt2" style="font-size: 18px;" data-rotate="180deg"></span>
+                        
+                        <!-- <div class="right_explore_option">
+
+                        </div> -->
+                        
+                        
+                        </li>
+                        <li><p>Earn a Certificate</p><span class="iconify" data-icon="dashicons:arrow-left-alt2" style="font-size: 18px;" data-rotate="180deg"></span></li>
+                        <li><p>Advance your career</p><span class="iconify" data-icon="dashicons:arrow-left-alt2" style="font-size: 18px;" data-rotate="180deg"></span></li>
+                        <li>Find your new career</li>
+                        <li>Train your team</li>
+                    </ul>
+                    <ul>
+                        <li>Subjects</li>
+                        <li><p>Data Science</p><span class="iconify" data-icon="dashicons:arrow-left-alt2" style="font-size: 18px;" data-rotate="180deg"></span></li>
+                        <li><p>Business</p><span class="iconify" data-icon="dashicons:arrow-left-alt2" style="font-size: 18px;" data-rotate="180deg"></span></li>
+                        <li><p>Computer Science</p><span class="iconify" data-icon="dashicons:arrow-left-alt2" style="font-size: 18px;" data-rotate="180deg"></span></li>
+                        <li><p>Information Technology</p><span class="iconify" data-icon="dashicons:arrow-left-alt2" style="font-size: 18px;" data-rotate="180deg"></span></li>
+                        <li><p>Language Learning</p><span class="iconify" data-icon="dashicons:arrow-left-alt2" style="font-size: 18px;" data-rotate="180deg"></span></li>
+                        <li><p>Health</p><span class="iconify" data-icon="dashicons:arrow-left-alt2" style="font-size: 18px;" data-rotate="180deg"></span></li>
+                        <li><p>Personal Development</p><span class="iconify" data-icon="dashicons:arrow-left-alt2" style="font-size: 18px;" data-rotate="180deg"></span></li>
+                        <li><p>Physical Science and Engineering</p><span class="iconify" data-icon="dashicons:arrow-left-alt2" style="font-size: 18px;" data-rotate="180deg"></span></li>
+                        <li><p>Social Sciences</p><span class="iconify" data-icon="dashicons:arrow-left-alt2" style="font-size: 18px;" data-rotate="180deg"></span></li>
+                        <li><p>Arts and Humanities</p><span class="iconify" data-icon="dashicons:arrow-left-alt2" style="font-size: 18px;" data-rotate="180deg"></span></li>
+                        <li><p>Math and Logic</p><span class="iconify" data-icon="dashicons:arrow-left-alt2" style="font-size: 18px;" data-rotate="180deg"></span></li>
+                    </ul>
+                    <button>Browse all subjects</button>
+                </div>
+            </div>
+        </div>
+        <input id="input_of_navbar" type="text" placeholder="What do you want to learn?">
         <button id="search"><span class="iconify" data-icon="eva:search-outline" data-width="20"></span></button>
         <p><a href="">Online Degrees</a></p>
         <p><a href="">Find your New Career</a></p>
@@ -89,3 +219,15 @@
 </body>
 </html>
 <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
+<script>
+    let hover_list = document.querySelectorAll(".left_explore_option > ul > li > p");
+    // hover_list.map((el)=>{
+        
+    // })
+    console.log(hover_list[0]);
+    let input_of_navbar = document.querySelector("#input_of_navbar");
+    input_of_navbar.addEventListener("onselect",()=>{
+        console.log("hello_jay")
+    })
+
+</script>
