@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+    }
+    #jnavbar{
+        display: flex;
+        align-items: center;
+        height: 60px;
+        border-bottom: 1px solid rgb(193, 189, 189);
+    }
+    #jnavbar a {
+        width: 125px;
+        margin: auto 20px;
+    }
+    #jnavbar button {
+        height: 36px;
+        color: white;
+        background-color:rgb(0,86,210) ;
+        border-radius: 4px;
+    }
+    #jnavbar input {
+        margin: auto 0px;
+        height: 30px;
+        width: 400px;
+    }
+    #jnavbar p a{
+        margin: 6px;
+        font-size: 14px;
+        color: rgb(39, 38, 38);
+        text-decoration: none;
+    }
+    #jnavbar p a:hover{
+        color: rgb(107, 107, 236);
+        text-decoration: underline;
+    }
+    #explore{
+        margin: auto 7px;
+        border: 2px solid black;
+        padding:0 13px;
+        font-weight: bold;
+    }
+    #search{
+        
+    }
+
+</style>
+<body>
+    <div id="jnavbar">
+        <a href="index.html"><img src="./icons/download.svg" alt=""></a>
+        <button id="explore">Explore <span class="iconify" data-icon="dashicons:arrow-left-alt2" style="font-size: 12px;" data-rotate="270deg"></span></button>
+        <input type="text" placeholder="What do you want to learn?">
+        <button id="search"><span class="iconify" data-icon="eva:search-outline" data-width="20"></span></button>
+        <p><a href="">Online Degrees</a></p>
+        <p><a href="">Find your New Career</a></p>
+        <p><a href="">For Enterprise</a></p>
+        <p><a href="">For Universities</a></p>
+        <p><a href="">Log In</a></p>
+        <button>Join for Free</button>
+    </div>
+</body>
+</html>
+<script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
