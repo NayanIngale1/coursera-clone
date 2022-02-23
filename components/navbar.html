@@ -10,8 +10,8 @@
     body {
         margin: 0;
         padding: 0;
-        font-family: sans-serif;
         box-sizing: border-box;
+        font-family: "Source Sans Pro", "Open Sans", sans-serif;
     }
     #jnavbar{
         position: sticky;
@@ -26,15 +26,16 @@
         margin: auto 20px;
     }
     #jnavbar button {
-        height: 36px;
+        height: 41px;
         color: white;
         background-color:rgb(0,86,210) ;
     }
     #jnavbar input {
         padding: 1px 5px;
         margin: auto 0px;
-        height: 30px;
-        width: 350px;
+        height: 35px;
+        width: 390px;
+        font-size: medium;
     }
     #jnavbar p a{
         margin: 6px;
@@ -64,7 +65,7 @@
         border: 0;
         border-radius: 0;
         width: 40px;
-        margin-right:7%;
+        margin-right:5%;
     }
     #join_for_free{
         border: 0;
@@ -146,22 +147,183 @@
         background-color:rgb(0,86,210) ;
         color: white;
     }
-    .right_explore_option {
-        width: 600px;
-        height: 585px;
-        border: 1px solid red;
-        position: absolute;
-        /* left: 100%; */
-        top: 0;
-        z-index: 5;
-        /* opacity: 0; */
-        transition: opacity 0.1s ease-in-out;
-        overflow-y: scroll;
-        padding:16px 0px ;
-    }
     li .iconify{
         float: right;
         margin-top: -25px;
+    }
+    #input_debouncing{
+        position: absolute;
+        top: 57px;
+        z-index: 5;
+        padding-left: 20px;
+        background-color: white;
+        border-radius: 3px;
+        overflow: scroll;
+        display: none;
+        width: 420px;
+        max-height: 415px;
+        border: 1px solid rebeccapurple;
+    }
+    #input_debouncing p {
+        margin:10px 0 20px;
+        font-size: 18px;
+        font-weight: 550;
+        color: rgba(0, 0, 0, 0.667);
+
+    }
+    .input_debouncing_MPS{
+        display: flex;
+        align-items: center;
+        padding: 5px 0;
+        margin: 15px 0;
+    }
+    .input_debouncing_MPS_left{
+        margin-right: 10px;
+    }
+    .input_debouncing_MPS_left img {
+        width: 40px;
+    }
+    .input_debouncing_MPS_right h3{
+        margin:0px 0 3px;
+        font-weight: 100;
+        font-size: 1em;
+    }
+    .input_debouncing_MPS_right h4{
+        margin: 0;
+        font-weight: 100;
+        font-size: 1em;
+        color: rgba(0, 0, 0, 0.701);
+    }
+    .input_debouncing_MPS:hover{
+        background-color: rgba(221, 217, 217, 0.542);
+        cursor: pointer;
+    }
+    .input_debouncing_PRN{
+        display: flex;
+        flex-direction: column;
+    }
+    .input_debouncing_PRN_div{
+        display: flex;
+        align-items: center;
+    }
+    .input_debouncing_PRN .input_debouncing_PRN_div img {
+        width: 30px;
+        margin: 0 10px;
+    }
+    .input_debouncing_PRN h6{
+        font-weight: 100;
+        font-size: 1em;
+        margin:0px 0;
+        padding: 5px;
+    }
+    .input_debouncing_PRN h6 .iconify{
+        color: rgba(52, 52, 238, 0.639);
+        margin:0px 20px -5px 10px;
+    }
+    .input_debouncing_PRN h6:hover {
+        background-color: rgba(221, 217, 217, 0.542);
+        cursor: pointer;
+    }
+    #navbar_goals_subject{
+        padding:30px 50px;
+        height: 557px;
+        width: 57%;
+        cursor: pointer;
+        display: none;
+        z-index: 5;
+        position: absolute;
+        overflow-y: scroll;
+        left: 28%;
+    }
+    .navbar_goal_header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .navbar_goal_header span{
+        font-weight: 100;
+        
+    }
+    
+    .navbar_goal_header h1{
+        font-size: 22px;
+        margin:-10px 0;
+    }
+    #navbar_goals_subject h5{
+        margin: 10px 0 20px;
+        font-weight: 100;
+        color: #656363;
+    }
+    .this_is_last_div{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+        grid-gap: 100px;
+    }
+    /* .display_gride_goals{
+            margin: 20px 0;
+    } */
+    .display_gride_goals h1{
+        font-size: 18px;
+    }
+    .display_gride_goals hr{
+        width: 90%;
+        margin-left:0 ;
+    }
+    .jayinput_debouncing_MPS{
+        display: flex;
+        align-items: center;
+        padding: 5px 0;
+        margin: 15px 0;
+    }
+    .jayinput_debouncing_MPS_left{
+        margin-right: 10px;
+    }
+    .jayinput_debouncing_MPS_left img {
+        width: 35px;
+    }
+    .jayinput_debouncing_MPS_right h3{
+        margin:0px 0 3px 10px;
+        font-weight: 100;
+        font-size: 1em;
+    }
+    .jayinput_debouncing_MPS_right h4{
+        margin: 0 0 0 10px;
+        font-weight: 100;
+        font-size: 1em;
+        color: rgba(75, 71, 71, 0.701);
+    }
+    .more_links button {
+        border-color:rgb(0,86,210);
+        margin: 30px 20px 100px 0;
+        padding:0 12px;
+        font-weight: bold;
+        height: 36px;
+        background-color: white;
+        color: rgb(0,86,210);
+        font-size: 16px;
+    }
+    .more_links button:hover{
+        background-color:rgb(0,86,210) ;
+        color: white;
+    }
+    .more_links .more_link_box{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .more_links .more_link_box p {
+        color: rgb(0,86,210);
+    }
+    .footer_navbar_goal{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+        grid-gap: 10px;
+    }
+    .footer_heading h1{
+        margin-top: 100px;
+        font-size: 18px;
+    }
+    .footer_heading hr{
+        width: 100%;
     }
 </style>
 <body>
@@ -176,14 +338,7 @@
                     <ul>
                         <li>Goals</li>
                         <li>Take a free course</li>
-                        <li><p>Earn a Degree</p><span class="iconify" data-icon="dashicons:arrow-left-alt2" style="font-size: 18px;" data-rotate="180deg"></span>
-                        
-                        <!-- <div class="right_explore_option">
-
-                        </div> -->
-                        
-                        
-                        </li>
+                        <li id="Earn_a_Degree"><p>Earn a Degree</p><span class="iconify" data-icon="dashicons:arrow-left-alt2" style="font-size: 18px;" data-rotate="180deg"></span></li>
                         <li><p>Earn a Certificate</p><span class="iconify" data-icon="dashicons:arrow-left-alt2" style="font-size: 18px;" data-rotate="180deg"></span></li>
                         <li><p>Advance your career</p><span class="iconify" data-icon="dashicons:arrow-left-alt2" style="font-size: 18px;" data-rotate="180deg"></span></li>
                         <li>Find your new career</li>
@@ -207,7 +362,43 @@
                 </div>
             </div>
         </div>
-        <input id="input_of_navbar" type="text" placeholder="What do you want to learn?">
+        <div id="input_debouncing_effect">
+            <input id="input_of_navbar" type="text" placeholder="What do you want to learn?">
+            <div id="input_debouncing">
+                <p>Most Popular Specializations</p>
+                <div class="input_debouncing_MPS">
+                    <div class="input_debouncing_MPS_left"><img src="./icons/googleSp1.jfif" alt="">
+                    </div>
+                    <div class="input_debouncing_MPS_right">
+                        <h3>Google Data Analytics</h3>
+                        <h4>Google</h4>
+                    </div>
+                </div>
+                <div class="input_debouncing_MPS">
+                    <div class="input_debouncing_MPS_left"><img src="./icons/googleSp2.jfif" alt="">
+                    </div>
+                    <div class="input_debouncing_MPS_right">
+                        <h3>Google Project Management:</h3>
+                        <h4>Google</h4>
+                    </div>
+                </div>
+                <div class="input_debouncing_MPS">
+                    <div class="input_debouncing_MPS_left"><img src="./icons/googleSp3.jfif" alt="">
+                    </div>
+                    <div class="input_debouncing_MPS_right">
+                        <h3>Google UX Design</h3>
+                        <h4>Google</h4>
+                    </div>
+                </div>
+                <div class="input_debouncing_PRN">
+                    <p>Popular right now</p>
+                    <h6><span class="iconify" data-icon="eva:search-outline" data-width="20"></span> python</h6>
+                    <h6><span class="iconify" data-icon="eva:search-outline" data-width="20"></span> data science</h6>
+                    <h6><span class="iconify" data-icon="eva:search-outline" data-width="20"></span> machine learning</h6>
+                </div>
+                
+            </div>
+        </div>
         <button id="search"><span class="iconify" data-icon="eva:search-outline" data-width="20"></span></button>
         <p><a href="">Online Degrees</a></p>
         <p><a href="">Find your New Career</a></p>
@@ -216,18 +407,371 @@
         <p><a id="log_in_text" href="">Log In</a></p>
         <button id="join_for_free">Join for Free</button>
     </div>
+    <div id="navbar_goals_subject">
+        <div class="navbar_goal_header">
+            <h1>Earn a Degree</h1>
+            <span class="iconify" data-icon="gridicons:cross" style="color: #656363;" data-width="30" ></span>
+        </div>
+        <h5>Breakthrough pricing on 100% online degree designed to fit into your life.</h5>
+        <div class="this_is_last_div">
+            <div class="display_gride_goals">
+                <h1>Data Science</h1>
+                <hr>
+                <div class="jayinput_debouncing_MPS">
+                    <div class="jayinput_debouncing_MPS_left"><img src="./icons/michalUniversity.jfif" alt="">
+                    </div>
+                    <div class="jayinput_debouncing_MPS_right">
+                        <h3>University of Michigan</h3>
+                        <h4>Master of Applied Data Science</h4>
+                    </div>
+                </div>
+                <div class="jayinput_debouncing_MPS">
+                    <div class="jayinput_debouncing_MPS_left"><img src="./icons/illinois.png" alt="">
+                    </div>
+                    <div class="jayinput_debouncing_MPS_right">
+                        <h3>University of Illinois at Urbana-Champaign</h3>
+                        <h4>Master in Computer Science</h4>
+                    </div>
+                </div>
+                <div class="jayinput_debouncing_MPS">
+                    <div class="jayinput_debouncing_MPS_left"><img src="./icons/CUBoulder_360x360.jfif" alt="">
+                    </div>
+                    <div class="jayinput_debouncing_MPS_right">
+                        <h3>University of Colorado Boulder</h3>
+                        <h4>Master of Science in Data Science</h4>
+                    </div>
+                </div>
+                <div class="jayinput_debouncing_MPS">
+                    <div class="jayinput_debouncing_MPS_left"><img src="./icons/HSE_white.jfif" alt="">
+                    </div>
+                    <div class="jayinput_debouncing_MPS_right">
+                        <h3>HSE University</h3>
+                        <h4>Master of Data Science</h4>
+                    </div>
+                </div>
+                <div class="jayinput_debouncing_MPS">
+                    <div class="jayinput_debouncing_MPS_left"><img src="./icons/HSE_white.jfif" alt="">
+                    </div>
+                    <div class="jayinput_debouncing_MPS_right">
+                        <h3>HSE University</h3>
+                        <h4>Master of Data and Network Analysis</h4>
+                    </div>
+                </div>
+                <div class="jayinput_debouncing_MPS">
+                    <div class="jayinput_debouncing_MPS_left"><img src="./icons/uniandessquare.jfif" alt="">
+                    </div>
+                    <div class="jayinput_debouncing_MPS_right">
+                        <h3>Universidad de los Andes</h3>
+                        <h4>Maestría en Inteligencia Analítica de Datos</h4>
+                    </div>
+                </div>
+                <a href="#">View all Data Science degrees</a>
+    
+            </div>
+            <div class="display_gride_goals">
+                <h1>Business</h1>
+                <hr>
+                <div class="jayinput_debouncing_MPS">
+                    <div class="jayinput_debouncing_MPS_left"><img src="./icons/UNT-logo1.jfif" alt="">
+                    </div>
+                    <div class="jayinput_debouncing_MPS_right">
+                        <h3>University of North Texas</h3>
+                        <h4>Bachelor of Applied Arts and Sciences</h4>
+                    </div>
+                </div>
+                <div class="jayinput_debouncing_MPS">
+                    <div class="jayinput_debouncing_MPS_left"><img src="./icons/360x360.png" alt="">
+                    </div>
+                    <div class="jayinput_debouncing_MPS_right">
+                        <h3>O.P. Jindal Global University</h3>
+                        <h4>MBA in Business Analytics</h4>
+                    </div>
+                </div>
+                <div class="jayinput_debouncing_MPS">
+                    <div class="jayinput_debouncing_MPS_left"><img src="./icons/illinois.png" alt="">
+                    </div>
+                    <div class="jayinput_debouncing_MPS_right">
+                        <h3>University of Illinois at Urbana-Champaign</h3>
+                        <h4>Master of Business Administration (iMBA)</h4>
+                    </div>
+                </div>
+                <div class="jayinput_debouncing_MPS">
+                    <div class="jayinput_debouncing_MPS_left"><img src="./icons/square-360px.png" alt="">
+                    </div>
+                    <div class="jayinput_debouncing_MPS_right">
+                        <h3>Macquarie University</h3>
+                        <h4>Global Master of Business Administration (Global MBA)</h4>
+                    </div>
+                </div>
+                <div class="jayinput_debouncing_MPS">
+                    <div class="jayinput_debouncing_MPS_left"><img src="./icons/HEC_logo.jfif" alt="">
+                    </div>
+                    <div class="jayinput_debouncing_MPS_right">
+                        <h3>HEC Paris</h3>
+                        <h4>MSc in Innovation and Entrepreneurship</h4>
+                    </div>
+                </div>
+                <div class="jayinput_debouncing_MPS">
+                    <div class="jayinput_debouncing_MPS_left"><img src="./icons/HSE_white.jfif" alt="">
+                    </div>
+                    <div class="jayinput_debouncing_MPS_right">
+                        <h3>HSE University</h3>
+                        <h4>Master of Business Analytics</h4>
+                    </div>
+                </div>
+                <a href="#">View all Data Science degrees</a>
+    
+            </div>
+            <div class="display_gride_goals">
+                <h1>Computer Science</h1>
+                <hr>
+                <div class="jayinput_debouncing_MPS">
+                    <div class="jayinput_debouncing_MPS_left"><img src="./icons/UoL-Logo_180x180.png" alt="">
+                    </div>
+                    <div class="jayinput_debouncing_MPS_right">
+                        <h3>University of London</h3>
+                        <h4>Bachelor of Science in Computer Science</h4>
+                    </div>
+                </div>
+                <div class="jayinput_debouncing_MPS">
+                    <div class="jayinput_debouncing_MPS_left"><img src="./icons/CenterILblock-ISQUAREOrangeBackgrnd.png" alt="">
+                    </div>
+                    <div class="jayinput_debouncing_MPS_right">
+                        <h3>University of Illinois at Urbana-Champaign</h3>
+                        <h4>Master of Computer Science</h4>
+                    </div>
+                </div>
+                <div class="jayinput_debouncing_MPS">
+                    <div class="jayinput_debouncing_MPS_left"><img src="./icons/Penn-Shield.png" alt="">
+                    </div>
+                    <div class="jayinput_debouncing_MPS_right">
+                        <h3>Penn Engineering</h3>
+                        <h4>Master of Computer and Information Technology</h4>
+                    </div>
+                </div>
+                <div class="jayinput_debouncing_MPS">
+                    <div class="jayinput_debouncing_MPS_left"><img src="./icons/uniandessquare (1).jfif" alt="">
+                    </div>
+                    <div class="jayinput_debouncing_MPS_right">
+                        <h3>Universidad de los Andes</h3>
+                        <h4>Maestría en Ingeniería de Software</h4>
+                    </div>
+                </div>
+                <div class="jayinput_debouncing_MPS">
+                    <div class="jayinput_debouncing_MPS_left"><img src="./icons/HSE_white.jfif" alt="">
+                    </div>
+                    <div class="jayinput_debouncing_MPS_right">
+                        <h3>HSE University</h3>
+                        <h4>Master of Computer Vision</h4>
+                    </div>
+                </div>
+                <div class="jayinput_debouncing_MPS">
+                    <div class="jayinput_debouncing_MPS_left"><img src="./icons/CUBoulder_360x360 (1).jfif" alt="">
+                    </div>
+                    <div class="jayinput_debouncing_MPS_right">
+                        <h3>University of Colorado Boulder</h3>
+                        <h4>Master of Science in Electrical Engineering</h4>
+                    </div>
+                </div>
+                <a href="#">View all Data Science degrees</a>
+    
+            </div>
+            <div class="display_gride_goals">
+                <h1>More Degrees</h1>
+                <hr>
+                <div class="more_links">
+                    <div class="more_link_box">
+                        <p>Public Health</p>
+                        <p>Engineering</p>
+                        <p>Social Sciences</p>
+                        <p>Bachelor's Degrees</p>
+                        <p>Master's Degrees</p>
+                    </div>
+                    <button>View all digree</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer_heading">
+            <h1>Earn credit toward a master's</h1>
+            <hr>
+        </div>
+        <div class="footer_navbar_goal">
+            <div class="last_footer_navbar">
+                <div class="jayinput_debouncing_MPS">
+                    <div class="jayinput_debouncing_MPS_left"><img src="./icons/ASUlogo.jfif" alt="">
+                    </div>
+                    <div class="jayinput_debouncing_MPS_right">
+                        <h3>Big Data MasterTrack® Certificate</h3>
+                        <h4>Degree credit•Expert feedback</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="last_footer_navbar">
+                <div class="jayinput_debouncing_MPS">
+                    <div class="jayinput_debouncing_MPS_left"><img src="./icons/HEC_logo (1).jfif" alt="">
+                    </div>
+                    <div class="jayinput_debouncing_MPS_right">
+                        <h3>Innovation Management & Entrepreneurship MasterTrack® Certificate</h3>
+                        <h4>Degree credit•Expert feedback</h4>
+                    </div>
+                </div>
+            </div>
+            <a href="#">View all MasterTrack Certificates</a>
+        </div>
+    </div>
+
 </body>
 </html>
 <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
 <script>
-    let hover_list = document.querySelectorAll(".left_explore_option > ul > li > p");
-    // hover_list.map((el)=>{
-        
-    // })
-    console.log(hover_list[0]);
     let input_of_navbar = document.querySelector("#input_of_navbar");
-    input_of_navbar.addEventListener("onselect",()=>{
-        console.log("hello_jay")
-    })
+    let input_debouncing = document.querySelector("#input_debouncing");
+    let input_and_body = document.querySelector("body");
+    let click_body = false;
+    let click_input = false;
+    input_and_body.addEventListener("click",()=>{
+                click_body = true;
+                input_of_navbar.addEventListener("click",()=>{
+                    click_input= true;
+                });       
+                if(click_body&&click_input){
+                    input_debouncing.style.display="block";
+                    click_body = false;
+                    click_input = false;
+                }
+                if(click_body&&!click_input){
+                    input_debouncing.style.display="none";
+                    click_body = false;
+                    click_input = false;
+                }
+    });
+
+    let timerId;
+    const debouncing= (timeId)=>{
+        if(timerId){
+            clearTimeout(timerId);
+        }
+        timerId = setTimeout(()=>{
+            main();
+        },1000);
+    }
+
+    input_of_navbar.addEventListener("keyup",debouncing);
+
+    const main = async()=>{
+        if(search_data() == null){
+            return;
+        }
+        else{
+            let data = await search_data();
+            filter_my_data(data);
+            sort_my_data(data);
+            
+        }
+    }
+    let input_term; 
+    const search_data =async ()=>{
+        try {
+            input_term = input_of_navbar.value;
+            let res = await fetch(`https://api.coursera.org/api/courses.v1?q=search&query=${input_term}&includes=photoUrl,partnerIds,shortName,location&fields=partnerIds ,photoUrl`);
+            let data = await res.json();
+            return data;
+        } catch (error) {
+            console.log(error);
+        }
+    }
+    search_data();
+    const filter_my_data = (data)=>{
+        let {
+            name,
+            partnerIds,
+            photoUrl
+        } = data.elements[0];
+            
+        let id = data.linked["partners.v1"].filter((el)=>{
+            return el.id==partnerIds[0];
+        });
+        let partners_name = id[0].name;
+        append_debouncing_data(photoUrl,name,partners_name);
+    }
+    const sort_my_data = (data)=>{
+        let names_of_search = [];
+        for(let x =0; x<7;x++){
+            names_of_search.push(data.elements[x].name);
+        }
+        append_debouncing_data_2(names_of_search);
+        
+    }
+    const append_debouncing_data = (photoUrl,name,partners_name)=>{
+        input_debouncing.innerHTML=null;
+        let div1 =  document.createElement("div");
+        div1.setAttribute("class","input_debouncing_MPS")
+        let div2 =  document.createElement("div");
+        div2.setAttribute("class","input_debouncing_MPS_left")
+        let div3 =  document.createElement("div");
+        div3.setAttribute("class","input_debouncing_MPS_right")
+        div1.append(div2,div3);
+        let photo = document.createElement("img");
+        photo.src = photoUrl;
+        let p1 = document.createElement("h3");
+        p1.innerText = name;
+        let p2 = document.createElement("h4");
+        p2.innerText = partners_name;
+        div2.append(photo);
+        div3.append(p1,p2);
+        input_debouncing.append(div1);
+    }
+    const append_debouncing_data_2 = (names)=>{
+        console.log(names);
+        let div = document.createElement("div");
+        div.setAttribute("class","input_debouncing_PRN");
+        let p = document.createElement("p");
+        div.append(p);
+        p.innerText = "Popular Searches";
+        let hello = document.querySelector("#jay");
+        names.map((el)=>{
+            let div1 = document.createElement("div");
+            div1.setAttribute("class","input_debouncing_PRN_div");
+            let img = document.createElement("img");
+            img.src = "./icons/searchIcon.jpg"
+            let p1 = document.createElement("h6");
+            p1.innerText = el;
+            div1.append(img,p1);
+            div.append(div1)
+        })
+        document.querySelector("#input_debouncing").append(div);
+    }
+    
+    
+    let hover_in_explorer = document.querySelector("#explore_option");
+    let hover_in_list = document.querySelector("#Earn_a_Degree");
+    let display_this = document.querySelector("#navbar_goals_subject");
+    let flag_hover_in_explorer = false;
+    let flag_hover_in_list = false;
+    let flag_display_this = false;
+    console.log(flag_hover_in_list)
+    hover_in_list.addEventListener("mouseover",()=>{
+            display_this.style.display="block";
+    });
+    display_this.addEventListener("mouseover",()=>{
+            display_this.style.display="block";
+            hover_in_explorer.style.display="block";
+            flag_display_this = false;
+    });
+    display_this.addEventListener("mouseout",()=>{
+                window.location.reload();
+            
+    });
+    // hover_in_explorer.addEventListener("mouseout",()=>{
+    //     display_this.style.display="none";
+    //     hover_in_explorer.style.display="none";
+    // });
+        
+        // document.querySelector("#explore_option").style.display="block";
+    
+        // display_this.style.display="block";
+        
+    
+    
 
 </script>
