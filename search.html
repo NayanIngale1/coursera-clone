@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/697099b486.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<style>
+    #filtercontainer {
+        width: 98%;
+        height: 150px;
+        border: 1px solid black;
+        background-color: whitesmoke;
+    }
+
+    #numbertally {
+        text-align: center;
+    }
+
+    #Language,
+    #Level,
+    #Duration,
+    #Subject,
+    #Skills,
+    #Partner,
+    #Learning-Product {
+        height: 40px;
+        width: 13%;
+        border-radius: 7%;
+    }
+
+    #filtertally {
+        /* border: 1px solid red; */
+        padding-left: 5%;
+    }
+
+/* render data */
+
+
+    #bigcontainer{
+        display: flex;
+border: 1px solid black;
+margin: 2%;
+border-bottom: 2px solid #dddddd;
+    }
+
+
+    #divcontainer{
+        width: 70%;
+        border: 1px solid black;
+        margin: 0px 5px; 
+    }
+
+    #imagebloc{
+        width: 50%; 
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    }
+
+    #div2container{
+        width: 23%;
+        border: 1px solid black;
+        text-align: center;
+        margin: 2%;
+      
+       
+    }
+
+    #certificates{
+        background-color: lavender;
+        color: rgb(31, 31, 31);
+letter-spacing: 0px;
+font-size: 1rem;
+line-height: 1.5rem;
+font-family: "Source Sans Pro", Arial, sans-serif;
+font-weight: 400;
+    }
+
+
+
+
+
+/* CSS of table started */
+
+
+    #main-heading{
+    font-size: 22px;
+    font-weight: bold;
+}
+.content-table{
+    border-collapse: collapse;
+    margin: 25px 0;
+    /* font-size: 0.9em; */
+    min-width: 400px;
+    font-size: 17px;
+
+    /* font-family: Source Sans Pro, Open Sans, sans-serif; */
+
+    font-family: 'Source Sans Pro',Arial,sans-serif;
+  
+    
+   
+}
+
+.content-table thead tr{
+    text-align: left;
+    font-weight: bold;
+    color: indianred;
+    
+}
+
+.content-table th, .content-table td{
+    padding: 35px 15px; 
+    
+}
+.content-table tbody tr{
+    border-bottom: 1px solid #dddddd;
+}
+
+.heading p {
+    text-align: center;
+    /* border: 1px solid black; */
+    background-color: lavender;
+}
+
+td{
+    line-height: 30px;
+}
+
+
+
+
+   
+
+</style>
+
+<body>
+
+    <div id="filtercontainer">
+        <div id="numbertally"> Showing 1274 total results for "machine learning " </div>
+
+        <br>
+        <br>
+        <div id="filtertally">
+
+            <select name="" id="Language">
+                <option value="">Language</option>
+                <option value="">Language
+
+
+                </option>
+                <option value="">Spanish</option>
+                <option value="">French</option>
+                <option value="">Russian</option>
+                <option value="">Portuguese</option>
+                <option value="">German</option>
+                <option value="">Arabic</option>
+                <option value="">Vientnamese</option>
+                <option value="">Italian</option>
+            </select>
+
+            <select name="" id="Level">
+                <option value="">Level</option>
+                <option value="">Intermediate</option>
+                <option value="">Beginner</option>
+                <option value="">Advanced</option>
+                <option value="">Mixed</option>
+            </select>
+
+            <select name="" id="Duration">
+                <option value=""> Duration </option>
+                <option value="">1-3 Months</option>
+                <option value="">Less Than 2 Hours</option>
+                <option value="">1-4 Weeks</option>
+                <option value="">3+ Months</option>
+            </select>
+
+            <select name="" id="Subject">
+                <option value="">Subject</option>
+                <option value="">Data Science</option>
+                <option value="">Computer Science</option>
+                <option value="">Information Technology</option>
+                <option value="">Business</option>
+                <option value="">Physical Science and Engineering</option>
+                <option value="">Health</option>
+                <option value="">Social Sciences</option>
+                <option value="">Math and Logic</option>
+                <option value="">Arts and Humanities</option>
+            </select>
+
+            <select name="" id="Skills">
+                <option value="">Skills</option>
+                <option value="">Machine Learning</option>
+                <option value="">Computer Programming</option>
+                <option value="">statistical Programming</option>
+                <option value="">Probability & statistic</option>
+                <option value="">Theoretical Computer Science</option>
+                <option value="">Data Management</option>
+                <option value="">Python Programming</option>
+                <option value="">Mathematics</option>
+                <option value="">General statistic</option>
+            </select>
+
+            <select name="" id="Partner">
+                <option value="">Partner</option>
+                <option value="">Coursera Project Network </option>
+                <option value="">Google Cloud</option>
+                <option value="">DeepLearning AI</option>
+                <option value="">IBM</option>
+                <option value="">Microsoft</option>
+                <option value="">HSE University</option>
+                <option value="">John Hopkins University</option>
+                <option value="">University of Illinois at Urbana-Champaign</option>
+                <option value="">University of Colorado Boulder</option>
+
+            </select>
+
+            <select name="" id="Learning-Product">
+                <option value="">Learning Product</option>
+                <option value="">Guided Projects</option>
+                <option value="">Courses</option>
+                <option value="">Specializations</option>
+                <option value="">Professional Certificate</option>
+                <option value="">Master Track Certificates</option>
+                <option value="">Degrees</option>
+            </select>
+
+        </div>
+
+    </div>
+
+    <div id="container"></div>
+
+
+    <div id="main-heading">What Coursera Has to Offer</div>
+
+
+    <table class="content-table">
+        <thead>
+            <tr>
+                <th class= "heading">  Learning Program   </th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class= "heading">   <p>  Guided Project  </p></td>
+                <td>Learn a job-relevant skill that you can use today in under 2 hours through an interactive experience guided by a subject matter expert. Access everything you need right in your browser and complete your project confidently with step-by-step instructions.</td>
+            </tr>
+            <tr>
+                <td class= "heading"> <p> Course  </p></td>
+                <td>Take courses from the world's best instructors and universities. Courses include recorded auto-graded and peer-reviewed assignments, video lectures, and community discussion forums. When you complete a course, you’ll be eligible to receive a shareable electronic Course Certificate for a small fee.</td>
+            </tr>
+            <tr>
+                <td class= "heading"> <p> Specialization </p></td>
+                <td>Enroll in a Specialization to master a specific career skill. You’ll complete a series of rigorous courses, tackle hands-on projects, and earn a Specialization Certificate to share with your professional network and potential employers.</td>
+            </tr>
+            <tr>
+                <td class= "heading">   <p> Professional Certificate </p></td>
+                <td>Whether you’re looking to start a new career or change your current one, Professional Certificates on Coursera help you become job ready. Learn at your own pace from top companies and universities, apply your new skills to hands-on projects that showcase your expertise to potential employers, and earn a career credential to kickstart your new career.</td>
+            </tr>
+            <tr>
+                <td class= "heading">  <p> MasterTrack® Certificate </p></td>
+                <td>With MasterTrack® Certificates, portions of Master’s programs have been split into online modules, so you can earn a high quality university-issued career credential at a breakthrough price in a flexible, interactive format. Benefit from a deeply engaging learning experience with real-world projects and live, expert instruction. If you are accepted to the full Master's program, your MasterTrack coursework counts towards your degree.</td>
+            </tr>
+            <tr>
+                <td class= "heading">  <p> Degree  </p></td>
+                <td>Transform your resume with a degree from a top university for a breakthrough price. Our modular degree learning experience gives you the ability to study online anytime and earn credit as you complete your course assignments. You'll receive the same credential as students who attend class on campus. Coursera degrees cost much less than comparable on-campus programs.</td>
+            </tr>
+        </tbody>
+    </table>
+   
+
+    
+
+
+
+</body>
+
+</html>
+
+
+
+<script>
+
+
+
+
+
+var userdata = [
+    {
+      courseType: "v2.ondemand",
+      partnerLogo:
+        "http://coursera-university-assets.s3.amazonaws.com/c0/87a10033a311e892619b85c6fd62bb/IBM-200x48.png",
+      description:
+        "The art of uncovering the insights and trends in data has been around since ancient times. The ancient Egyptians used census data to increase efficiency in tax collection and they accurately predicted the flooding of the Nile river every year. Since then, people working in data science have carved out a unique and distinct field for the work they do. This field is data science. In this course, we will meet some data science practitioners and we will get an overview of what data science is today.",
+      domainTypes: [
+        {
+          subdomainId: "data-analysis",
+          domainId: "data-science",
+        },
+      ],
+      photoUrl:
+        "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-course-photos.s3.amazonaws.com/16/d602b00a6c11e88d594f951694ab88/Data-Science-Orientation.png",
+      id: "r0GnHOZaEees-Q6jQMxlrg",
+      slug: "what-is-datascience",
+      instructorIds: ["28513748", "28512151"],
+      specializations: [],
+      workload: "3 weeks of study, 2-3 hours/week",
+      partnerIds: ["348"],
+      certificates: ["VerifiedCert", "Specialization"],
+      name: "What is Data Science? ",
+      startDate: 1520864132943,
+    },
+    {
+      courseType: "v2.ondemand",
+      partnerLogo:
+        "https://coursera-university-assets.s3.amazonaws.com/f4/e4fea0b32811e5b3a0efb601c61536/UC-Davis-Gold-logo-transparent-200-x-48.png",
+      description:
+        "As data collection has increased exponentially, so has the need for people skilled at using and interacting with data; to be able to think critically, and provide insights to make better decisions and optimize their businesses. This is a data scientist, part mathematician, part computer scientist, and part trend spotter (SAS Institute, Inc.). According to Glassdoor, being a data scientist is the best job in America; with a median base salary of $110,000 and thousands of job openings at a time. The skills necessary to be a good data scientist include being able to retrieve and work with data, and to do that you need to be well versed in SQL, the standard language for communicating with database systems.\n\nThis course is designed to give you a primer in the fundamentals of SQL and working with data so that you can begin analyzing it for data science purposes. You will begin to ask the right questions and come up with good answers to deliver valuable insights for your organization. This course starts with the basics and assumes you do not have any knowledge or skills in SQL. It will build on that foundation and gradually have you write both simple and complex queries to help you select data from tables.  You'll start to work with different types of data like strings and numbers and discuss methods to filter and pare down your results. \n\nYou will create new tables and be able to move data into them. You will learn common operators and how to combine the data. You will use case statements and concepts like data governance and profiling. You will discuss topics on data, and practice using real-world programming assignments. You will interpret the structure, meaning, and relationships in source data and use SQL as a professional to shape your data for targeted analysis purposes. Although we do not have any specific prerequisites or software requirements to take this course, a simple text editor is recommended for the final project. So what are you waiting for? This is your first step in landing a job in the best occupation in the US and soon the world!",
+      domainTypes: [
+        {
+          subdomainId: "data-analysis",
+          domainId: "data-science",
+        },
+        {
+          domainId: "math-and-logic",
+          subdomainId: "math-and-logic",
+        },
+      ],
+      photoUrl:
+        "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-course-photos.s3.amazonaws.com/7a/569080aab711e79d97bf25c196049d/1200px-square-dark.jpg",
+      id: "_8FRmSXkEeeCDQ44DPGlIA",
+      slug: "sql-for-data-science",
+      instructorIds: ["6648160"],
+      specializations: [],
+      workload: "4 weeks of study, 3-5 hours/week",
+      partnerIds: ["83"],
+      certificates: ["VerifiedCert", "Specialization"],
+      name: "SQL for Data Science",
+      startDate: 1510597207731,
+    },
+    {
+      courseType: "v2.ondemand",
+      partnerLogo:
+        "http://coursera-university-assets.s3.amazonaws.com/c0/87a10033a311e892619b85c6fd62bb/IBM-200x48.png",
+      description:
+        "What are some of the most popular data science tools, how do you use them, and what are their features? In this course, you'll learn about Jupyter Notebooks, JupyterLab, RStudio IDE, Git, GitHub, and Watson Studio. You will learn about what each tool is used for, what programming languages they can execute, their features and limitations. With the tools hosted in the cloud on Skills Network Labs, you will be able to test each tool and follow instructions to run simple code in Python, R or Scala. To end the course, you will create a final project with a Jupyter Notebook on IBM Watson Studio and demonstrate your proficiency preparing a notebook, writing Markdown, and sharing your work with your peers.",
+      domainTypes: [
+        {
+          subdomainId: "data-analysis",
+          domainId: "data-science",
+        },
+        {
+          domainId: "computer-science",
+          subdomainId: "software-development",
+        },
+      ],
+      photoUrl:
+        "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-course-photos.s3.amazonaws.com/f4/acffe00bd811e8bfabed507b508fa4/ds0105en-square.png",
+      id: "oCBU5_VYEeeBQA7SG0nILA",
+      slug: "open-source-tools-for-data-science",
+      instructorIds: ["69929142", "76756109", "18682389"],
+      specializations: [],
+      workload: "3 weeks of study, 2-3 hours/week",
+      partnerIds: ["348"],
+      certificates: ["VerifiedCert", "Specialization"],
+      name: "Tools for Data Science",
+      startDate: 1520864250173,
+    },
+    {
+      courseType: "v2.ondemand",
+      partnerLogo:
+        "http://coursera-university-assets.s3.amazonaws.com/c0/87a10033a311e892619b85c6fd62bb/IBM-200x48.png",
+      description:
+        "Kickstart your learning of Python for data science, as well as programming in general, with this beginner-friendly introduction to Python. Python is one of the world's most popular programming languages, and there has never been greater demand for professionals with the ability to apply Python fundamentals to drive business solutions across industries. \n\nThis course will take you from zero to programming in Python in a matter of hours—no prior programming experience necessary! You will learn Python fundamentals, including data structures and data analysis, complete hands-on exercises throughout the course modules, and create a final project to demonstrate your new skills. \n\nBy the end of this course, you'll feel comfortable creating basic programs, working with data, and solving real-world problems in Python. You'll gain a strong foundation for more advanced learning in the field, and develop skills to help advance your career. \n\nThis course can be applied to multiple Specialization or Professional Certificate programs. Completing this course will count towards your learning in any of the following programs: \n\nIBM Applied AI Professional Certificate \n\nApplied Data Science Specialization \n\nIBM Data Science Professional Certificate \n\nUpon completion of any of the above programs, in addition to earning a Specialization completion certificate from Coursera, you'll also receive a digital badge from IBM recognizing your expertise in the field.",
+      domainTypes: [
+        {
+          subdomainId: "data-analysis",
+          domainId: "data-science",
+        },
+      ],
+      photoUrl:
+        "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-course-photos.s3.amazonaws.com/fc/c1b8dfbac740999b6256aca490de43/Python-Image.jpg",
+      id: "ejOz7RDUEei99hK0xs-tsg",
+      slug: "python-for-applied-data-science-ai",
+      instructorIds: ["28511493"],
+      specializations: [],
+      workload: "",
+      partnerIds: ["348"],
+      certificates: ["VerifiedCert", "Specialization"],
+      name: "Python for Data Science, AI & Development",
+      startDate: 1525712225329,
+    },
+  ];
+
+
+  async function renderdata(){
+
+    
+    let res = await fetch(`https://api.coursera.org/api/courses.v1?limit=30&q=search&query=machine&includes=instructorIds,photoUrl,partnerIds,description,largeIcon,shortName,location&fields=instructorIds,partnerIds`)
+ let data= await res.json();
+ 
+ console.log(data);
+
+}
+
+renderdata();
+ 
+
+
+    userdata.forEach((elem) => {
+
+
+        let bigcontainer= document.createElement("div");
+        bigcontainer.setAttribute("id", "bigcontainer")
+
+        let div1container = document.createElement("div");
+        div1container.setAttribute("id", "divcontainer")
+
+        let image = document.createElement("img");
+        image.setAttribute("id", "imagebloc")
+        image.src = elem.photoUrl;
+
+        let div2container= document.createElement("div");
+        div1container.setAttribute("id", "div2container")
+
+        let coursename= document.createElement("h3");
+        coursename.innerHTML= elem.name; 
+
+        let Rating = document.createElement("h4");
+        // Rating.innerHTML= (Math.random() * 6).toFixed(1)
+        Rating.innerHTML= (Math.random() * (5 - 1) + 1).toFixed(1);
+
+
+        let Students= document.createElement("p");
+
+        Students.innerHTML= Math.floor(Math.random() * 999) + "K";
+
+
+//         function getRandomArbitrary(min, max) {
+//   return Math.random() * (max - min) + min;
+// }
+
+    //     var symbol= document.createElement("i")
+    // symbol.setAttribute("class", "")
+
+        let certificates= document.createElement("p");
+        certificates.innerHTML= elem.certificates   
+        certificates.setAttribute("id", "certificates") 
+
+        // <span class="iconify" data-icon="mdi:star"></span>
+
+
+
+        // let p1 = document.createElement("img");
+        // p.src = elem.photoUrl
+
+        div1container.append(image)
+        div2container.append(coursename, Rating, Students, certificates);
+
+        bigcontainer.append(div1container,div2container)
+
+
+
+        document.getElementById("container").append(bigcontainer)
+
+
+
+        
+
+
+    })
+
+</script>
+<!-- <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script> -->
