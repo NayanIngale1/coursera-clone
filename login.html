@@ -1,0 +1,384 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">  
+ <style>
+.text{
+    color: #0056d2;
+}
+.show-modal:hover,
+.show-modal:focus{
+    color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    outline: none;
+}
+.modal-dialog{
+    width: 400px;
+    margin: 70px auto 0;
+}
+.modal-dialog{ transform: scale(0.5); }
+.modal-dialog{ transform: scale(1); }
+.modal-dialog .modal-content{
+    text-align: center;
+    border: none;
+}
+.modal-content .close{
+    color: #fff;
+    background: linear-gradient(to right, #33a3ff, #0675cf, #4cd5ff);
+    font-size: 25px;
+    font-weight: 400;
+    text-shadow: none;
+    line-height: 27px;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    overflow: hidden;
+    opacity: 1;
+    position: absolute;
+    left: auto;
+    right: 8px;
+    top: 8px;
+    z-index: 1;
+    transition: all 0.3s;
+}
+.modal-content .close:hover{
+    color: #fff;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+.close:focus{ outline: none; }
+.modal-body{ padding: 60px 40px 40px !important; }
+.modal-body .title{
+    color: black;
+    font-size: 33px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    margin: 0 0 10px;
+}
+.modal-body .description{
+    color: gray;
+    font-size: 16px;
+    margin: 0 0 0px;
+}
+.modal-body .form-group{
+    text-align: left;
+    margin-bottom: 20px;
+    position: relative;
+}
+.modal-body .input-icon{
+    color: #777;
+    font-size: 18px;
+    transform: translateY(-50%);
+    position: absolute;
+    top: 50%;
+    left: 20px;
+}
+.modal-body .form-control{
+    font-size: 17px;
+    height: 45px;
+    width: 100%;
+    padding: 6px 0 6px 50px;
+    margin: 0 auto;
+    border: 2px solid #eee;
+    border-radius: 5px;
+    box-shadow: none;
+    outline: none;
+}
+.form-control::placeholder{
+    color: #AEAFB1;
+}
+.form-group.checkbox{
+    width: 130px;
+    margin-top: 0;
+    display: inline-block;
+}
+.form-group.checkbox label{
+    color: #9A9EA9;
+    font-weight: normal;
+}
+.form-group.checkbox input[type=checkbox]{
+    margin-left: 0;
+}
+.modal-body .forgot-pass{
+    color: #7F7FD5;
+    font-size: 13px;
+    text-align: right;
+    width: calc(100% - 135px);
+    display: inline-block;
+    vertical-align: top;
+    transition: all 0.3s ease 0s;
+}
+.forgot-pass:hover{
+    color: #9A9EA9;
+    text-decoration: underline;
+}
+.modal-content .modal-body .btn{
+    color: #fff;
+    background: #0056d2;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    /* text-transform: uppercase; */
+    line-height: 38px;
+    width: 100%;
+    height: 40px;
+    padding: 0;
+    border: none;
+    border-radius: 5px;
+    border: none;
+    display: inline-block;
+    transition: all 0.6s ease 0s;
+}
+.modal-content .modal-body .btn:hover{
+    color: #fff;
+    letter-spacing: 2px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.img{
+     border: 1px solid black;
+     height: 41px;
+     display: flex;
+     justify-content: space-between;
+     cursor: pointer;
+     margin-bottom: 20px;
+     border-radius: 5px;
+}
+.google_img{
+     /* border: 1px solid blue; */
+     height: 21px;
+     margin: 10px 30px;
+     /* width: 20px; */
+}
+.google_text{
+     /* border: 1px solid teal; */
+     font-size: 16px;
+     /* margin: 10px 10px; */
+     padding: 10px 30px 10px 0px;
+     width: 90%;
+}
+.flex{
+     display: flex;
+     margin: auto;
+}
+.para{
+     color: gray;
+     font-size: 12px;
+}
+.para > a{
+     color: gray;
+     text-decoration: underline;
+}
+#container{
+          border: 1px solid gray;
+          width: 100%;
+          height: 50px;
+          display: flex;
+          justify-content: space-between;
+     }
+     #left{
+          /* border: 1px solid red; */
+          width: 40%;
+          display: flex;
+     }
+.logo{
+     margin: 13px 20px;
+}
+#email{
+    margin-bottom: 30px;
+}
+#password{
+    margin-bottom: 30px;
+}
+.btn_div{
+     /* border: 1px solid red; */
+     width: 100px;
+     margin: 10px 24px;
+     text-align: center;
+}
+.btn_div > button{
+     background-color: #0056d2;
+     color: white;
+     text-decoration: none;
+     border: 0px;
+     width: 100%;
+     padding: 5px 20px;
+     font-size: 16px;
+}
+.input_div{
+     /* border: 1px solid green; */
+     width: 45%;
+     display: flex;  
+}
+.input_div > input{
+     width: 100%;
+     height: 30px;
+     margin: 5px 20px ;
+}
+.input_div > button{
+     background-color: #0056d2;
+     text-decoration: none;
+     width: 40px;
+     margin-right: -100px;
+     height: 33px;
+     /* margin: 7px 0px 7px 0px; */
+     margin-top: 5px;
+     border: 0px;
+     cursor: pointer;
+}
+#right{
+     /* border: 1px solid black; */
+     width: 40%;
+     display: flex;
+     justify-content: space-evenly;
+}
+#right > div > a{
+     text-decoration: none;
+     color: black;
+}
+#right > div{
+     margin-top: 10px;
+}
+.modal-content .modal-body .btn:focus{ outline: none; }
+@media only screen and (max-width: 480px){
+    .modal-dialog{ width: 95% !important; }
+    .modal-content .modal-body{
+        padding: 60px 20px 40px !important;
+    }
+}
+
+  </style>
+</head>
+<body>
+  <!-- <div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="modal-box"> -->
+                <!-- Button trigger modal -->
+                
+                <!-- <button type="button" class="btn btn-primary btn-lg show-modal" data-toggle="modal" data-target="#myModal">
+                    Sign up
+                </button> -->
+
+                <!-- i vae pasted the data of navbar from here -->
+                <div id="container">
+                    <div id="left">
+                         <div>
+                              <img class="logo" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE2LjIuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPgo8c3ZnIHZpZXdCb3g9IjAgMCAxMTU1IDE2NCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLW1pdGVybGltaXQ9IjIiPjxwYXRoIGQ9Ik0xNTkuNzUgODEuNTRjMC00NC40OSAzNi42My04MC40NyA4Mi40My04MC40NyA0Ni4xMiAwIDgyLjc2IDM2IDgyLjc2IDgwLjQ3IDAgNDQuMTYtMzYuNjQgODAuOC04Mi43NiA4MC44LTQ1LjggMC04Mi40My0zNi42OC04Mi40My04MC44em0xMjUuNjEgMGMwLTIyLjI0LTE5LjMtNDEuODctNDMuMTgtNDEuODctMjMuNTUgMC00Mi44NSAxOS42My00Mi44NSA0MS44NyAwIDIyLjU3IDE5LjMgNDIuMiA0Mi44NSA0Mi4yIDIzLjkyIDAgNDMuMTgtMTkuNjMgNDMuMTgtNDIuMnptNzA1LjYzIDEuMzFjMC00OC43NCAzOS41OC04MS43OCA3NS41Ny04MS43OCAyNC41MyAwIDM4LjYgNy41MiA0OC4wOCAyMS45MmwzLjc3LTE5aDM2Ljc5djE1NS40aC0zNi43OWwtNC43NS0xNmMtMTAuNzkgMTEuNzgtMjQuMjEgMTktNDcuMSAxOS0zNS4zMy0uMDUtNzUuNTctMzEuMTMtNzUuNTctNzkuNTR6bTEyNS42MS0uMzNjLS4wOS0yMy41MjctMTkuNDctNDIuODM1LTQzLTQyLjgzNS0yMy41OSAwLTQzIDE5LjQxMS00MyA0M3YuMTY1YzAgMjEuNTkgMTkuMyA0MC44OSA0Mi44NiA0MC44OSAyMy44NSAwIDQzLjE0LTE5LjMgNDMuMTQtNDEuMjJ6TTk0NS43OCAyMlY0aC00MC4yM3YxNTUuMzloNDAuMjNWNzUuNjZjMC0yNS4xOSAxMi40NC0zOC4yNyAzNC0zOC4yNyAxLjQzIDAgMi43OS4xIDQuMTIuMjNMOTkxLjM2LjExYy0yMC45Ny4xMS0zNi4xNyA3LjMtNDUuNTggMjEuODl6bS00MDQuMjcuMDF2LTE4bC00MC4yMy4wOS4zNCAxNTUuMzcgNDAuMjMtLjA5LS4yMi04My43MmMtLjA2LTI1LjE4IDEyLjM1LTM4LjI5IDMzLjkzLTM4LjM0IDEuMzc2LjAwNCAyLjc1Mi4wODEgNC4xMi4yM0w1ODcuMSAwYy0yMSAuMTctMzYuMjIgNy4zOS00NS41OSAyMi4wMXpNMzM4Ljg4IDk5LjJWNC4wMWg0MC4yMlY5NC4zYzAgMTkuOTUgMTEuMTIgMzEuNzMgMzAuNDIgMzEuNzMgMjEuNTkgMCAzNC0xMy4wOSAzNC0zOC4yOFY0LjAxaDQwLjI0djE1NS4zOGgtNDAuMjF2LTE4Yy05LjQ4IDE0LjcyLTI0Ljg2IDIxLjkyLTQ2LjEyIDIxLjkyLTM1Ljk4LjAxLTU4LjU1LTI2LjE2LTU4LjU1LTY0LjExem0zOTEuNzQtMTcuNDhjLjA5LTQzLjUxIDMxLjIzLTgwLjc0IDgwLjYyLTgwLjY1IDQ1LjguMDkgNzguMTEgMzYuNzggNzggODAgLjAxIDQuMjczLS4zMyA4LjU0LTEgMTIuNzZsLTExOC40MS0uMjJjNC41NCAxOC42NSAxOS44OSAzMi4wOSA0My4xMiAzMi4xNCAxNC4wNiAwIDI5LjEyLTUuMTggMzguMy0xNi45NGwyNy40NCAyMmMtMTQuMTEgMTkuOTMtMzkgMzEuNjYtNjUuNDggMzEuNjEtNDYuNzUtLjE2LTgyLjY3LTM1LjIzLTgyLjU5LTgwLjd6bTExOC4xMi0xNi4xNGMtMi4yNi0xNS43LTE4LjU5LTI3Ljg0LTM3Ljg5LTI3Ljg3LTE4LjY1IDAtMzMuNzEgMTEuMDYtMzkuNjMgMjcuNzNsNzcuNTIuMTR6bS0yNjEuNCA1OS45NGwzNS43Ni0xOC43MmM1LjkxIDEyLjgxIDE3LjczIDIwLjM2IDM0LjQ4IDIwLjM2IDE1LjQzIDAgMjEuMzQtNC45MiAyMS4zNC0xMS44MiAwLTI1LTg0LjcxLTkuODUtODQuNzEtNjcgMC0zMS41MiAyNy41OC00OC4yNiA2MS43Mi00OC4yNiAyNS45NCAwIDQ4LjkyIDExLjQ5IDYxLjQgMzIuODNsLTM1LjQ0IDE4Ljc1Yy01LjI1LTEwLjUxLTE1LjEtMTYuNDItMjcuNTgtMTYuNDItMTIuMTQgMC0xOC4wNiA0LjI3LTE4LjA2IDExLjQ5IDAgMjQuMyA4NC43MSA4Ljg3IDg0LjcxIDY3IDAgMzAuMjEtMjQuNjIgNDguNTktNjQuMzUgNDguNTktMzMuODItLjAzLTU3LjQ2LTExLjE5LTY5LjI3LTM2Ljh6TTAgODEuNTRDMCAzNi43MyAzNi42My43NCA4Mi40My43NGMyNy45NDctLjE5NiA1NC4xODIgMTMuNzM3IDY5LjY3IDM3bC0zNC4zNCAxOS45MmE0Mi45NzIgNDIuOTcyIDAgMDAtMzUuMzMtMTguMzJjLTIzLjU1IDAtNDIuODUgMTkuNjMtNDIuODUgNDIuMiAwIDIyLjU3IDE5LjMgNDIuMiA0Mi44NSA0Mi4yYTQyLjUwMiA0Mi41MDIgMCAwMDM2LjMxLTIwbDM0IDIwLjI4Yy0xNS4zMDcgMjMuOTU1LTQxLjkwMiAzOC40MzEtNzAuMzMgMzguMjhDMzYuNjMgMTYyLjM0IDAgMTI1LjY2IDAgODEuNTR6IiBmaWxsPSIjMDA1NkQyIiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48L3N2Zz4=" alt="" width="150px">
+                         </div>
+                         <div class="btn_div">
+                              <button>Explore</button>
+                         </div>
+                         <div class="input_div">
+                              <input type="text" placeholder="   What do you want to learn?">
+                              <button></button>
+                         </div>
+                    </div>
+                    <div id="right">
+                         <div>
+                              <a href="">Online Degrees</a>
+                         </div>
+                         <div>
+                              <a href="">Find Your New Career</a>
+                         </div>
+                         <div>
+                              <a href="">For Enterprise</a>
+                         </div>
+                         <div>
+                              <a href="">For Universities</a>
+                         </div>
+                         <div>
+                              <a  data-toggle="modal" data-target="#myModal" href=""> <p class="text">Log in</p></a>
+                         </div>
+                         <div>
+                              <a href="">Join for Free</a>
+                         </div>
+                    </div>
+               </div>
+                <!-- to here -->
+ 
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content clearfix">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                            <div class="modal-body">
+                                <h3 class="title">Welcome back</h3>
+                                <div class="form-group">
+
+                                     <form action="" id="loginform">
+                                        <h5> <strong>EMAIL</strong> </h5>
+                                        <input type="email" id="email" class="form-control" placeholder="name@gmail.com">
+
+                                        <h5> <strong>Password</strong> </h5>
+                                        <input type="password" id="password" class="form-control" placeholder="Create Password">
+
+                                        <button class="btn">Login</button>
+                                    </div> 
+                                     </form>
+                                    
+                                    <!-- <a href=""><div class="btn">Login</div></a> -->
+                                    
+                                    <!-- <span class="input-icon"><i class="fa fa-user"></i></span> -->
+                                <hr>
+                                <div class="img">
+                                   <svg class="google_img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 488 512"><path d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"/></svg>
+                                   <p class="google_text"><strong>Continue with Google</strong></p>
+                                </div>
+                                <div class="img">
+                                   <svg class="google_img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><<path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+                                   <p class="google_text"><strong>Continue with Facebook</strong></p>
+                                </div>
+                                <div class="img">
+                                   <svg xmlns="http://www.w3.org/2000/svg" class="google_img" viewBox="0 0 384 512"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
+                                   <p class="google_text"><strong>Continue with Apple</strong></p>
+                                </div>
+                                <div class="flex">
+                                     <p>Already on Coursera?</p>
+                                     <a href="signup.html">SignUp</a>
+                                </div>
+                                <hr>
+                                <p class="para">Having trouble logging in? <a href="">Learner help center</a> </p>
+                                <p class="para">This site is protected by reCAPTCHA Enterprise and the Google <a href="">Privacy Policy</a>  and <a href="">Terms of Service</a>  apply.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+ 
+</body>
+</html>
+
+<script>
+    document.querySelector(".btn").addEventListener("click", signIn);
+    var regdUsers = JSON.parse(localStorage.getItem("database"));
+    function signIn(event){
+        event.preventDefault();
+
+        var email = document.querySelector("#email").value;
+        var password = document.querySelector("#password").value;
+
+        flag = false;
+        for(var i = 0; i < regdUsers.length; i++){
+            if(regdUsers[i].userEmail == email && regdUsers[i].userPassword == password){
+                window.location.href = "hi.html";
+                flag = true;
+                break;
+            } 
+        }
+        if(flag){
+            alert("Successfully Login");
+        }else{
+            alert("Your Email or Password is Invalid");
+        }
+    
+    }
+</script>
