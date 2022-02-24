@@ -136,19 +136,19 @@ const footer = ()=>{
     </div>
     <div class="last_footer_list">
         <!-- <h2>Learn Anywhere</h2> -->
-        <img src="./icons/download_on_the_app_store_badge_en.svg" alt="">
-        <img src="./icons/en_generic_rgb_wo_45.png" alt="">
-        <img id="certified" src="./icons/2018-B-Corp-Logo-Black-S.png" alt="">
+        <img src="./components/icons/download_on_the_app_store_badge_en.svg" alt="">
+        <img src="./components/icons/en_generic_rgb_wo_45.png" alt="">
+        <img id="certified" src="./components/icons/2018-B-Corp-Logo-Black-S.png" alt="">
     </div>
 </div>
 <div id="last_part_of_footer">
         <p>© 2022 Coursera Inc. All rights reserved.</p>
         <div>
-            <img src="./icons/facebook.png" alt="">
-            <img src="./icons/linkedin.png" alt="">
-            <img src="./icons/twitter.png" alt="">
-            <img src="./icons/youtube.png" alt="">
-            <img src="./icons/instagram.png" alt="">
+            <img src="./components/icons/facebook.png" alt="">
+            <img src="./components/icons/linkedin.png" alt="">
+            <img src="./components/icons/twitter.png" alt="">
+            <img src="./components/icons/youtube.png" alt="">
+            <img src="./components/icons/instagram.png" alt="">
         </div>
     </div>`;
 };
