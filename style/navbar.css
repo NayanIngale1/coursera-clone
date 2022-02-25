@@ -231,7 +231,8 @@
         cursor: pointer;
         display: none;
         z-index: 5;
-        position: absolute;
+        position: fixed;
+        top: 61px;
         overflow-y: scroll;
         left: 28%;
     }
@@ -359,7 +360,59 @@
     .footer_heading hr{
         width: 100%;
     }
-    .cross_button{
+    .cross_button1{
+        background:none;
+        border: none;
+    }
+    .cross_button2{
+        background:none;
+        border: none;
+    }
+    .cross_button3{
+        background:none;
+        border: none;
+    }
+    .cross_button4{
+        background:none;
+        border: none;
+    }
+    .cross_button5{
+        background:none;
+        border: none;
+    }
+    .cross_button6{
+        background:none;
+        border: none;
+    }
+    .cross_button7{
+        background:none;
+        border: none;
+    }
+    .cross_button8{
+        background:none;
+        border: none;
+    }
+    .cross_button9{
+        background:none;
+        border: none;
+    }
+    .cross_button10{
+        background:none;
+        border: none;
+    }
+    .cross_button11{
+        background:none;
+        border: none;
+    }
+    .cross_button12{
+        background:none;
+        border: none;
+    }
+    .cross_button13{
+        background:none;
+        border: none;
+    }
+    .cross_button14{
         background:none;
         border: none;
     }
@@ -372,7 +425,8 @@
         cursor: pointer;
         display: none;
         z-index: 5;
-        position: absolute;
+        position: fixed;
+        top: 61px;
         overflow-y: scroll;
         left: 28%;
     }
@@ -390,7 +444,8 @@
         cursor: pointer;
         display: none;
         z-index: 5;
-        position: absolute;
+        position: fixed;
+        top: 61px;
         overflow-y: scroll;
         left: 28%;
     }
@@ -424,7 +479,8 @@
         cursor: pointer;
         display: none;
         z-index: 5;
-        position: absolute;
+        position: fixed;
+        top: 61px;
         overflow-y: scroll;
         left: 28%;
     }
@@ -452,7 +508,8 @@
         cursor: pointer;
         display: none;
         z-index: 5;
-        position: absolute;
+        position: fixed;
+        top: 61px;
         overflow-y: scroll;
         left: 28%;
     }
@@ -470,7 +527,8 @@
         cursor: pointer;
         display: none;
         z-index: 5;
-        position: absolute;
+        position: fixed;
+        top: 61px;
         overflow-y: scroll;
         left: 28%;
     }
@@ -488,7 +546,8 @@
         cursor: pointer;
         display: none;
         z-index: 5;
-        position: absolute;
+        position: fixed;
+        top: 61px;
         overflow-y: scroll;
         left: 28%;
     }
@@ -506,7 +565,8 @@
         cursor: pointer;
         display: none;
         z-index: 5;
-        position: absolute;
+        position: fixed;
+        top: 61px;
         overflow-y: scroll;
         left: 28%;
     }
@@ -524,7 +584,8 @@
         cursor: pointer;
         display: none;
         z-index: 5;
-        position: absolute;
+        position: fixed;
+        top: 61px;
         overflow-y: scroll;
         left: 28%;
     }
@@ -542,7 +603,8 @@
         cursor: pointer;
         display: none;
         z-index: 5;
-        position: absolute;
+        position: fixed;
+        top: 61px;
         overflow-y: scroll;
         left: 28%;
     }
@@ -560,7 +622,8 @@
         cursor: pointer;
         display: none;
         z-index: 5;
-        position: absolute;
+        position: fixed;
+        top: 61px;
         overflow-y: scroll;
         left: 28%;
     }
@@ -578,7 +641,8 @@
         cursor: pointer;
         display: none;
         z-index: 5;
-        position: absolute;
+        position: fixed;
+        top: 61px;
         overflow-y: scroll;
         left: 28%;
     }
@@ -596,7 +660,8 @@
         cursor: pointer;
         display: none;
         z-index: 5;
-        position: absolute;
+        position: fixed;
+        top: 61px;
         overflow-y: scroll;
         left: 28%;
     }
@@ -614,7 +679,8 @@
         cursor: pointer;
         display: none;
         z-index: 5;
-        position: absolute;
+        position: fixed;
+        top: 61px;
         overflow-y: scroll;
         left: 28%;
     }
