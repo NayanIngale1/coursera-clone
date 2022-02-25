@@ -516,11 +516,11 @@ const sort_my_data = (data)=>{
 const append_debouncing_data = (photoUrl,name,partners_name)=>{
     input_debouncing.innerHTML=null;
     let div1 =  document.createElement("div");
-    div1.setAttribute("class","input_debouncing_MPS")
+    div1.setAttribute("class","input_debouncing_MPS");
     let div2 =  document.createElement("div");
-    div2.setAttribute("class","input_debouncing_MPS_left")
+    div2.setAttribute("class","input_debouncing_MPS_left");
     let div3 =  document.createElement("div");
-    div3.setAttribute("class","input_debouncing_MPS_right")
+    div3.setAttribute("class","input_debouncing_MPS_right");
     div1.append(div2,div3);
     let photo = document.createElement("img");
     photo.src = photoUrl;
@@ -529,6 +529,12 @@ const append_debouncing_data = (photoUrl,name,partners_name)=>{
     let p2 = document.createElement("h4");
     p2.innerText = partners_name;
     div2.append(photo);
+
+    div1.addEventListener("click",()=>{
+    localStorage.setItem("query",JSON.stringify(name));
+    window.location.href="#";
+});
+
     div3.append(p1,p2);
     input_debouncing.append(div1);
 }
@@ -547,6 +553,12 @@ const append_debouncing_data_2 = (names)=>{
         img.src = "./components/icons/searchIcon.jpg"
         let p1 = document.createElement("h6");
         p1.innerText = el;
+
+        div1.addEventListener("click",()=>{
+    localStorage.setItem("query",JSON.stringify(el));
+    window.location.href="#";
+});
+
         div1.append(img,p1);
         div.append(div1)
     })
@@ -870,6 +882,16 @@ productContainers.forEach((item, i) => {
      
         console.log(count)
     })
+})
+
+// ------------------------input debouncting----------------
+
+let querySearch = document.querySelector("#search");
+querySearch.addEventListener("click",()=>{
+    console.log("hello query")
+    let query = document.querySelector("#input_of_navbar").value;
+    localStorage.setItem("query",JSON.stringify(query));
+    window.location.href="#";
 })
 
  
