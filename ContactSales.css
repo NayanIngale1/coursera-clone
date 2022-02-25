@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Source+Sans+Pro:wght@400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", "Open Sans", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+/* Nav bar  */
+.top-nav {
+  display: flex;
+  padding: 10px 50px;
+  justify-content: space-between;
+  border-bottom: 2px solid #c3c3c3;
+  align-items: center;
+}
+.logo-for-business {
+  min-width: 250px;
+  max-width: 300px;
+
+  /* border: solid 1px; */
+  cursor: pointer;
+}
+
+.logo-for-business img {
+  width: 100%;
+}
+.nav-items {
+  display: flex;
+  align-items: center;
+}
+.nav-items ul {
+  display: flex;
+  align-items: center;
+}
+.nav-items ul li {
+  list-style-type: none;
+  margin: 0px 20px;
+  transition: 300ms ease-in-out;
+  cursor: pointer;
+}
+.nav-items ul li:hover {
+  color: blue;
+}
+.nav-items ul hr {
+  background: black;
+  height: 20px;
+  font-weight: 700;
+  width: 3px;
+}
+.nav-items button {
+  border: 0;
+  outline: 0;
+  padding: 10px 20px;
+  color: white;
+  background-color: blue;
+  cursor: pointer;
+}
+
+/* container */
+.container {
+  padding: 4% 13%;
+}
+/* contact-sales */
+.contact-sales {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5%;
+  margin: 2rem auto;
+}
+
+/* contact-sale-info */
+.contact-sale-info {
+  padding: 3%;
+}
+.contact-sale-info h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.contact-sale-info ul {
+  margin: 4%;
+  line-height: 2.5rem;
+  font-size: 1.1rem;
+}
+/* companies */
+.companies {
+  padding: 3%;
+  text-align: center;
+}
+.images {
+  margin-top: 2rem;
+  padding: 2%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.images > div {
+  /* border: 1px solid; */
+  width: 80px;
+  height: 80px;
+  margin: auto;
+}
+.images > div > img {
+  width: 100%;
+}
+
+/* .info-card */
+.info-card {
+  min-width: 300px;
+  max-width: 450px;
+  margin: auto;
+  border: 1px solid#e9e9e9;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.05) 0px 8px 32px;
+  padding: 30px;
+}
+
+.info-card p {
+  font-size: 1.5rem;
+}
+
+.info-card-person {
+  margin: 2rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.info-card-person img {
+  width: 100px;
+  margin-right: 2rem;
+}
+.person-info h2 {
+  font-weight: 600;
+}
+.person-info p {
+  font-size: 1rem;
+}
+
+/* contact-sale-form */
+.contact-sale-form {
+  padding: 0 2rem;
+}
+.contact-sale-form label {
+  display: block;
+  margin-top: 20px;
+
+  font-weight: 600;
+  color: black;
+}
+.contact-sale-form input,
+.contact-sale-form select,
+.contact-sale-form textarea {
+  display: block;
+  margin-top: 5px;
+  font-size: 1.2rem;
+  padding: 10px;
+  width: 100%;
+}
+
+.contact-sale-form p {
+  margin: 1rem;
+}
+.contact-sale-form #submit {
+  border: 0;
+  outline: 0;
+  padding: 20px 100px;
+  color: white;
+  background-color: blue;
+  font-size: 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
+  margin: 1rem auto;
+  width: fit-content;
+}
+
+/* media queries */
+@media only screen and (max-width: 1200px) {
+  .container {
+    padding: 4% 8%;
+  }
+  .contact-sales {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5%;
+    margin: 2rem auto;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .container {
+    padding: 4% 8%;
+  }
+  .contact-sales {
+    display: block;
+    gap: 5%;
+    margin: 2rem auto;
+  }
+  .nav-items ul li,
+  hr {
+    display: none;
+  }
+  .nav-items ul li:nth-child(1) {
+    display: initial;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .container {
+    padding: 4% 5%;
+  }
+  .contact-sales {
+    display: block;
+    gap: 5%;
+    margin: 2rem auto;
+  }
+
+  .nav-items ul li,
+  hr {
+    display: none;
+  }
+  .nav-items ul li:nth-child(1) {
+    display: none;
+  }
+
+  .top-nav {
+    padding: 10px 10px;
+  }
+  .logo-for-business {
+    min-width: 200px;
+    max-width: 200px;
+  }
+  .contact-sale-info,
+  .contact-sale-form {
+    padding: 3%;
+    max-width: 280px;
+  }
+  textarea {
+    width: 80%;
+  }
+}

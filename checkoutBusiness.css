@@ -1,0 +1,373 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Source+Sans+Pro:wght@400;600;700&display=swap");
+
+:root {
+  --primary-color: rgb(11, 78, 179);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+*,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Source Sans Pro", "Open Sans", sans-serif;
+}
+
+.top-nav {
+  display: flex;
+  padding: 20px 50px;
+  justify-content: space-between;
+  border-bottom: 2px solid #c3c3c3;
+  align-items: center;
+}
+.logo-for-teams {
+  width: 300px;
+  /* border: solid 1px; */
+  cursor: pointer;
+}
+
+.logo-for-teams img {
+  width: 100%;
+}
+
+/*  form  */
+.checkout-form,
+.wait {
+  padding: 1rem 13%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 60% 35%;
+  /* border: 1px solid; */
+  gap: 5%;
+}
+.form,
+#otpverify {
+  margin: 0 auto;
+  width: 100%;
+  /* border: 1px solid #ccc; */
+  border-radius: 0.35rem;
+  padding: 1.5rem;
+}
+
+.form-step {
+  display: none;
+  transform-origin: top;
+  animation: animate 0.5s;
+}
+
+.form-step-active {
+  display: block;
+}
+
+.input-group {
+  margin: 1rem 0;
+}
+
+@keyframes animate {
+  from {
+    transform: scale(1, 0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1, 1);
+    opacity: 1;
+  }
+}
+
+/* Global Stylings */
+h1,
+h4,
+h2 {
+  margin: 1rem 0;
+}
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+input,
+select {
+  display: block;
+  margin: 1rem 0;
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1.1rem;
+  border: 1px solid gray;
+  border-radius: 0.25rem;
+}
+
+.width-50 {
+  width: 50%;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* butn-group */
+.btns-group {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.btn {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  display: block;
+  text-decoration: none;
+  background-color: var(--primary-color);
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  border: 0;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn:hover {
+  box-shadow: 0 0 0 2px #fff, 0 0 0 3px var(--primary-color);
+}
+
+/* Progressbar */
+.progressbar {
+  position: relative;
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  counter-reset: step;
+  margin: 0 auto 4rem;
+}
+
+.progressbar::before,
+.progress {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 4px;
+  width: 100%;
+  background-color: #dcdcdc;
+  z-index: -1;
+}
+
+.progress {
+  background-color: var(--primary-color);
+  width: 0%;
+  transition: 0.3s;
+}
+
+.progress-step {
+  width: 2.1875rem;
+  height: 2.1875rem;
+  background-color: #dcdcdc;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.progress-step::before {
+  counter-increment: step;
+  content: counter(step);
+}
+
+.progress-step::after {
+  content: attr(data-title);
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  font-size: 1rem;
+  width: fit-content;
+  color: #666;
+}
+
+.progress-step-active {
+  background-color: var(--primary-color);
+  color: #f3f3f3;
+}
+
+/* payment-option */
+.payment-options {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.payment-options label {
+  display: flex;
+  border: 1px solid blue;
+  border-radius: 5px;
+  width: 250px;
+  height: 80px;
+  margin: 1rem 0;
+  align-items: center;
+}
+.payment-options input {
+  width: 40px;
+}
+
+/* purchase-summary */
+.summary {
+  padding: 0 4%;
+}
+.purchase-summary {
+  border: 1px solid #c3c3c3;
+  padding: 5%;
+}
+.table-row {
+  margin: 0;
+  display: flex;
+  padding: 0;
+  align-items: center;
+  justify-content: space-between;
+}
+.table-row p {
+  margin: 5px 0;
+}
+.todays-pay {
+  background: #ebf3ff;
+  width: 100%;
+  padding: 5%;
+  margin-top: 1rem;
+}
+.price {
+  font-weight: 700;
+}
+
+.icon-tic {
+  margin-bottom: 2rem;
+}
+.icon-tic i {
+  color: blue;
+  margin-right: 1rem;
+}
+.icon-table-row {
+  display: flex;
+  align-items: center;
+}
+.icon-table-row div {
+  margin: 0.5rem 0;
+}
+
+/* organization */
+.organization {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3%;
+  place-content: center;
+}
+
+/*    payment success mesaage */
+
+#payment-success,
+.wait {
+  display: none;
+  margin: 2rem auto;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  flex-direction: column;
+}
+#payment-success h1 {
+  font-family: Helvetica;
+  font-size: 36px;
+  width: fit-content;
+  margin: 40px auto;
+  color: #333;
+  opacity: 0;
+  animation: 0.6s title ease-in-out;
+  animation-delay: 1.2s;
+  animation-fill-mode: forwards;
+}
+.circle {
+  stroke-dasharray: 1194;
+  stroke-dashoffset: 1194;
+}
+.tick {
+  stroke-dasharray: 350;
+  stroke-dashoffset: 350;
+}
+svg .circle {
+  animation: circle 1s ease-in-out;
+  animation-fill-mode: forwards;
+}
+svg .tick {
+  animation: tick 0.8s ease-out;
+  animation-fill-mode: forwards;
+  animation-delay: 0.95s;
+}
+
+@keyframes circle {
+  from {
+    stroke-dashoffset: 1194;
+  }
+  to {
+    stroke-dashoffset: 2388;
+  }
+}
+
+@keyframes tick {
+  form {
+    stroke-dashoffset: 350;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes title {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*   media Queries   */
+@media only screen and (max-width: 1200px) {
+  .progress-step::after {
+    font-size: 0.75rem;
+    width: min-content;
+  }
+  .organization {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media only screen and (max-width: 768px) {
+  .checkout-form {
+    padding: 1rem 5%;
+    margin: 0 auto;
+    display: block;
+    /* border: 1px solid; */
+    gap: 5%;
+  }
+  .progress-step::after {
+    font-size: 1rem;
+    width: min-content;
+  }
+  .organization {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 420px) {
+  .progress-step::after {
+    font-size: 0.75rem;
+    width: min-content;
+  }
+  .organization {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #payment-success {
+    width: 75%;
+    min-height: 10vh;
+  }
+}
