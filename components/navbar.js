@@ -6,7 +6,7 @@ const navbar = ()=>{
     <div><i class="iconify" data-icon="carbon:search" style="color: #373a3c;" data-width="20"></i></div>
 </div>
 <div id="jnavbar">
-    <a href="index.html"><img src="./components/icons/download.svg" alt=""></a>
+    <a href="index.html"><img class="coursera" src="./components/icons/download.svg" alt=""></a>
     <div id="explore">
         <button id="explore_button">Explore <span class="iconify" data-icon="dashicons:arrow-left-alt2" style="font-size: 12px;" data-rotate="270deg"></span></button>
         
@@ -79,7 +79,7 @@ const navbar = ()=>{
     </div>
     <button id="search"><span class="iconify" data-icon="eva:search-outline" data-width="20"></span></button>
     <p><a href="">Online Degrees</a></p>
-    <p><a href="../FindNewCareer.html">Find your New Career</a></p>
+    <p style="width:280px;"><a href="../FindNewCareer.html">Find your New Career</a></p>
     <p><a href="../ForBusinessEnterprises.html">For Enterprise</a></p>
     <p><a href="">For Universities</a></p>
     <p><a data-toggle="modal" data-target="#myModal" href="" id="log_in_text">Log In</a></p>

@@ -11,8 +11,12 @@
         height: 60px;
         border-bottom: 1px solid rgb(193, 189, 189);
     }
+    #jnavbar .coursera{
+        height: 14px;
+    }
     #jnavbar a {
         width: 125px;
+        font-size: 14px;
         margin: auto 20px;
     }
     #jnavbar button {
@@ -31,9 +35,8 @@
         color: rgb(42, 115, 204);
     }
     #jnavbar p a{
-        font-family:"Source Sans Pro", Arial, sans-serif;
-        line-height:21px;
-        margin: 6px;
+        margin: 3px;
+        padding: 0;
         font-weight: 400;
         font-weight: lighter;
         font-size: 14px;
@@ -46,6 +49,7 @@
     }
     #explore_button{
         border-color:rgb(1, 86, 184);
+        width: 100px;
         margin: auto 7px;
         padding:0 13px;
         font-weight: bold;
@@ -57,11 +61,12 @@
     #search{
         border: 0;
         border-radius: 0;
-        width: 40px;
+        width: 60px;
         margin-right:5%;
     }
     #join_for_free{
         border: 0;
+        width: 200px;
         margin: auto;
         padding: 0 20px;
     }
@@ -100,7 +105,7 @@
     }
     #explore_option .left_explore_option ul li{
         width: 97%;
-        padding:0 20px;
+        padding:0 10px;
         list-style: none;
         line-height: 30px;
     }
