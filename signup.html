@@ -6,7 +6,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="./style/index.css">
+<link rel="stylesheet" href="./style/navbar.css">
+<link rel="stylesheet" href="./style/footer.css">
+  <link rel="icon" href="./components/icons/image.png">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">  
  <style>
 .btn_show_div{
@@ -27,12 +31,7 @@
     outline: none;
 }
 .modal-dialog{
-    position: fixed;
-    top: -60px;
-    left: 500px;
-    height: 700px;
-    overflow-y: scroll;
-    width: 450px;
+    width: 400px;
     margin: 70px auto 0;
 }
 .modal-dialog{ transform: scale(0.5); }
@@ -155,28 +154,25 @@
 }
 .img{
      border: 1px solid black;
-     line-height: 24px;
-     padding: 12px 16px 12px 0px;
-     height: 50px;
-     font-weight: 700;
-     color:rgb(29, 33, 39);
+     height: 41px;
      display: flex;
-     justify-content: space-around;
-     /* align-items: center; */
-     font-size: 14px;
+     justify-content: space-between;
      cursor: pointer;
      margin-bottom: 20px;
      border-radius: 5px;
 }
-.img:hover{
-    color: #0056d2;
-    background-color: rgb(243, 248, 255);
-}
-.img img {
-     height: 20px;
+.google_img{
+     /* border: 1px solid blue; */
+     height: 21px;
+     margin: 10px 30px;
+     /* width: 20px; */
 }
 .google_text{
-    margin-left: -20px;
+     /* border: 1px solid teal; */
+     font-size: 16px;
+     /* margin: 10px 10px; */
+     padding: 10px 30px 10px 0px;
+     width: 90%;
 }
 .flex{
      display: flex;
@@ -278,43 +274,9 @@
   </style>
 </head>
 <body>
-                <!-- my navbar code goes here -->
-                <div id="container">
-                    <div id="left">
-                         <div>
-                              <img class="logo" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE2LjIuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPgo8c3ZnIHZpZXdCb3g9IjAgMCAxMTU1IDE2NCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLW1pdGVybGltaXQ9IjIiPjxwYXRoIGQ9Ik0xNTkuNzUgODEuNTRjMC00NC40OSAzNi42My04MC40NyA4Mi40My04MC40NyA0Ni4xMiAwIDgyLjc2IDM2IDgyLjc2IDgwLjQ3IDAgNDQuMTYtMzYuNjQgODAuOC04Mi43NiA4MC44LTQ1LjggMC04Mi40My0zNi42OC04Mi40My04MC44em0xMjUuNjEgMGMwLTIyLjI0LTE5LjMtNDEuODctNDMuMTgtNDEuODctMjMuNTUgMC00Mi44NSAxOS42My00Mi44NSA0MS44NyAwIDIyLjU3IDE5LjMgNDIuMiA0Mi44NSA0Mi4yIDIzLjkyIDAgNDMuMTgtMTkuNjMgNDMuMTgtNDIuMnptNzA1LjYzIDEuMzFjMC00OC43NCAzOS41OC04MS43OCA3NS41Ny04MS43OCAyNC41MyAwIDM4LjYgNy41MiA0OC4wOCAyMS45MmwzLjc3LTE5aDM2Ljc5djE1NS40aC0zNi43OWwtNC43NS0xNmMtMTAuNzkgMTEuNzgtMjQuMjEgMTktNDcuMSAxOS0zNS4zMy0uMDUtNzUuNTctMzEuMTMtNzUuNTctNzkuNTR6bTEyNS42MS0uMzNjLS4wOS0yMy41MjctMTkuNDctNDIuODM1LTQzLTQyLjgzNS0yMy41OSAwLTQzIDE5LjQxMS00MyA0M3YuMTY1YzAgMjEuNTkgMTkuMyA0MC44OSA0Mi44NiA0MC44OSAyMy44NSAwIDQzLjE0LTE5LjMgNDMuMTQtNDEuMjJ6TTk0NS43OCAyMlY0aC00MC4yM3YxNTUuMzloNDAuMjNWNzUuNjZjMC0yNS4xOSAxMi40NC0zOC4yNyAzNC0zOC4yNyAxLjQzIDAgMi43OS4xIDQuMTIuMjNMOTkxLjM2LjExYy0yMC45Ny4xMS0zNi4xNyA3LjMtNDUuNTggMjEuODl6bS00MDQuMjcuMDF2LTE4bC00MC4yMy4wOS4zNCAxNTUuMzcgNDAuMjMtLjA5LS4yMi04My43MmMtLjA2LTI1LjE4IDEyLjM1LTM4LjI5IDMzLjkzLTM4LjM0IDEuMzc2LjAwNCAyLjc1Mi4wODEgNC4xMi4yM0w1ODcuMSAwYy0yMSAuMTctMzYuMjIgNy4zOS00NS41OSAyMi4wMXpNMzM4Ljg4IDk5LjJWNC4wMWg0MC4yMlY5NC4zYzAgMTkuOTUgMTEuMTIgMzEuNzMgMzAuNDIgMzEuNzMgMjEuNTkgMCAzNC0xMy4wOSAzNC0zOC4yOFY0LjAxaDQwLjI0djE1NS4zOGgtNDAuMjF2LTE4Yy05LjQ4IDE0LjcyLTI0Ljg2IDIxLjkyLTQ2LjEyIDIxLjkyLTM1Ljk4LjAxLTU4LjU1LTI2LjE2LTU4LjU1LTY0LjExem0zOTEuNzQtMTcuNDhjLjA5LTQzLjUxIDMxLjIzLTgwLjc0IDgwLjYyLTgwLjY1IDQ1LjguMDkgNzguMTEgMzYuNzggNzggODAgLjAxIDQuMjczLS4zMyA4LjU0LTEgMTIuNzZsLTExOC40MS0uMjJjNC41NCAxOC42NSAxOS44OSAzMi4wOSA0My4xMiAzMi4xNCAxNC4wNiAwIDI5LjEyLTUuMTggMzguMy0xNi45NGwyNy40NCAyMmMtMTQuMTEgMTkuOTMtMzkgMzEuNjYtNjUuNDggMzEuNjEtNDYuNzUtLjE2LTgyLjY3LTM1LjIzLTgyLjU5LTgwLjd6bTExOC4xMi0xNi4xNGMtMi4yNi0xNS43LTE4LjU5LTI3Ljg0LTM3Ljg5LTI3Ljg3LTE4LjY1IDAtMzMuNzEgMTEuMDYtMzkuNjMgMjcuNzNsNzcuNTIuMTR6bS0yNjEuNCA1OS45NGwzNS43Ni0xOC43MmM1LjkxIDEyLjgxIDE3LjczIDIwLjM2IDM0LjQ4IDIwLjM2IDE1LjQzIDAgMjEuMzQtNC45MiAyMS4zNC0xMS44MiAwLTI1LTg0LjcxLTkuODUtODQuNzEtNjcgMC0zMS41MiAyNy41OC00OC4yNiA2MS43Mi00OC4yNiAyNS45NCAwIDQ4LjkyIDExLjQ5IDYxLjQgMzIuODNsLTM1LjQ0IDE4Ljc1Yy01LjI1LTEwLjUxLTE1LjEtMTYuNDItMjcuNTgtMTYuNDItMTIuMTQgMC0xOC4wNiA0LjI3LTE4LjA2IDExLjQ5IDAgMjQuMyA4NC43MSA4Ljg3IDg0LjcxIDY3IDAgMzAuMjEtMjQuNjIgNDguNTktNjQuMzUgNDguNTktMzMuODItLjAzLTU3LjQ2LTExLjE5LTY5LjI3LTM2Ljh6TTAgODEuNTRDMCAzNi43MyAzNi42My43NCA4Mi40My43NGMyNy45NDctLjE5NiA1NC4xODIgMTMuNzM3IDY5LjY3IDM3bC0zNC4zNCAxOS45MmE0Mi45NzIgNDIuOTcyIDAgMDAtMzUuMzMtMTguMzJjLTIzLjU1IDAtNDIuODUgMTkuNjMtNDIuODUgNDIuMiAwIDIyLjU3IDE5LjMgNDIuMiA0Mi44NSA0Mi4yYTQyLjUwMiA0Mi41MDIgMCAwMDM2LjMxLTIwbDM0IDIwLjI4Yy0xNS4zMDcgMjMuOTU1LTQxLjkwMiAzOC40MzEtNzAuMzMgMzguMjhDMzYuNjMgMTYyLjM0IDAgMTI1LjY2IDAgODEuNTR6IiBmaWxsPSIjMDA1NkQyIiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48L3N2Zz4=" alt="" width="150px">
-                         </div>
-                         <div class="btn_div">
-                              <button>Explore</button>
-                         </div>
-                         <div class="input_div">
-                              <input type="text" placeholder="   What do you want to learn?">
-                              <button></button>
-                         </div>
-                    </div>
-                    <div id="right">
-                         <div>
-                              <a href="">Online Degrees</a>
-                         </div>
-                         <div>
-                              <a href="">Find Your New Career</a>
-                         </div>
-                         <div>
-                              <a href="">For Enterprise</a>
-                         </div>
-                         <div>
-                              <a href="">For Universities</a>
-                         </div>
-                         <div>
-                              <a href="">Log in</a>
-                         </div>
-                         <div class="btn_show_div">
-                              <a type="button" class="show_btn" data-toggle="modal" data-target="#myModal" href=""> <p id="text">Join for Free</p></a>
-                         </div>
-                    </div>
-               </div>
+                <div id="navbar_parent"></div>
+                <div id="footer_parent"></div>
                 <!-- till here -->
- 
                 <!-- Modal -->
                 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                     <div class="modal-dialog" role="document">
@@ -345,11 +307,11 @@
                                     
                                 <hr>
                                 <div class="img">
-                                    <img src="./components/icons/download.jfif" alt="">
-                                    <p class="google_text"><strong>Continue with Google</strong></p>
+                                   <svg class="google_img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 488 512"><path d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"/></svg>
+                                   <p class="google_text"><strong>Continue with Google</strong></p>
                                 </div>
                                 <div class="img">
-                                    <img src="./components/icons/facebook.jpg" alt="">
+                                   <svg class="google_img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><<path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
                                    <p class="google_text"><strong>Continue with Facebook</strong></p>
                                 </div>
                                 <div class="flex">
@@ -371,7 +333,7 @@
  
 </body>
 </html>
-
+<script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
 <script>
 document.querySelector(".join_btn").addEventListener("click",signUp);
 var userData = JSON.parse(localStorage.getItem("database")) || [];
@@ -380,6 +342,8 @@ function signUp(event){
     var name = document.getElementById("name").value;
     var email = document.getElementById("email").value;
     var password = document.querySelector("#password").value;
+
+    
 
     var userDetails = {
         userName: name,
@@ -390,7 +354,19 @@ function signUp(event){
     console.log(userData);
 
     localStorage.setItem("database",JSON.stringify(userData));
-    // alert("You Have Successfully Created Your Account.")
-    window.location.href = "login.html"
+    // alert("Sign Up Successfully")
+    window.location.href = "./login.html"
 }
+
+
+
 </script>
+
+<script type="module">
+     import navbar from "./components/navbar.js";
+     document.querySelector("#navbar_parent").innerHTML = navbar();
+     import {footer,Minifooter} from "./components/footer.js";
+     document.querySelector("#footer_parent").innerHTML = footer();
+ 
+ 
+ </script>
