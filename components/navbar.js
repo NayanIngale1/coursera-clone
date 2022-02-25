@@ -88,7 +88,7 @@ const navbar = ()=>{
 <div id="navbar_goals_subject">
     <div class="navbar_goal_header">
         <h1>Earn a Degree</h1>
-        <button class="cross_button"> <span class="iconify" data-icon="gridicons:cross" style="color: rgb(102, 102, 102);" data-width="30" ></span></button>
+        <button class="cross_button1"> <span class="iconify" data-icon="gridicons:cross" style="color: rgb(102, 102, 102);" data-width="30" ></span></button>
     </div>
     <h5>Breakthrough pricing on 100% online degree designed to fit into your life.</h5>
     <div class="this_is_last_div">
@@ -302,7 +302,7 @@ const navbar = ()=>{
 <div id="navbar_goals_certificates">
     <div class="navbar_goal_header">
         <h1>Earn a Certificate</h1>
-        <button class="cross_button"> <span class="iconify" data-icon="gridicons:cross" style="color: rgb(102, 102, 102);" data-width="30" ></span></button>
+        <button class="cross_button2"> <span class="iconify" data-icon="gridicons:cross" style="color: rgb(102, 102, 102);" data-width="30" ></span></button>
     </div>
     <h5>In 3-9 months, gain the skills to break into a new career or take your career to the next level.</h5>
     <div class="this_is_last_div">
@@ -482,7 +482,7 @@ const navbar = ()=>{
 <div id="navbar_goals_career">
     <div class="navbar_goal_header">
         <h1>Advance your career</h1>
-        <button class="cross_button"> <span class="iconify" data-icon="gridicons:cross" style="color: rgb(102, 102, 102);" data-width="30" ></span></button>
+        <button class="cross_button3"> <span class="iconify" data-icon="gridicons:cross" style="color: rgb(102, 102, 102);" data-width="30" ></span></button>
     </div>
     
     <div class="this_is_last_div">
@@ -616,7 +616,7 @@ const navbar = ()=>{
 <div id="navbar_subject_data_science">
     <div class="navbar_goal_header">
         <h1>Data Science</h1>
-        <button class="cross_button"> <span class="iconify" data-icon="gridicons:cross" style="color: rgb(102, 102, 102);" data-width="30" ></span></button>
+        <button class="cross_button4"> <span class="iconify" data-icon="gridicons:cross" style="color: rgb(102, 102, 102);" data-width="30" ></span></button>
     </div>
     <div class="this_is_really_last_div">
         <div class="display_gride_goals">
@@ -842,7 +842,7 @@ const navbar = ()=>{
 <div id="navbar_subject_data_business">
     <div class="navbar_goal_header">
         <h1>Business</h1>
-        <button class="cross_button"> <span class="iconify" data-icon="gridicons:cross" style="color: rgb(102, 102, 102);" data-width="30" ></span></button>
+        <button class="cross_button5"> <span class="iconify" data-icon="gridicons:cross" style="color: rgb(102, 102, 102);" data-width="30" ></span></button>
     </div>
     <div class="this_is_really_last_div">
         <div class="display_gride_goals">
@@ -1046,7 +1046,7 @@ const navbar = ()=>{
 <div id="navbar_subject_data_computer_science">
     <div class="navbar_goal_header">
         <h1>Computer Science</h1>
-        <button class="cross_button"> <span class="iconify" data-icon="gridicons:cross" style="color: rgb(102, 102, 102);" data-width="30" ></span></button>
+        <button class="cross_button6"> <span class="iconify" data-icon="gridicons:cross" style="color: rgb(102, 102, 102);" data-width="30" ></span></button>
     </div>
     <div class="this_is_really_last_div">
         <div class="display_gride_goals">
@@ -1261,7 +1261,7 @@ const navbar = ()=>{
 <div id="navbar_subject_data_IT">
     <div class="navbar_goal_header">
         <h1>Information Technology</h1>
-        <button class="cross_button"> <span class="iconify" data-icon="gridicons:cross" style="color: rgb(102, 102, 102);" data-width="30" ></span></button>
+        <button class="cross_button7"> <span class="iconify" data-icon="gridicons:cross" style="color: rgb(102, 102, 102);" data-width="30" ></span></button>
     </div>
     <div class="this_is_really_last_div">
         <div class="display_gride_goals">
@@ -1468,7 +1468,7 @@ const navbar = ()=>{
 <div id="navbar_subject_data_language">
     <div class="navbar_goal_header">
         <h1>Language Learning</h1>
-        <button class="cross_button"> <span class="iconify" data-icon="gridicons:cross" style="color: rgb(102, 102, 102);" data-width="30" ></span></button>
+        <button class="cross_button8"> <span class="iconify" data-icon="gridicons:cross" style="color: rgb(102, 102, 102);" data-width="30" ></span></button>
     </div>
     <div class="this_is_really_last_div">
         <div class="display_gride_goals">
@@ -1542,7 +1542,7 @@ const navbar = ()=>{
 <div id="navbar_subject_data_health">
     <div class="navbar_goal_header">
         <h1>Health</h1>
-        <button class="cross_button"> <span class="iconify" data-icon="gridicons:cross" style="color: rgb(102, 102, 102);" data-width="30" ></span></button>
+        <button class="cross_button9"> <span class="iconify" data-icon="gridicons:cross" style="color: rgb(102, 102, 102);" data-width="30" ></span></button>
     </div>
     <div class="this_is_really_last_div">
         <div class="display_gride_goals">
@@ -1695,7 +1695,7 @@ const navbar = ()=>{
 <div id="navbar_subject_data_personal">
     <div class="navbar_goal_header">
         <h1>Personal Development</h1>
-        <button class="cross_button"> <span class="iconify" data-icon="gridicons:cross" style="color: rgb(102, 102, 102);" data-width="30" ></span></button>
+        <button class="cross_button10"> <span class="iconify" data-icon="gridicons:cross" style="color: rgb(102, 102, 102);" data-width="30" ></span></button>
     </div>
     <div class="this_is_really_last_div">
         <div class="display_gride_goals">
@@ -1824,7 +1824,7 @@ const navbar = ()=>{
 <div id="navbar_subject_data_physical_science">
     <div class="navbar_goal_header">
         <h1>Physical Science and Engineering</h1>
-        <button class="cross_button"> <span class="iconify" data-icon="gridicons:cross" style="color: rgb(102, 102, 102);" data-width="30" ></span></button>
+        <button class="cross_button11"> <span class="iconify" data-icon="gridicons:cross" style="color: rgb(102, 102, 102);" data-width="30" ></span></button>
     </div>
     <div class="this_is_really_last_div">
         <div class="display_gride_goals">
@@ -1987,7 +1987,7 @@ const navbar = ()=>{
 <div id="navbar_subject_data_social_science">
     <div class="navbar_goal_header">
         <h1>Social Sciences</h1>
-        <button class="cross_button"> <span class="iconify" data-icon="gridicons:cross" style="color: rgb(102, 102, 102);" data-width="30" ></span></button>
+        <button class="cross_button12"> <span class="iconify" data-icon="gridicons:cross" style="color: rgb(102, 102, 102);" data-width="30" ></span></button>
     </div>
     <div class="this_is_really_last_div">
         <div class="display_gride_goals">
@@ -2102,7 +2102,7 @@ const navbar = ()=>{
 <div id="navbar_subject_data_arts_hum">
     <div class="navbar_goal_header">
         <h1>Arts and Humanities</h1>
-        <button class="cross_button"> <span class="iconify" data-icon="gridicons:cross" style="color: rgb(102, 102, 102);" data-width="30" ></span></button>
+        <button class="cross_button13"> <span class="iconify" data-icon="gridicons:cross" style="color: rgb(102, 102, 102);" data-width="30" ></span></button>
     </div>
     <div class="this_is_really_last_div">
         <div class="display_gride_goals">
@@ -2241,7 +2241,7 @@ const navbar = ()=>{
 <div id="navbar_subject_data_math">
     <div class="navbar_goal_header">
         <h1>Math and Logic</h1>
-        <button class="cross_button"> <span class="iconify" data-icon="gridicons:cross" style="color: rgb(102, 102, 102);" data-width="30" ></span></button>
+        <button class="cross_button14"> <span class="iconify" data-icon="gridicons:cross" style="color: rgb(102, 102, 102);" data-width="30" ></span></button>
     </div>
     <div class="this_is_really_last_div">
         <div class="display_gride_goals">
