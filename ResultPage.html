@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Search section</title>
+    <link rel="stylesheet" href="ResultPage.css">
+    <!-- <style>
+       
+    </style> -->
+
+</head>
+
+<body onload="slidShow()">
+
+    <div id="Banavbar">
+        <div id="jnavbar">
+            <a href="index.html"><img src="./icons/download.svg" alt=""></a>
+            <div id="explore">
+                <button id="explore_button">Explore <span class="iconify" data-icon="dashicons:arrow-left-alt2"
+                        style="font-size: 12px;" data-rotate="270deg"></span></button>
+
+                <div id="explore_option">
+                    <div class="faltu_div_on_navbar"></div>
+                    <div class="left_explore_option">
+                        <ul>
+                            <li>Goals</li>
+                            <li>Take a free course</li>
+                            <li>
+                                <p>Earn a Degree</p><span class="iconify" data-icon="dashicons:arrow-left-alt2"
+                                    style="font-size: 18px;" data-rotate="180deg"></span>
+
+                                <!-- <div class="right_explore_option">
+    
+                            </div> -->
+
+
+                            </li>
+                            <li>
+                                <p>Earn a Certificate</p><span class="iconify" data-icon="dashicons:arrow-left-alt2"
+                                    style="font-size: 18px;" data-rotate="180deg"></span>
+                            </li>
+                            <li>
+                                <p>Advance your career</p><span class="iconify" data-icon="dashicons:arrow-left-alt2"
+                                    style="font-size: 18px;" data-rotate="180deg"></span>
+                            </li>
+                            <li>Find your new career</li>
+                            <li>Train your team</li>
+                        </ul>
+                        <ul>
+                            <li>Subjects</li>
+                            <li>
+                                <p>Data Science</p><span class="iconify" data-icon="dashicons:arrow-left-alt2"
+                                    style="font-size: 18px;" data-rotate="180deg"></span>
+                            </li>
+                            <li>
+                                <p>Business</p><span class="iconify" data-icon="dashicons:arrow-left-alt2"
+                                    style="font-size: 18px;" data-rotate="180deg"></span>
+                            </li>
+                            <li>
+                                <p>Computer Science</p><span class="iconify" data-icon="dashicons:arrow-left-alt2"
+                                    style="font-size: 18px;" data-rotate="180deg"></span>
+                            </li>
+                            <li>
+                                <p>Information Technology</p><span class="iconify" data-icon="dashicons:arrow-left-alt2"
+                                    style="font-size: 18px;" data-rotate="180deg"></span>
+                            </li>
+                            <li>
+                                <p>Language Learning</p><span class="iconify" data-icon="dashicons:arrow-left-alt2"
+                                    style="font-size: 18px;" data-rotate="180deg"></span>
+                            </li>
+                            <li>
+                                <p>Health</p><span class="iconify" data-icon="dashicons:arrow-left-alt2"
+                                    style="font-size: 18px;" data-rotate="180deg"></span>
+                            </li>
+                            <li>
+                                <p>Personal Development</p><span class="iconify" data-icon="dashicons:arrow-left-alt2"
+                                    style="font-size: 18px;" data-rotate="180deg"></span>
+                            </li>
+                            <li>
+                                <p>Physical Science and Engineering</p><span class="iconify"
+                                    data-icon="dashicons:arrow-left-alt2" style="font-size: 18px;"
+                                    data-rotate="180deg"></span>
+                            </li>
+                            <li>
+                                <p>Social Sciences</p><span class="iconify" data-icon="dashicons:arrow-left-alt2"
+                                    style="font-size: 18px;" data-rotate="180deg"></span>
+                            </li>
+                            <li>
+                                <p>Arts and Humanities</p><span class="iconify" data-icon="dashicons:arrow-left-alt2"
+                                    style="font-size: 18px;" data-rotate="180deg"></span>
+                            </li>
+                            <li>
+                                <p>Math and Logic</p><span class="iconify" data-icon="dashicons:arrow-left-alt2"
+                                    style="font-size: 18px;" data-rotate="180deg"></span>
+                            </li>
+                        </ul>
+                        <button>Browse all subjects</button>
+                    </div>
+                </div>
+            </div>
+            <input id="input_of_navbar" type="text" placeholder="What do you want to learn?">
+            <button id="search"><span class="iconify" data-icon="eva:search-outline" data-width="20"></span></button>
+            <p><a href="">Online Degrees</a></p>
+            <p><a href="">Find your New Career</a></p>
+            <p><a href="">For Enterprise</a></p>
+            <p><a href="">For Universities</a></p>
+            <p><a id="log_in_text" href="">Log In</a></p>
+            <button id="join_for_free">Join for Free</button>
+        </div>
+    </div>
+
+
+    <div id="catagory">
+        <div>All</div>
+        <div>Guided Project</div>
+        <div>Degree & Certificates</div>
+    </div>
+    <h5 style="margin-left: 150px;">Explore 100% online Degrees and Certificates on Coursera</h5>
+    <div class="sliding_container">
+        <div id="leftarrow" onclick="leftmove()">
+            <button><i class="material-icons">
+                    arrow_back_ios
+                </i></button>
+        </div>
+
+        <div class="child fr" id="c1">
+            <div class="child1">
+                <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/http://coursera-university-assets.s3.amazonaws.com/d8/42cdc0ab2011e8b910bdf80bed9f6c/CenterILblock-ISQUAREOrangeBackgrnd.png?auto=format%2Ccompress&dpr=1&w=72&h=72&fit=crop"
+                    alt="">
+                <div>
+                    <h6>Bachlor Of science</h6>
+                    <h6>in science</h6>
+                    <h6>Science</h6>
+                    <p>university</p>
+                </div>
+            </div>
+        </div>
+        <div class="child" id="c2">
+            <div class="child1">
+                <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/http://coursera-university-assets.s3.amazonaws.com/fb/b28a301e0211e8a40e23e4176c8e4a/UoL-Logo_180x180.png?auto=format%2Ccompress&dpr=1&w=72&h=72&fit=crop"
+                    alt="">
+                <div>
+                    <h6>Master Of Business </h6>
+                    <h6>Administration</h6>
+
+                    <p>Landon university</p>
+                </div>
+            </div>
+        </div>
+        <div class="child" id="c3">
+            <div class="child1">
+                <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-university-assets.s3.amazonaws.com/5e/4003d6fe94ae4089d5daf13129a515/penn-logo.png?auto=format%2Ccompress&dpr=1&w=72&h=72&fit=crop"
+                    alt="">
+                <div>
+                    <h6>MBA Business</h6>
+                    <h6>analytics</h6>
+                    <h6>Science</h6>
+                    <p>OP Jindal university</p>
+                </div>
+            </div>
+        </div>
+        <div class="child" id="c4">
+            <div class="child1">
+                <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-university-assets.s3.amazonaws.com/70/de505d47be7d3a063b51b6f856a6e2/New-Block-M-Stacked-Blue-295C_600x600.png?auto=format%2Ccompress&dpr=1&w=72&h=72&fit=crop"
+                    alt="">
+                <div>
+                    <h6>Master Of science</h6>
+                    <h6>in Accounting</h6>
+                    <h6>Science</h6>
+                    <p>Illionis university</p>
+                </div>
+            </div>
+        </div>
+        <div class="child" id="c5">
+            <div class="child1">
+                <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-university-assets.s3.amazonaws.com/be/bf4290646811e5b6de89a29eb8ebc3/ASUlogo.png?auto=format%2Ccompress&dpr=1&w=72&h=72&fit=crop"
+                    alt="">
+                <div>
+                    <h6>Bachlor Of Electical</h6>
+                    <h6>Engineering</h6>
+
+                    <p>Global university</p>
+                </div>
+            </div>
+        </div>
+        <div class="child" id="c6">
+            <div class="child1">
+                <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/http://coursera-university-assets.s3.amazonaws.com/fa/0b3fb0640711e8b77e73d0990f7c82/180.png?auto=format%2Ccompress&dpr=1&w=72&h=72&fit=crop"
+                    alt="">
+                <div>
+                    <h6>Bachlor Of science</h6>
+                    <h6>in science</h6>
+                    <h6>Science</h6>
+                    <p>university</p>
+                </div>
+            </div>
+        </div>
+        <div class="child" id="c7">
+
+            <div class="child1">
+                <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/http://coursera-university-assets.s3.amazonaws.com/1a/6984a02c5a45e0bc8c40b02a42bbdb/UNT-logo1.png?auto=format%2Ccompress&dpr=1&w=72&h=72&fit=crop"
+                    alt="">
+                <div>
+                    <h6>Global Of Master Business</h6>
+                    <h6>and Accounting</h6>
+
+                    <p> Dhara university</p>
+                </div>
+            </div>
+        </div>
+        <div class="child" id="c8">
+            <div class="child1">
+                <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/http://coursera-university-assets.s3.amazonaws.com/13/4f6741eec44e2b9e40fc79bdf15b87/360x360.png?auto=format%2Ccompress&dpr=1&w=72&h=72&fit=crop"
+                    alt="">
+                <div>
+                    <h6>Bachlor of Art</h6>
+                    <h6>And Commerce</h6>
+                    <h6>Science</h6>
+                    <p>Besnoi university</p>
+                </div>
+            </div>
+        </div>
+        <div class="child" id="c9">
+            <div class="child1">
+                <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera_assets/ddp/branding/msee-boulder/CUBoulder_360x360.png?auto=format%2Ccompress&dpr=1&w=72&h=72&fit=crop"
+                    alt="">
+                <div>
+                    <h6>Bachlor Of science</h6>
+                    <h6>in science</h6>
+                    <h6>Science</h6>
+                    <p>university</p>
+                </div>
+            </div>
+        </div>
+        <div id="rightarrow" onclick="rightmove()">
+            <button><i class="material-icons">
+                    arrow_forward_ios
+                </i></button>
+        </div>
+    </div>
+
+    <div id="Second-div">
+
+
+        <div id="filter-part">
+
+            <div id="filtercontainer">
+                <br>
+                <div id="numbertally"> Showing total results for "machine learning " </div>
+
+                <br>
+                <br>
+                <div id="filtertally">
+
+                    <select name="" id="Language">
+                        <option value="">Language</option>
+                        <option value="">Language
+
+
+                        </option>
+                        <option value="">Spanish</option>
+                        <option value="">French</option>
+                        <option value="">Russian</option>
+                        <option value="">Portuguese</option>
+                        <option value="">German</option>
+                        <option value="">Arabic</option>
+                        <option value="">Vientnamese</option>
+                        <option value="">Italian</option>
+                    </select>
+
+                    <select name="" id="Level">
+                        <option value="">Level</option>
+                        <option value="">Intermediate</option>
+                        <option value="">Beginner</option>
+                        <option value="">Advanced</option>
+                        <option value="">Mixed</option>
+                    </select>
+
+                    <select name="" id="Duration">
+                        <option value=""> Duration </option>
+                        <option value="">1-3 Months</option>
+                        <option value="">Less Than 2 Hours</option>
+                        <option value="">1-4 Weeks</option>
+                        <option value="">3+ Months</option>
+                    </select>
+
+                    <select name="" id="Subject">
+                        <option value="">Subject</option>
+                        <option value="">Data Science</option>
+                        <option value="">Computer Science</option>
+                        <option value="">Information Technology</option>
+                        <option value="">Business</option>
+                        <option value="">Physical Science and Engineering</option>
+                        <option value="">Health</option>
+                        <option value="">Social Sciences</option>
+                        <option value="">Math and Logic</option>
+                        <option value="">Arts and Humanities</option>
+                    </select>
+
+                    <select name="" id="Skills">
+                        <option value="">Skills</option>
+                        <option value="">Machine Learning</option>
+                        <option value="">Computer Programming</option>
+                        <option value="">statistical Programming</option>
+                        <option value="">Probability & statistic</option>
+                        <option value="">Theoretical Computer Science</option>
+                        <option value="">Data Management</option>
+                        <option value="">Python Programming</option>
+                        <option value="">Mathematics</option>
+                        <option value="">General statistic</option>
+                    </select>
+
+                    <select name="" id="Partner">
+                        <option value="">Partner</option>
+                        <option value="">Coursera Project Network </option>
+                        <option value="">Google Cloud</option>
+                        <option value="">DeepLearning AI</option>
+                        <option value="">IBM</option>
+                        <option value="">Microsoft</option>
+                        <option value="">HSE University</option>
+                        <option value="">John Hopkins University</option>
+                        <option value="">University of Illinois at Urbana-Champaign</option>
+                        <option value="">University of Colorado Boulder</option>
+
+                    </select>
+
+                    <select name="" id="Learning-Product">
+                        <option value="">Learning Product</option>
+                        <option value="">Guided Projects</option>
+                        <option value="">Courses</option>
+                        <option value="">Specializations</option>
+                        <option value="">Professional Certificate</option>
+                        <option value="">Master Track Certificates</option>
+                        <option value="">Degrees</option>
+                    </select>
+
+                </div>
+
+            </div>
+
+
+        </div>
+        <div id="leftData-scroll">
+
+
+
+        </div>
+
+
+
+
+    </div>
+
+    <div id="main-heading">What Coursera Has to Offer</div>
+
+    <div id="Tabale_Div">
+        <table class="content-table">
+            <thead>
+                <tr>
+                    <th class="heading1"> Learning Program </th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="heading">
+                        <p> Guided Project </p>
+                    </td>
+                    <td>Learn a job-relevant skill that you can use today in under 2 hours through an interactive
+                        experience
+                        guided by a subject matter expert. Access everything you need right in your browser and complete
+                        your project confidently with step-by-step instructions.</td>
+                </tr>
+                <tr>
+                    <td class="heading">
+                        <p> Course </p>
+                    </td>
+                    <td>Take courses from the world's best instructors and universities. Courses include recorded
+                        auto-graded and peer-reviewed assignments, video lectures, and community discussion forums. When
+                        you
+                        complete a course, you’ll be eligible to receive a shareable electronic Course Certificate for a
+                        small fee.</td>
+                </tr>
+                <tr>
+                    <td class="heading">
+                        <p> Specialization </p>
+                    </td>
+                    <td>Enroll in a Specialization to master a specific career skill. You’ll complete a series of
+                        rigorous
+                        courses, tackle hands-on projects, and earn a Specialization Certificate to share with your
+                        professional network and potential employers.</td>
+                </tr>
+                <tr>
+                    <td class="heading">
+                        <p> Professional Certificate </p>
+                    </td>
+                    <td>Whether you’re looking to start a new career or change your current one, Professional
+                        Certificates
+                        on Coursera help you become job ready. Learn at your own pace from top companies and
+                        universities,
+                        apply your new skills to hands-on projects that showcase your expertise to potential employers,
+                        and
+                        earn a career credential to kickstart your new career.</td>
+                </tr>
+                <tr>
+                    <td class="heading">
+                        <p> MasterTrack® Certificate </p>
+                    </td>
+                    <td>With MasterTrack® Certificates, portions of Master’s programs have been split into online
+                        modules,
+                        so you can earn a high quality university-issued career credential at a breakthrough price in a
+                        flexible, interactive format. Benefit from a deeply engaging learning experience with real-world
+                        projects and live, expert instruction. If you are accepted to the full Master's program, your
+                        MasterTrack coursework counts towards your degree.</td>
+                </tr>
+                <tr>
+                    <td class="heading">
+                        <p> Degree </p>
+                    </td>
+                    <td>Transform your resume with a degree from a top university for a breakthrough price. Our modular
+                        degree learning experience gives you the ability to study online anytime and earn credit as you
+                        complete your course assignments. You'll receive the same credential as students who attend
+                        class on
+                        campus. Coursera degrees cost much less than comparable on-campus programs.</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+    <div id="Bafooter">
+
+        <div id="jfooter">
+            <div class="footer_list">
+                <h2>Start or advance your career</h2>
+                <p><a href="">Google Data Analyst</a></p>
+                <p><a href="">Google Project Management</a></p>
+                <p><a href=""></a>Google UX Design</p>
+                <p><a href="">Google IT Support</a></p>
+                <p><a href="">IBM Data Science</a></p>
+                <p><a href="">IBM Data Analyst</a></p>
+                <p><a href="">IBM Data Analytics with Excel and R</a></p>
+                <p><a href="">IBM Cybersecurity Analyst</a></p>
+                <p><a href="">IBM Data Engineering</a></p>
+                <p><a href="">IBM Full Stack Cloud Developer</a></p>
+                <p><a href="">Facebook Social Media Marketing</a></p>
+                <p><a href="">Facebook Marketing Analytics</a></p>
+                <p><a href="">Salesforce Sales Development Representative</a></p>
+                <p><a href="">Salesforce Sales Operations</a></p>
+                <p><a href="">Intuit Bookkeeping</a></p>
+                <p><a href="">Preparing for Google Cloud Certification: Cloud Architect</a></p>
+                <p><a href="">Preparing for Google Cloud Certification: Cloud Data Engineer</a></p>
+                <p><a href="">Launch your career</a></p>
+                <p><a href="">Prepare for a certification</a></p>
+                <p><a href="">Advance your career</a></p>
+            </div>
+            <div class="footer_list">
+                <h2>Browse popular topics</h2>
+                <p><a href="">Free Courses</a></p>
+                <p><a href="">Learn a Language</a></p>
+                <p><a href="">Python</a></p>
+                <p><a href="">Java</a></p>
+                <p><a href="">Web Design</a></p>
+                <p><a href="">SQL</a></p>
+                <p><a href="">Cursos Gratis</a></p>
+                <p><a href="">Microsoft Excel</a></p>
+                <p><a href="">Project Management</a></p>
+                <p><a href="">Cybersecurity</a></p>
+                <p><a href="">Human Resources</a></p>
+                <p><a href="">Data Science Free Courses</a></p>
+                <p><a href="">Speaking English</a></p>
+                <p><a href="">Content Writing</a></p>
+                <p><a href="">Full Stack Web Development</a></p>
+                <p><a href="">Artificial Intelligence</a></p>
+                <p><a href="">C Programming</a></p>
+                <p><a href="">Communication Skills</a></p>
+                <p><a href="">Blockchain</a></p>
+                <p><a href="">See all courses</a></p>
+            </div>
+            <div class="footer_list">
+                <h2>Popular courses and articles</h2>
+
+                <p><a href="">Skills for Data Science Teams</a></p>
+                <p><a href="">Data Driven Decision Making</a></p>
+                <p><a href="">Software Engineering Skills</a></p>
+                <p><a href="">Soft Skills for Engineering Teams</a></p>
+                <p><a href="">Management Skills</a></p>
+                <p><a href="">Marketing Skills</a></p>
+                <p><a href="">Skills for Sales Teams</a></p>
+                <p><a href="">Product Manager Skills</a></p>
+                <p><a href="">Skills for Finance</a></p>
+                <p><a href="">Popular Data Science Courses in the UK</a></p>
+                <p><a href="">Beliebte Technologiekurse in Deutschland</a></p>
+                <p><a href="">Popular Cybersecurity Certifications</a></p>
+                <p><a href="">Popular IT Certifications</a></p>
+                <p><a href="">Popular SQL Certifications</a></p>
+                <p><a href="">Marketing Manager Career Guide</a></p>
+                <p><a href="">Project Manager Career Guide</a></p>
+                <p><a href="">Python Programming Skills</a></p>
+                <p><a href="">Web Developer Career Guide</a></p>
+                <p><a href="">Data Analyst Skills</a></p>
+                <p><a href="">Skills for UX Designers</a></p>
+            </div>
+            <div class="footer_list">
+                <h2>Earn a degree or certificate online</h2>
+                <p><a href="">MasterTrack® Certificates</a></p>
+                <p><a href="">Professional Certificates</a></p>
+                <p><a href="">University Certificates</a></p>
+                <p><a href="">MBA & Business Degrees</a></p>
+                <p><a href="">Data Science Degrees</a></p>
+                <p><a href="">Computer Science Degrees</a></p>
+                <p><a href="">Data Analytics Degrees</a></p>
+                <p><a href="">Public Health Degrees</a></p>
+                <p><a href="">Social Sciences Degrees</a></p>
+                <p><a href="">Management Degrees</a></p>
+                <p><a href="">Degrees from Top European Universities</a></p>
+                <p><a href="">Master's Degrees</a></p>
+                <p><a href="">Bachelor's Degrees</a></p>
+                <p><a href="">Degrees with a Performance Pathway</a></p>
+                <p><a href="">Bsc Courses</a></p>
+                <p><a href="">What is a Bachelor's Degree?</a></p>
+                <p><a href="">How Long Does a Master's Degree Take?</a></p>
+                <p><a href="">Is an Online MBA Worth It?</a></p>
+                <p><a href="">7 Ways to Pay for Graduate School</a></p>
+                <p><a href="">See all certificates</a></p>
+            </div>
+            <div class="footer_list">
+                <h2>Coursera</h2>
+                <p><a href="">About</a></p>
+                <p><a href="">What We Offer</a></p>
+                <p><a href="">Leadership</a></p>
+                <p><a href="">Careers</a></p>
+                <p><a href="">Catalog</a></p>
+                <p><a href="">Coursera Plus</a></p>
+                <p><a href="">Professional Certificates</a></p>
+                <p><a href="">MasterTrack® Certificates</a></p>
+                <p><a href="">Degrees</a></p>
+                <p><a href="">For Enterprise</a></p>
+                <p><a href="">For Government</a></p>
+                <p><a href="">For Campus</a></p>
+                <p><a href="">Become a Partner</a></p>
+                <p><a href="">Coronavirus Response</a></p>
+            </div>
+            <div class="footer_list">
+                <h2>Community</h2>
+                <p><a href="">Learners</a></p>
+                <p><a href="">Partners</a></p>
+                <p><a href="">Developers</a></p>
+                <p><a href="">Beta Testers</a></p>
+                <p><a href="">Translators</a></p>
+                <p><a href="">Blog</a></p>
+                <p><a href="">Tech Blog</a></p>
+                <p><a href="">Teaching Center</a></p>
+            </div>
+            <div class="footer_list">
+                <h2>More</h2>
+                <p><a href="">Press</a></p>
+                <p><a href="">Investors</a></p>
+                <p><a href="">Terms</a></p>
+                <p><a href="">Privacy</a></p>
+                <p><a href="">Help</a></p>
+                <p><a href="">Accessibility</a></p>
+                <p><a href="">Contact</a></p>
+                <p><a href="">Articles</a></p>
+                <p><a href="">Directory</a></p>
+                <p><a href="">Affiliates</a></p>
+            </div>
+            <div class="last_footer_list">
+                <!-- <h2>Learn Anywhere</h2> -->
+                <img src="./icons/download_on_the_app_store_badge_en.svg" alt="">
+                <img src="./icons/en_generic_rgb_wo_45.png" alt="">
+                <img id="certified" src="./icons/2018-B-Corp-Logo-Black-S.png" alt="">
+            </div>
+        </div>
+        <div id="last_part_of_footer">
+            <p>© 2022 Coursera Inc. All rights reserved.</p>
+            <div>
+                <img src="./icons/facebook.png" alt="">
+                <img src="./icons/linkedin.png" alt="">
+                <img src="./icons/twitter.png" alt="">
+                <img src="./icons/youtube.png" alt="">
+                <img src="./icons/instagram.png" alt="">
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
+<script>
+    var left = 1;
+    var right = 4;
+    function slidShow() {
+        // console.log(left, right)
+        for (var i = left; i <= right; i++) {
+            document.getElementById("c" + i).style.display = "inline-block"
+        }
+
+
+    }
+    function leftmove() {
+        if (left <= 5 && right <= 9) {
+
+
+            document.getElementById("c" + left).style.display = "none";
+            left++;
+            right++;
+            for (var i = left; i <= right; i++) {
+                document.getElementById("c" + i).style.display = "inline-block";
+            }
+        }
+        else {
+            return;
+        }
+        console.log("yes")
+    }
+    function rightmove() {
+        if (left >= 1 && right >= 5) {
+
+
+            document.getElementById("c" + right).style.display = "none";
+            left--;
+            right--;
+            for (var i = left; i <= right; i++) {
+                document.getElementById("c" + i).style.display = "inline-block";
+            }
+        }
+        else {
+            return;
+        }
+    }
+
+
+    var userdata = [
+        {
+            courseType: "v2.ondemand",
+            partnerLogo:
+                "http://coursera-university-assets.s3.amazonaws.com/c0/87a10033a311e892619b85c6fd62bb/IBM-200x48.png",
+            description:
+                "The art of uncovering the insights and trends in data has been around since ancient times. The ancient Egyptians used census data to increase efficiency in tax collection and they accurately predicted the flooding of the Nile river every year. Since then, people working in data science have carved out a unique and distinct field for the work they do. This field is data science. In this course, we will meet some data science practitioners and we will get an overview of what data science is today.",
+            domainTypes: [
+                {
+                    subdomainId: "data-analysis",
+                    domainId: "data-science",
+                },
+            ],
+            photoUrl:
+                "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-course-photos.s3.amazonaws.com/16/d602b00a6c11e88d594f951694ab88/Data-Science-Orientation.png",
+            id: "r0GnHOZaEees-Q6jQMxlrg",
+            slug: "what-is-datascience",
+            instructorIds: ["28513748", "28512151"],
+            specializations: [],
+            workload: "3 weeks of study, 2-3 hours/week",
+            partnerIds: ["348"],
+            certificates: ["VerifiedCert", "Specialization"],
+            name: "What is Data Science? ",
+            startDate: 1520864132943,
+        },
+        {
+            courseType: "v2.ondemand",
+            partnerLogo:
+                "http://coursera-university-assets.s3.amazonaws.com/c0/87a10033a311e892619b85c6fd62bb/IBM-200x48.png",
+            description:
+                "The art of uncovering the insights and trends in data has been around since ancient times. The ancient Egyptians used census data to increase efficiency in tax collection and they accurately predicted the flooding of the Nile river every year. Since then, people working in data science have carved out a unique and distinct field for the work they do. This field is data science. In this course, we will meet some data science practitioners and we will get an overview of what data science is today.",
+            domainTypes: [
+                {
+                    subdomainId: "data-analysis",
+                    domainId: "data-science",
+                },
+            ],
+            photoUrl:
+                "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-course-photos.s3.amazonaws.com/16/d602b00a6c11e88d594f951694ab88/Data-Science-Orientation.png",
+            id: "r0GnHOZaEees-Q6jQMxlrg",
+            slug: "what-is-datascience",
+            instructorIds: ["28513748", "28512151"],
+            specializations: [],
+            workload: "3 weeks of study, 2-3 hours/week",
+            partnerIds: ["348"],
+            certificates: ["VerifiedCert", "Specialization"],
+            name: "What is Data Science? ",
+            startDate: 1520864132943,
+        },
+        {
+            courseType: "v2.ondemand",
+            partnerLogo:
+                "https://coursera-university-assets.s3.amazonaws.com/f4/e4fea0b32811e5b3a0efb601c61536/UC-Davis-Gold-logo-transparent-200-x-48.png",
+            description:
+                "As data collection has increased exponentially, so has the need for people skilled at using and interacting with data; to be able to think critically, and provide insights to make better decisions and optimize their businesses. This is a data scientist, part mathematician, part computer scientist, and part trend spotter (SAS Institute, Inc.). According to Glassdoor, being a data scientist is the best job in America; with a median base salary of $110,000 and thousands of job openings at a time. The skills necessary to be a good data scientist include being able to retrieve and work with data, and to do that you need to be well versed in SQL, the standard language for communicating with database systems.\n\nThis course is designed to give you a primer in the fundamentals of SQL and working with data so that you can begin analyzing it for data science purposes. You will begin to ask the right questions and come up with good answers to deliver valuable insights for your organization. This course starts with the basics and assumes you do not have any knowledge or skills in SQL. It will build on that foundation and gradually have you write both simple and complex queries to help you select data from tables.  You'll start to work with different types of data like strings and numbers and discuss methods to filter and pare down your results. \n\nYou will create new tables and be able to move data into them. You will learn common operators and how to combine the data. You will use case statements and concepts like data governance and profiling. You will discuss topics on data, and practice using real-world programming assignments. You will interpret the structure, meaning, and relationships in source data and use SQL as a professional to shape your data for targeted analysis purposes. Although we do not have any specific prerequisites or software requirements to take this course, a simple text editor is recommended for the final project. So what are you waiting for? This is your first step in landing a job in the best occupation in the US and soon the world!",
+            domainTypes: [
+                {
+                    subdomainId: "data-analysis",
+                    domainId: "data-science",
+                },
+                {
+                    domainId: "math-and-logic",
+                    subdomainId: "math-and-logic",
+                },
+            ],
+            photoUrl:
+                "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-course-photos.s3.amazonaws.com/7a/569080aab711e79d97bf25c196049d/1200px-square-dark.jpg",
+            id: "_8FRmSXkEeeCDQ44DPGlIA",
+            slug: "sql-for-data-science",
+            instructorIds: ["6648160"],
+            specializations: [],
+            workload: "4 weeks of study, 3-5 hours/week",
+            partnerIds: ["83"],
+            certificates: ["VerifiedCert", "Specialization"],
+            name: "SQL for Data Science",
+            startDate: 1510597207731,
+        },
+        {
+            courseType: "v2.ondemand",
+            partnerLogo:
+                "http://coursera-university-assets.s3.amazonaws.com/c0/87a10033a311e892619b85c6fd62bb/IBM-200x48.png",
+            description:
+                "The art of uncovering the insights and trends in data has been around since ancient times. The ancient Egyptians used census data to increase efficiency in tax collection and they accurately predicted the flooding of the Nile river every year. Since then, people working in data science have carved out a unique and distinct field for the work they do. This field is data science. In this course, we will meet some data science practitioners and we will get an overview of what data science is today.",
+            domainTypes: [
+                {
+                    subdomainId: "data-analysis",
+                    domainId: "data-science",
+                },
+            ],
+            photoUrl:
+                "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-course-photos.s3.amazonaws.com/16/d602b00a6c11e88d594f951694ab88/Data-Science-Orientation.png",
+            id: "r0GnHOZaEees-Q6jQMxlrg",
+            slug: "what-is-datascience",
+            instructorIds: ["28513748", "28512151"],
+            specializations: [],
+            workload: "3 weeks of study, 2-3 hours/week",
+            partnerIds: ["348"],
+            certificates: ["VerifiedCert", "Specialization"],
+            name: "What is Data Science? ",
+            startDate: 1520864132943,
+        },
+        {
+            courseType: "v2.ondemand",
+            partnerLogo:
+                "http://coursera-university-assets.s3.amazonaws.com/c0/87a10033a311e892619b85c6fd62bb/IBM-200x48.png",
+            description:
+                "Kickstart your learning of Python for data science, as well as programming in general, with this beginner-friendly introduction to Python. Python is one of the world's most popular programming languages, and there has never been greater demand for professionals with the ability to apply Python fundamentals to drive business solutions across industries. \n\nThis course will take you from zero to programming in Python in a matter of hours—no prior programming experience necessary! You will learn Python fundamentals, including data structures and data analysis, complete hands-on exercises throughout the course modules, and create a final project to demonstrate your new skills. \n\nBy the end of this course, you'll feel comfortable creating basic programs, working with data, and solving real-world problems in Python. You'll gain a strong foundation for more advanced learning in the field, and develop skills to help advance your career. \n\nThis course can be applied to multiple Specialization or Professional Certificate programs. Completing this course will count towards your learning in any of the following programs: \n\nIBM Applied AI Professional Certificate \n\nApplied Data Science Specialization \n\nIBM Data Science Professional Certificate \n\nUpon completion of any of the above programs, in addition to earning a Specialization completion certificate from Coursera, you'll also receive a digital badge from IBM recognizing your expertise in the field.",
+            domainTypes: [
+                {
+                    subdomainId: "data-analysis",
+                    domainId: "data-science",
+                },
+            ],
+            photoUrl:
+                "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-course-photos.s3.amazonaws.com/fc/c1b8dfbac740999b6256aca490de43/Python-Image.jpg",
+            id: "ejOz7RDUEei99hK0xs-tsg",
+            slug: "python-for-applied-data-science-ai",
+            instructorIds: ["28511493"],
+            specializations: [],
+            workload: "",
+            partnerIds: ["348"],
+            certificates: ["VerifiedCert", "Specialization"],
+            name: "Python for Data Science, AI & Development",
+            startDate: 1525712225329,
+        },
+        {
+            courseType: "v2.ondemand",
+            partnerLogo:
+                "http://coursera-university-assets.s3.amazonaws.com/c0/87a10033a311e892619b85c6fd62bb/IBM-200x48.png",
+            description:
+                "What are some of the most popular data science tools, how do you use them, and what are their features? In this course, you'll learn about Jupyter Notebooks, JupyterLab, RStudio IDE, Git, GitHub, and Watson Studio. You will learn about what each tool is used for, what programming languages they can execute, their features and limitations. With the tools hosted in the cloud on Skills Network Labs, you will be able to test each tool and follow instructions to run simple code in Python, R or Scala. To end the course, you will create a final project with a Jupyter Notebook on IBM Watson Studio and demonstrate your proficiency preparing a notebook, writing Markdown, and sharing your work with your peers.",
+            domainTypes: [
+                {
+                    subdomainId: "data-analysis",
+                    domainId: "data-science",
+                },
+                {
+                    domainId: "computer-science",
+                    subdomainId: "software-development",
+                },
+            ],
+            photoUrl:
+                "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-course-photos.s3.amazonaws.com/f4/acffe00bd811e8bfabed507b508fa4/ds0105en-square.png",
+            id: "oCBU5_VYEeeBQA7SG0nILA",
+            slug: "open-source-tools-for-data-science",
+            instructorIds: ["69929142", "76756109", "18682389"],
+            specializations: [],
+            workload: "3 weeks of study, 2-3 hours/week",
+            partnerIds: ["348"],
+            certificates: ["VerifiedCert", "Specialization"],
+            name: "Tools for Data Science",
+            startDate: 1520864250173,
+        },
+        {
+            courseType: "v2.ondemand",
+            partnerLogo:
+                "http://coursera-university-assets.s3.amazonaws.com/c0/87a10033a311e892619b85c6fd62bb/IBM-200x48.png",
+            description:
+                "Kickstart your learning of Python for data science, as well as programming in general, with this beginner-friendly introduction to Python. Python is one of the world's most popular programming languages, and there has never been greater demand for professionals with the ability to apply Python fundamentals to drive business solutions across industries. \n\nThis course will take you from zero to programming in Python in a matter of hours—no prior programming experience necessary! You will learn Python fundamentals, including data structures and data analysis, complete hands-on exercises throughout the course modules, and create a final project to demonstrate your new skills. \n\nBy the end of this course, you'll feel comfortable creating basic programs, working with data, and solving real-world problems in Python. You'll gain a strong foundation for more advanced learning in the field, and develop skills to help advance your career. \n\nThis course can be applied to multiple Specialization or Professional Certificate programs. Completing this course will count towards your learning in any of the following programs: \n\nIBM Applied AI Professional Certificate \n\nApplied Data Science Specialization \n\nIBM Data Science Professional Certificate \n\nUpon completion of any of the above programs, in addition to earning a Specialization completion certificate from Coursera, you'll also receive a digital badge from IBM recognizing your expertise in the field.",
+            domainTypes: [
+                {
+                    subdomainId: "data-analysis",
+                    domainId: "data-science",
+                },
+            ],
+            photoUrl:
+                "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-course-photos.s3.amazonaws.com/fc/c1b8dfbac740999b6256aca490de43/Python-Image.jpg",
+            id: "ejOz7RDUEei99hK0xs-tsg",
+            slug: "python-for-applied-data-science-ai",
+            instructorIds: ["28511493"],
+            specializations: [],
+            workload: "",
+            partnerIds: ["348"],
+            certificates: ["VerifiedCert", "Specialization"],
+            name: "Python for Data Science, AI & Development",
+            startDate: 1525712225329,
+        },
+        {
+            courseType: "v2.ondemand",
+            partnerLogo:
+                "http://coursera-university-assets.s3.amazonaws.com/c0/87a10033a311e892619b85c6fd62bb/IBM-200x48.png",
+            description:
+                "The art of uncovering the insights and trends in data has been around since ancient times. The ancient Egyptians used census data to increase efficiency in tax collection and they accurately predicted the flooding of the Nile river every year. Since then, people working in data science have carved out a unique and distinct field for the work they do. This field is data science. In this course, we will meet some data science practitioners and we will get an overview of what data science is today.",
+            domainTypes: [
+                {
+                    subdomainId: "data-analysis",
+                    domainId: "data-science",
+                },
+            ],
+            photoUrl:
+                "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-course-photos.s3.amazonaws.com/16/d602b00a6c11e88d594f951694ab88/Data-Science-Orientation.png",
+            id: "r0GnHOZaEees-Q6jQMxlrg",
+            slug: "what-is-datascience",
+            instructorIds: ["28513748", "28512151"],
+            specializations: [],
+            workload: "3 weeks of study, 2-3 hours/week",
+            partnerIds: ["348"],
+            certificates: ["VerifiedCert", "Specialization"],
+            name: "What is Data Science? ",
+            startDate: 1520864132943,
+        },
+
+    ];
+
+
+    async function renderdata() {
+
+
+        let res = await fetch(`https://api.coursera.org/api/courses.v1?limit=30&q=search&query=machine&includes=instructorIds,photoUrl,partnerIds,description,largeIcon,shortName,location&fields=instructorIds,partnerIds`)
+        let data = await res.json();
+
+        console.log(data);
+
+    }
+
+    renderdata();
+
+
+
+    userdata.forEach((elem) => {
+
+
+        let bigcontainer = document.createElement("div");
+        bigcontainer.setAttribute("id", "bigcontainer")
+
+        let div1container = document.createElement("div");
+        div1container.setAttribute("id", "divcontainer")
+
+        let image = document.createElement("img");
+        image.setAttribute("id", "imagebloc")
+        image.src = elem.photoUrl;
+
+        let div2container = document.createElement("div");
+        div1container.setAttribute("id", "div2container")
+
+        let coursename = document.createElement("h3");
+        coursename.innerHTML = elem.name;
+
+        let Rating = document.createElement("h4");
+        // Rating.innerHTML= (Math.random() * 6).toFixed(1)
+        Rating.innerHTML = (Math.random() * (5 - 1) + 1).toFixed(1);
+
+
+        let Students = document.createElement("p");
+
+        Students.innerHTML = Math.floor(Math.random() * 999) + "K";
+
+
+        //         function getRandomArbitrary(min, max) {
+        //   return Math.random() * (max - min) + min;
+        // }
+
+        //     var symbol= document.createElement("i")
+        // symbol.setAttribute("class", "")
+
+        let certificates = document.createElement("p");
+        certificates.innerHTML = elem.certificates
+        certificates.setAttribute("id", "certificates")
+
+        // <span class="iconify" data-icon="mdi:star"></span>
+
+
+
+        // let p1 = document.createElement("img");
+        // p.src = elem.photoUrl
+
+        div1container.append(image)
+        div2container.append(coursename, Rating, Students, certificates);
+
+        bigcontainer.append(div1container, div2container)
+
+
+
+        document.getElementById("leftData-scroll").append(bigcontainer)
+
+
+
+
+
+
+    })
+
+    let hover_list = document.querySelectorAll(".left_explore_option > ul > li > p");
+    // hover_list.map((el)=>{
+
+    // })
+    console.log(hover_list[0]);
+    let input_of_navbar = document.querySelector("#input_of_navbar");
+    input_of_navbar.addEventListener("onselect", () => {
+        console.log("hello_jay")
+    })
+
+
+
+</script>
+<script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
