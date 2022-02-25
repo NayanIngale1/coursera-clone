@@ -13,7 +13,7 @@ faqs.forEach((faq) => {
 });
 
 const body = document.body;
-lastScroll = 0;
+let lastScroll = 0;
 window.addEventListener("scroll", () => {
   const currentScroll = window.pageYOffset;
   console.log("currentScroll:", currentScroll);
