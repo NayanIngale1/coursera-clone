@@ -79,8 +79,8 @@ const navbar = ()=>{
     </div>
     <button id="search"><span class="iconify" data-icon="eva:search-outline" data-width="20"></span></button>
     <p><a href="">Online Degrees</a></p>
-    <p><a href="">Find your New Career</a></p>
-    <p><a href="">For Enterprise</a></p>
+    <p><a href="../FindNewCareer.html">Find your New Career</a></p>
+    <p><a href="../ForBusinessEnterprises.html">For Enterprise</a></p>
     <p><a href="">For Universities</a></p>
     <p><a id="log_in_text" href="">Log In</a></p>
     <button id="join_for_free">Join for Free</button>
