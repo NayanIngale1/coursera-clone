@@ -82,7 +82,7 @@ const navbar = ()=>{
     <p><a href="../FindNewCareer.html">Find your New Career</a></p>
     <p><a href="../ForBusinessEnterprises.html">For Enterprise</a></p>
     <p><a href="">For Universities</a></p>
-    <p><a id="log_in_text" href="">Log In</a></p>
+    <p><a data-toggle="modal" data-target="#myModal" href="" id="log_in_text">Log In</a></p>
     <button id="join_for_free">Join for Free</button>
 </div>
 <div id="navbar_goals_subject">
