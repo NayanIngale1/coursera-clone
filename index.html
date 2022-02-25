@@ -6,8 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Coursera in India | Online Courses &amp; Certificates From Top Institutions</title>
     <!-- <link rel="stylesheet" href="./components/Footer.css">
-    <link rel="stylesheet" href="./components/navbar.css"> -->
-  <style>
+  
+        <link rel="stylesheet" href="./components/navbar.css"> -->
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;900&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="./Components/slidestyle.css">
+ <style>
      #main #first{
           display: flex;
           margin-left:390px
@@ -116,63 +120,12 @@
      #main  a:hover{
          text-decoration: underline;
      }
-     #main main{
-        margin-left: -30px;
-        width:84%;
-        height:800px;
-        margin-top: 30px;
-        /* margin:200px auto; */
-        overflow: hidden;
-        position: relative;
+     
+    #main >section{
+        margin-top: -200px;
     }
-    #main *{
-        padding: 0;
-        margin: 0;
-    }
-    #main span{
-        position:absolute;
-        top:40%;
-        font-size: 60px;
-        font-weight: bold;
-        color:black;
-        cursor:pointer;
-        left:.5%;
-        z-index:1;
-    }
-    #main span:nth-of-type(2){
-        left:98%;
-        text-align: right;
-    }
-    #main section{
-        width:98%;
-        height:500px; 
-        margin:10px auto;
-        display:flex;
-        justify-content: left;
-        overflow-x: auto;
-    }
-    #main section::-webkit-scrollbar{
-        visibility: hidden;
-    }
-    #main section>div{
-        min-width:280px;
-        height: 400px;
-        position: relative;
-        left:0;
-        text-align: center;
-        padding-top: 60px;
-        font-size: 100px;
-        /* font-weight: bold; */
-        margin: 10px 20px;
-        /* color:white; */
-        background-color: white;
-        transition: 0.5s;
-        cursor: pointer;
-       
-    }
-    #main section>div:hover{
-         box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
-    }
+     
+    
     #main #seven{
         display: grid;
          margin-left: 330px;
@@ -214,6 +167,7 @@
     #main #nine{
         text-align: center;
         margin-top: 80px;
+        margin-bottom: 80px;
         
     }
     #main #nine>h1{
@@ -236,9 +190,7 @@
         display: grid;
         grid-template-columns: repeat(3,100px);
         grid-template-rows: repeat(2,60px);
-        
-       
-       
+          
     }
     #main>#ten>#nineright{
         margin-top: 100px;
@@ -260,6 +212,9 @@
         margin-left: 350px;
         margin-right: 100px;
     }
+    #main >#innermainfromthird>div{
+        margin-top: 50px;
+    }
   </style>
 </head>
 <body  >
@@ -269,7 +224,7 @@
         <div id="main">
             <div id="first">
                 <div id="left"><h1>Learn Without Limits</h1>
-                <p style=" font-size:20px;width:600px">
+                <p style=" font-size:20px;width:600px; margin:20px 0px">
                     Open your door to more with world-class Professional Certificates and degrees
                     <div>
                         <button id="join">Join for free</button>
@@ -300,117 +255,249 @@
 
         <!-- Third DIvision starts here -->
         <div id="innermainfromthird">
-            <div class="third" id="third">
+            <div style="margin-top: 50px"class="third" id="third">
                 <p style="color:darkblue; padding-top: 50px;">Professional Certificates</p>
                 <h1>Get job-ready for an in-demand career</h1>
                 <p>Break into a new field like information technology or data science. No prior experience necessary to get started.</p>
-                <main id="firstslideparent">
-                    
-                    <span>&#139;</span>
-                    <span>&#155;</span>
-                    <section>
-                        <div>1<img src="" alt=""></div>
-                        <div>2<img src="" alt=""></div>
-                        <div>3<img src="" alt=""></div>
-                        <div>4<img src="" alt=""></div>
-                        <div>5<img src="" alt=""></div>
-                        <div>6<img src="" alt=""></div>
-                        <div>7<img src="" alt=""></div>
-                        <div>8<img src="" alt=""></div>
-                        <div>9<img src="" alt=""></div>
-                        <div>10<img src="" alt=""></div>
-                        <div>11<img src="" alt=""></div>
-                        <div>12<img src="" alt=""></div>
-                    </section>
- 
-                </main>
-                <a href="#" style="text-align:center;padding:200px;"><h4>Explore Certificates</h4></a>
-        </div >
-             
-        <div class="third" id="four">
-            <p style="color:darkblue; padding-top: 50px;">Master's and Bachelor's Degrees</p>
+           </div >
+              
+        <section class="product"> 
+         
+            <button class="pre-btn"><img src="./SlidesImages/arrow.png" alt=""></button>
+            <button class="nxt-btn"><img src="./SlidesImages/arrow.png" alt=""></button>
+
+            <div class="product-container" id="firstslide">
+               <div class="product-card">
+                   <img src="./SlidesImages/img1.png" alt="">
+               </div>
+               <div class="product-card">
+                <img src="./SlidesImages/img2.png" alt="">
+            </div>
+            <div class="product-card">
+                <img src="./SlidesImages/img3.png" alt="">
+            </div>
+            <div class="product-card">
+                <img src="./SlidesImages/img4.png" alt="">
+            </div>
+            <div class="product-card">
+                <img src="./SlidesImages/img5.png" alt="">
+            </div>
+            <div class="product-card">
+                <img src="./SlidesImages/img6.png" alt="">
+            </div>
+            <div class="product-card">
+                <img src="./SlidesImages/img7.png" alt="">
+            </div>
+            <div class="product-card">
+                <img src="./SlidesImages/img8.png" alt="">
+            </div>
+            <div class="product-card">
+                <img src="./SlidesImages/img9.png" alt="">
+            </div>
+            <div class="product-card">
+                <img src="./SlidesImages/img10.png" alt="">
+            </div>
+            <div class="product-card">
+                <img src="./SlidesImages/img11.png" alt="">
+            </div>
+            <div class="product-card">
+                <img src="./SlidesImages/img12.png" alt="">
+            </div>
+            </div>
+        </section>
+         <div class="dots" >
+             <div class="dots1"id="1dots"></div>
+             <div id="2dots"></div>
+             <div id="3dots"></div>
+         </div>
+         <a href="#" style="margin-left:970px;font-weight: bold;">Explore Certificates</a>
+       
+           
+
+                <div style="margin-top: 50px"class="third" id="four">
+                <p style="color:darkblue; padding-top: 50px;">Master's and Bachelor's Degrees</p>
                 <h1>Find a top degree that fits your life</h1>
                 <p>Breakthrough pricing on 100% online degrees from top universities.</p>
-                <main id="SecSpanList" >
-             
-                    <span id="fspan">&#139;</span>
-                    <span id="fspan">&#155;</span>
-                    <section>
-                        <div id="fdiv"><img src="" alt=""></div>
-                        <div id="fdiv"><img src="" alt=""></div>
-                        <div id="fdiv"><img src="" alt=""></div>
-                        <div id="fdiv"><img src="" alt=""></div>
-                        <div id="fdiv"><img src="" alt=""></div>
-                        <div id="fdiv"><img src="" alt=""></div>
-                        <div id="fdiv"><img src="" alt=""></div>
-                        <div id="fdiv"><img src="" alt=""></div>
-                        <div id="fdiv"><img src="" alt=""></div>
-                        <div id="fdiv"><img src="" alt=""></div>
-                        <div id="fdiv"><img src="" alt=""></div>
-                        <div id="fdiv"><img src="" alt=""></div>
-                    </section> 
- 
-                </main>
-                <a href="#" style="text-align:center;padding:200px;"><h4>Explore Degrees</h4></a>
-        </div>
+               </div>
+
+                    <section class="product"> 
+         
+                        <button class="pre-btn"><img src="./SlidesImages/arrow.png" alt=""></button>
+                        <button class="nxt-btn"><img src="./SlidesImages/arrow.png" alt=""></button>
 
 
-        <div class="third" id="five">
+                        <div class="product-container" id="secondslide">
+                            <div class="product-card">
+                                <img src="./SlidesImages/img13.png" alt="">
+                            </div>
+                            <div class="product-card">
+                             <img src="./SlidesImages/img14.png" alt="">
+                         </div>
+                         <div class="product-card">
+                             <img src="./SlidesImages/img15.png" alt="">
+                         </div>
+                         <div class="product-card">
+                             <img src="./SlidesImages/img16.png" alt="">
+                         </div>
+                         <div class="product-card">
+                             <img src="./SlidesImages/img17.png" alt="">
+                         </div>
+                         <div class="product-card">
+                             <img src="./SlidesImages/img18.png" alt="">
+                         </div>
+                         <div class="product-card">
+                             <img src="./SlidesImages/img19.png" alt="">
+                         </div>
+                         <div class="product-card">
+                             <img src="./SlidesImages/img20.png" alt="">
+                         </div>
+                         <div class="product-card">
+                             <img src="./SlidesImages/img21.png" alt="">
+                         </div>
+                         <div class="product-card">
+                             <img src="./SlidesImages/img22.png" alt="">
+                         </div>
+                         <div class="product-card">
+                             <img src="./SlidesImages/img23.png" alt="">
+                         </div>
+                         <div class="product-card">
+                             <img src="./SlidesImages/img24.png" alt="">
+                         </div>
+                        </div>
+                    </section>
+           
+                    <div class="dots">
+                        <div style="background-color: gray;" id="1dots"></div>
+                        <div id="2dots"></div>
+                        <div id="3dots"></div>
+                    </div>
+                    <a href="#" style="margin-left:970px;font-weight: bold;">Explore Degrees</a>
+       
+
+
+         <div style="margin-top: 50px"class="third" id="four">
             <p style="color:darkblue; padding-top: 50px;">Courses and specializations</p>
                 <h1>Advance your career with new skills</h1>
                 <p>Choose from over 4,000 courses in topics like business analytics, graphic design, Python, and more.</p>
-                <main id="slideparent" >
-                    
-                    <span>&#139;</span>
-                    <span>&#155;</span>
-                    <section>
-                        <div><img src="" alt=""></div>
-                        <div><img src="" alt=""></div>
-                        <div><img src="" alt=""></div>
-                        <div><img src="" alt=""></div>
-                        <div><img src="" alt=""></div>
-                        <div><img src="" alt=""></div>
-                        <div><img src="" alt=""></div>
-                        <div><img src="" alt=""></div>
-                        <div><img src="" alt=""></div>
-                        <div><img src="" alt=""></div>
-                        <div><img src="" alt=""></div>
-                        <div><img src="" alt=""></div>
-                    </section>
- 
-                </main>
-                <a href="#" style="text-align:center;padding:200px;"><h4>Explore Skills</h4></a>
+             
         </div>
+        
+        <section class="product"> 
+         
+            <button class="pre-btn"><img src="./SlidesImages/arrow.png" alt=""></button>
+            <button class="nxt-btn"><img src="./SlidesImages/arrow.png" alt=""></button>
+            <div class="product-container" id="thirdslide">
+                <div class="product-card">
+                    <img src="./SlidesImages/img25.png" alt="">
+                </div>
+                <div class="product-card">
+                 <img src="./SlidesImages/img26.png" alt="">
+             </div>
+             <div class="product-card">
+                 <img src="./SlidesImages/img27.png" alt="">
+             </div>
+             <div class="product-card">
+                 <img src="./SlidesImages/img28.png" alt="">
+             </div>
+             <div class="product-card">
+                 <img src="./SlidesImages/img29.png" alt="">
+             </div>
+             <div class="product-card">
+                 <img src="./SlidesImages/img30.png" alt="">
+             </div>
+             <div class="product-card">
+                 <img src="./SlidesImages/img31.png" alt="">
+             </div>
+             <div class="product-card">
+                 <img src="./SlidesImages/img32.png" alt="">
+             </div>
+             <div class="product-card">
+                 <img src="./SlidesImages/img33.png" alt="">
+             </div>
+             <div class="product-card">
+                 <img src="./SlidesImages/img34.png" alt="">
+             </div>
+             <div class="product-card">
+                 <img src="./SlidesImages/img35.png" alt="">
+             </div>
+             <div class="product-card">
+                 <img src="./SlidesImages/img36.png" alt="">
+             </div>
+            </div>
+        </section>
+        <div class="dots">
+            <div style="background-color: gray;" id="1dots"></div>
+            <div id="2dots"></div>
+            <div id="3dots"></div>
+        </div>
+        <a href="#" style="margin-left:990px;font-weight: bold;">Explore Skills</a>
+       
 
-
-
-        <div class="third" id="six">
+        <div  class="third" id="six">
             <p style="color:darkblue; padding-top: 50px;">100% Free</p>
                 <h1>Start Learning with Free Courses</h1>
                 <p>Free online courses from the world's top universities and companies.</p>
-                <main id="slideparent" >
-                    
-                    <span>&#139;</span>
-                    <span>&#155;</span>
-                    <section>
-                        <div><img src="" alt=""></div>
-                        <div><img src="" alt=""></div>
-                        <div><img src="" alt=""></div>
-                        <div><img src="" alt=""></div>
-                        <div><img src="" alt=""></div>
-                        <div><img src="" alt=""></div>
-                        <div><img src="" alt=""></div>
-                        <div><img src="" alt=""></div>
-                        <div><img src="" alt=""></div>
-                        <div><img src="" alt=""></div>
-                        <div><img src="" alt=""></div>
-                        <div><img src="" alt=""></div>
-                    </section>
- 
-                </main>
-                <a href="#" style="text-align:center;padding:200px;"><h4>Explore Free Courses</h4></a>
+                
         </div>
-        <h1 style="margin-left: 330px;width:1000px; font-size:50px;">Explore Coursera</h1>
+
+        
+        <section class="product"> 
+         
+            <button class="pre-btn"><img src="./SlidesImages/arrow.png" alt=""></button>
+            <button class="nxt-btn"><img src="./SlidesImages/arrow.png" alt=""></button>
+            <div class="product-container" id="fourthslide">
+                <div class="product-card">
+                    <img src="./SlidesImages/img37.png" alt="">
+                </div>
+                <div class="product-card">
+                 <img src="./SlidesImages/img38.png" alt="">
+             </div>
+             <div class="product-card">
+                 <img src="./SlidesImages/img39.png" alt="">
+             </div>
+             <div class="product-card">
+                 <img src="./SlidesImages/img40.png" alt="">
+             </div>
+             <div class="product-card">
+                 <img src="./SlidesImages/img41.png" alt="">
+             </div>
+             <div class="product-card">
+                 <img src="./SlidesImages/img42.png" alt="">
+             </div>
+             <div class="product-card">
+                 <img src="./SlidesImages/img43.png" alt="">
+             </div>
+             <div class="product-card">
+                 <img src="./SlidesImages/img44.png" alt="">
+             </div>
+             <div class="product-card">
+                 <img src="./SlidesImages/img45.png" alt="">
+             </div>
+             <div class="product-card">
+                 <img src="./SlidesImages/img46.png" alt="">
+             </div>
+             <div class="product-card">
+                 <img src="./SlidesImages/img47.png" alt="">
+             </div>
+             <div class="product-card">
+                 <img src="./SlidesImages/img48.png" alt="">
+             </div>
+            </div>
+        </section>
+
+        <div class="dots">
+            <div style="background-color: gray;" id="1dots"></div>
+            <div id="2dots"></div>
+            <div id="3dots"></div>
+        </div>
+        <a href="#" style="margin-left:960px; font-weight: bold;">Explore Free Courses</a>
+       
+<!-- 
+///////////slide part ends here -->
+
+
+
+        <h1 style="margin-top:100px;margin-left: 330px;width:1000px; font-size:50px;">Explore Coursera</h1>
         <div id="seven">
             
         <div>
@@ -466,52 +553,54 @@
                  
                     <h1>From the coursera community</h1>
                     <p>87+ million people are already learning on Coursera</p>
-                    <main id="slideparent" >
-                        
-                        <span>&#139;</span>
-                        <span>&#155;</span>
-                        <section>
-                            <div><img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/7ggy6QrC3CRJuXoFtHEibR/76c50df66789ed3ef2e5d5857bf6144f/enaveen.png?auto=format%2Ccompress&dpr=1&w=202&h=202&q=40" alt="">
+               
+            </div>
+            <section class="product marginforclassnine"> 
+         
+                <button class="pre-btn"><img src="images/arrow.png" alt=""></button>
+                <button class="nxt-btn"><img src="images/arrow.png" alt=""></button>
+                <div class="product-container">
+                    <div class="product-card">
+                        <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/7ggy6QrC3CRJuXoFtHEibR/76c50df66789ed3ef2e5d5857bf6144f/enaveen.png?auto=format%2Ccompress&dpr=1&w=202&h=202&q=40" alt="">
                             <h4 style="font-size: 20px;">E. Naveen</h4>
                             <h5 style="font-size: 15px;">Google IT Professional Certificate</h5>
                             <p style="font-size: 20px;margin-left:30px">Telangana</p>
                             <hr style="width:200px;margin-left:30px;margin-top:10px">
                             <p style="font-size: 15px;width:270px;margin-top:10px">"Google's IT Support Certificate allowed me to get a foot in the door for the roles I went after, thereby allowing me to convert an offer"</p>
-                            </div>
                            
-                           
-                           
-                            <div><img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/PrIvmSLiG4acl5kOHEPFF/95e4d58ea4152ecb8d5f3f24973ed8bd/manmeet.png?auto=format%2Ccompress&dpr=1&w=202&h=202&q=40" alt="">
+                      
+                    </div>
+                    <div class="product-card">
+                        <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/PrIvmSLiG4acl5kOHEPFF/95e4d58ea4152ecb8d5f3f24973ed8bd/manmeet.png?auto=format%2Ccompress&dpr=1&w=202&h=202&q=40" alt="">
                                 <h4 style="font-size: 20px;">Manmeet G</h4>
                                 <h5 style="font-size: 15px;">IBM Cybersecurity Analyst</h5>
                                 <p style="font-size: 20px;margin-left:30px">Gujrat</p>
                                 <hr style="width:200px;margin-left:30px;margin-top:10px">
                                 <p style="font-size: 15px;width:270px;margin-top:10px">"The most amazing thing about this (IBM Cybersecurity Analyst) program is the certified and experienced instructors"</p>
-                            </div>
-                            <div><img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/4h4M25YRzZCUn0c00R89br/65ac983516b30ec75a762ec9fcd47ef1/umakant.png?auto=format%2Ccompress&dpr=1&w=202&h=202&q=40" alt="">
+                            
+                       
+                    </div>
+                    <div class="product-card">
+                        <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/4h4M25YRzZCUn0c00R89br/65ac983516b30ec75a762ec9fcd47ef1/umakant.png?auto=format%2Ccompress&dpr=1&w=202&h=202&q=40" alt="">
                                 <h4 style="font-size: 20px;">Uma K</h4>
                                 <h5 style="font-size: 15px;">IBM Data Science Profwssional Certificate</h5>
                                 <p style="font-size: 20px;margin-left:30px">Bihar</p>
                                 <hr style="width:200px;margin-left:30px;margin-top:10px">
                                 <p style="font-size: 15px;width:270px;margin-top:10px">"The IBM Data Science Profwssional Certificate has continued to open doors for me"</p>
-                               
-                            </div>
-                           
-                           
-                            <div><img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/1QIDSUd4qW2vZAgie7ouFT/e3d4da851c8fca2c937abdbd8446a9b8/bharathan.png?auto=format%2Ccompress&dpr=1&w=202&h=202&q=40" alt="">
+                              
+                        
+                    </div>
+                    <div style=" background-color: none;"class="product-card">
+                        <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/1QIDSUd4qW2vZAgie7ouFT/e3d4da851c8fca2c937abdbd8446a9b8/bharathan.png?auto=format%2Ccompress&dpr=1&w=202&h=202&q=40" alt="">
                                 <h4 style="font-size: 20px;">Bharathan M</h4>
                                 <h5 style="font-size: 15px;">Deep Learning Specialization</h5>
                                 <p style="font-size: 20px;margin-left:30px">Gujrat</p>
                                 <hr style="width:200px;margin-left:30px;margin-top:10px">
                                 <p style="font-size: 15px;width:250px;margin-top:10px">"The knowledge I gained through the Machine Learning and Deep Learning courses helped me land an internship"</p>
-                               
-                            </div>
-                             
-                        </section>
-     
-                    </main>
-                    
-            </div>
+                      
+                    </div>
+                </div>
+            </section>
         </div>
         <div id="ten">
             <div id="nineleft">
@@ -547,133 +636,127 @@
 
 </body>
 </html>
-<script type="module">
+<script  type="module">
     // import footer from './components/Footer.js'
     // import navbar from './components/Navbar.js'
     // let nav=navbar()
+    // import slide from './components/homeslide.js'
+</script>
+<script   src="./Components/slide.js">
+    
    
     // let foot= footer();
+    let myslide=slide()
+    // console.log(slide)
+    document.getElementById("SecSpanList").innerHTML=myslide
+
 </script>
 <script>
-   async function getdata(){
-       let query="datascience"
-       try {
-           let res= await fetch(`https://api.coursera.org/api/courses.v1?limit=30&q=search&query=${query}&includes=instructorIds,photoUrl,partnerIds,description,largeIcon,shortName,location&fields=instructorIds,partnerIds`)
-           let data=await res.json();
-           data=data.elements
-           console.log(data)
-           render(data)
-       } catch (error) {
-           console.log(error)
-       }
-   }
-   getdata()
-
-  
-    var span=document.getElementsByTagName('span')
-    var div=document.getElementsByTagName('div')
-    var l=0;
-    console.log(span)
-    span[1].onclick=()=>{
-        l++;
-        for(var i of div){
-            if(l==0){
-                i.style.left="0px";
-            }
-            if(l==1){
-                i.style.left="-1280px";
-            }
-            if(l==2){
-                i.style.left="-2560px";
-            }
-            
-            if(l>2){
-                l=2;
-            }
-            if(l===3){
-                // l=2;
-                i.style.left="0px";
-                l=0
-            }
-             
-        }
-    }
-    span[0].onclick=()=>{
-        l--;
-          for(var i of div){
-            if(l==0){
-                i.style.left="0px";
-            }
-            if(l==1){
-                i.style.left="-1280px";
-            }
-            if(l==2){
-                i.style.left="-2560px";
-            }
-            
-            // if(l===3){
-            //     // l=2;
-            //     i.style.left="0px";
-            //     l=0
-            // }
-            if(l>2){
-                l=2;
-            }
-        }
-    }
+    async function getMLdata(){
+    let query="Machine Learning"
+     try {
+         let res= await fetch(`https://api.coursera.org/api/courses.v1?limit=30&q=search&query=${query}&includes=instructorIds,photoUrl,partnerIds,description,largeIcon,shortName,location&fields=instructorIds,partnerIds`)
+         let data=await res.json();
+         data=data.elements
+         data=data.slice(4)
+         console.log(data)
+        //  renderML(data)
+     } catch (error) {
+         console.log(error)
+     }
+ }
+ getMLdata()
  
-    // let span1=document.getElementById('fspan')
-    // let div1=document.getElementById('fdiv')
-    // var l=0;
-    // console.log(span1)
-    // span1[3].onclick=()=>{
-    //     l++;
-    //     for(var i of div1){
-    //         if(l==0){
-    //             i.style.left="0px";
-    //         }
-    //         if(l==1){
-    //             i.style.left="-1280px";
-    //         }
-    //         if(l==2){
-    //             i.style.left="-2560px";
-    //         }
-            
-    //         if(l>2){
-    //             l=2;
-    //         }
-    //         // if(l===3){
-    //         //     // l=2;
-    //         //     i.style.left="0px";
-    //         //     l=0
-    //         // }
-             
-    //     }
-    // }
-    // span1[2].onclick=()=>{
-    //     l--;
-    //       for(var i of div1){
-    //         if(l==0){
-    //             i.style.left="0px";
-    //         }
-    //         if(l==1){
-    //             i.style.left="-1280px";
-    //         }
-    //         if(l==2){
-    //             i.style.left="-2560px";
-    //         }
-            
-    //         // if(l===3){
-    //         //     // l=2;
-    //         //     i.style.left="0px";
-    //         //     l=0
-    //         // }
-    //         if(l>2){
-    //             l=2;
-    //         }
-    //     }
-    // }
+ 
+function renderML(data){
+    data.forEach(function card(elem){
+     let div=document.createElement("div")
+     div.setAttribute("class","product-card")
+     let name=document.createElement("p").textContent=elem.name
+     div.append(document.createElement("p").textContent=elem.name)
+    document.getElementById("firstslide").append(div)
+    
+    })
+}
 
+async function getUIUXdata(){
+    let query="UIUX"
+     try {
+         let res= await fetch(`https://api.coursera.org/api/courses.v1?limit=30&q=search&query=${query}&includes=instructorIds,photoUrl,partnerIds,description,largeIcon,shortName,location&fields=instructorIds,partnerIds`)
+         let data=await res.json();
+         data=data.elements
+         
+         data=data.slice(14)
+         console.log(data)
+        //  renderUIUX(data)
+     } catch (error) {
+         console.log(error)
+     }
+ }
+ getUIUXdata()
+ function renderUIUX(data){
+    data.forEach(function card(elem){
+     let div=document.createElement("div")
+     div.setAttribute("class","product-card")
+     let name=document.createElement("p").textContent=elem.name
+     div.append(document.createElement("p").textContent=elem.name)
+    document.getElementById("secondslide").append(div)
+    
+    })
+}
 
-     
+async function getpythondata(){
+    let query="python"
+     try {
+         let res= await fetch(`https://api.coursera.org/api/courses.v1?limit=30&q=search&query=${query}&includes=instructorIds,photoUrl,partnerIds,description,largeIcon,shortName,location&fields=instructorIds,partnerIds`)
+         let data=await res.json();
+         data=data.elements
+         
+         data=data.slice(14)
+         console.log(data)
+        //  renderpython(data)
+     } catch (error) {
+         console.log(error)
+     }
+ }
+ getpythondata()
+ function renderpython(data){
+    data.forEach(function card(elem){
+     let div=document.createElement("div")
+     div.setAttribute("class","product-card")
+     let name=document.createElement("p").textContent=elem.name
+     div.append(document.createElement("p").textContent=elem.name)
+    document.getElementById("thirdslide").append(div)
+    
+    })
+}
+async function getanalyticsdata(){
+    let query="analytics"
+     try {
+         let res= await fetch(`https://api.coursera.org/api/courses.v1?limit=30&q=search&query=${query}&includes=instructorIds,photoUrl,partnerIds,description,largeIcon,shortName,location&fields=instructorIds,partnerIds`)
+         let data=await res.json();
+         data=data.elements
+         
+         data=data.slice(14)
+         console.log(data)
+        //  renderanalytics(data)
+     } catch (error) {
+         console.log(error)
+     }
+ }
+ getanalyticsdata()
+ function renderanalytics(data){
+    data.forEach(function card(elem){
+     let div=document.createElement("div")
+     div.setAttribute("class","product-card")
+     let name=document.createElement("p").textContent=elem.name
+     div.append(document.createElement("p").textContent=elem.name)
+    document.getElementById("fourthslide").append(div)
+    
+    })
+}
+// let BusinessManagement= getdata("ui ux")
+
+//  let python= getdata("python")
+//    let webdev=getdata("webdevelopment")
 </script>
