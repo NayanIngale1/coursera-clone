@@ -8,6 +8,9 @@ body {
     
     background-color: rgb(245,245,245);
 }
+.p_tag_of_navbar{
+  width:280px;
+}
 #main{
     margin-top: 70px;
   background-color: white;

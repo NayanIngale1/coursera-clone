@@ -1,4 +1,3 @@
-  
     #jnavbar{
         display: block;
         z-index: 5;
@@ -12,12 +11,8 @@
         border-bottom: 1px solid rgb(193, 189, 189);
     }
     #jnavbar .coursera{
-        height: 14px;
-    }
-    #jnavbar a {
-        width: 125px;
-        font-size: 14px;
-        margin: auto 20px;
+        height: 18px;
+        margin: auto 5px;
     }
     #jnavbar button {
         height: 41px;
@@ -28,18 +23,14 @@
         padding: 1px 5px;
         margin: auto 0px;
         height: 35px;
-        width: 390px;
+        width: 380px;
         font-size: medium;
     }
-    #log_in_text {
-        color: rgb(42, 115, 204);
-    }
     #jnavbar p a{
-        margin: 3px;
+        margin:auto 5px;
         padding: 0;
-        font-weight: 400;
-        font-weight: lighter;
         font-size: 14px;
+        font-weight: lighter;
         color: rgb(55, 58, 60);
         text-decoration: none;
     }
@@ -62,12 +53,12 @@
         border: 0;
         border-radius: 0;
         width: 60px;
-        margin-right:5%;
+        margin-right:3%;
     }
     #join_for_free{
         border: 0;
         width: 200px;
-        margin: auto;
+        margin: auto 0;
         padding: 0 20px;
     }
 

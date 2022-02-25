@@ -1,0 +1,116 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: whitesmoke;
+}
+#topSlider{
+    color: rgb(55, 58, 60);
+    background-color: white;
+    border: 1px solid;
+    font-size: 16px;
+    line-height: 21px;
+    padding: 10px 210px;
+    margin:64px auto;
+    font-weight: 400;
+    text-align: start;
+    height: 174px;
+
+}
+#mainBody{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#FilterData{
+    width: 24%;
+    border: 1px solid;
+    height: fit-content;
+}
+#searchResult{
+    width: 74%;
+    height: fit-content;
+    
+}
+#head_of_search{
+    font-size: 28px;
+    color: rgb(31, 31, 31);
+    line-height: 36px;
+    font-weight: 600;
+    margin: 0 0 20px ;
+}
+.just_for_border{
+    width: 80%;
+    padding: 15px 0;
+    border-bottom: .5px solid rgb(63, 63, 62);
+}
+.just_for_border:hover h2{
+    text-decoration: underline;
+}
+.boxSearch{
+    background-color: white;
+    display: flex;
+    height: 150px;
+
+}
+.boxSearch img{
+    width: 150px;
+    margin-right: 15px;
+}
+.boxSearch .left_data{
+    width: 750px;
+
+}
+.left_data h2{
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 600;
+    margin: 0;
+}
+.left_data h3{
+    font-size: 16px;
+    line-height: 20px;
+    margin: 4px 0 0;
+    color:rgb(99, 99, 99) ;
+}
+.left_data h4{
+    font-size: 16px;
+    line-height: 24px;
+    width: fit-content;
+    background-color: lavender;
+    margin: 5px 0;
+    padding: 2px 11px 3px;
+    font-weight: 400;
+}
+.left_data .rating{
+    display: flex;
+    align-items: center;
+}
+.left_data .rating img{
+    height: 30px;
+}
+.left_data h5{
+    line-height: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    margin-right: 10px;
+}
+.left_data p{
+    line-height: 21px;
+    font-size: 16px;
+    font-weight: 400;
+}
+#nextPage{
+    color: rgb(58, 69, 112);
+    background-color: #fff;
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 400;
+    margin: 48px 0px;
+    border: 1px solid;
+    width: 74%;
+    position: absolute;
+    right: 0;
+    height: 50px;
+}

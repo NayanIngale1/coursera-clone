@@ -79,7 +79,7 @@ const navbar = ()=>{
     </div>
     <button id="search"><span class="iconify" data-icon="eva:search-outline" data-width="20"></span></button>
     <p><a href="">Online Degrees</a></p>
-    <p style="width:280px;"><a href="../FindNewCareer.html">Find your New Career</a></p>
+    <p class="p_tag_of_navbar"><a href="../FindNewCareer.html">Find your New Career</a></p>
     <p><a href="../ForBusinessEnterprises.html">For Enterprise</a></p>
     <p><a href="">For Universities</a></p>
     <p><a data-toggle="modal" data-target="#myModal" href="" id="log_in_text">Log In</a></p>
