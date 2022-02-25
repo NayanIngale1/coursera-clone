@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Edit Profile</title>
+     <link rel="stylesheet" href="editProfile.css">
+</head>
+<body>
+     <div id="jnavbar">
+          <a href="index.html"><img src="./icons/download.svg" alt=""></a>
+          <div id="explore">
+              <button id="explore_button">Explore <span class="iconify" data-icon="dashicons:arrow-left-alt2" style="font-size: 12px;" data-rotate="270deg"></span></button>
+              
+              <div id="explore_option">
+                  <div class="faltu_div_on_navbar"></div>
+                  <div class="left_explore_option">
+                      <ul>
+                          <li>Goals</li>
+                          <li>Take a free course</li>
+                          <li><p>Earn a Degree</p><span class="iconify" data-icon="dashicons:arrow-left-alt2" style="font-size: 18px;" data-rotate="180deg"></span>
+                          
+                          <!-- <div class="right_explore_option">
+                          </div> -->
+                          
+                          
+                          </li>
+                          <li><p>Earn a Certificate</p><span class="iconify" data-icon="dashicons:arrow-left-alt2" style="font-size: 18px;" data-rotate="180deg"></span></li>
+                          <li><p>Advance your career</p><span class="iconify" data-icon="dashicons:arrow-left-alt2" style="font-size: 18px;" data-rotate="180deg"></span></li>
+                          <li>Find your new career</li>
+                          <li>Train your team</li>
+                      </ul>
+                      <ul>
+                          <li>Subjects</li>
+                          <li><p>Data Science</p><span class="iconify" data-icon="dashicons:arrow-left-alt2" style="font-size: 18px;" data-rotate="180deg"></span></li>
+                          <li><p>Business</p><span class="iconify" data-icon="dashicons:arrow-left-alt2" style="font-size: 18px;" data-rotate="180deg"></span></li>
+                          <li><p>Computer Science</p><span class="iconify" data-icon="dashicons:arrow-left-alt2" style="font-size: 18px;" data-rotate="180deg"></span></li>
+                          <li><p>Information Technology</p><span class="iconify" data-icon="dashicons:arrow-left-alt2" style="font-size: 18px;" data-rotate="180deg"></span></li>
+                          <li><p>Language Learning</p><span class="iconify" data-icon="dashicons:arrow-left-alt2" style="font-size: 18px;" data-rotate="180deg"></span></li>
+                          <li><p>Health</p><span class="iconify" data-icon="dashicons:arrow-left-alt2" style="font-size: 18px;" data-rotate="180deg"></span></li>
+                          <li><p>Personal Development</p><span class="iconify" data-icon="dashicons:arrow-left-alt2" style="font-size: 18px;" data-rotate="180deg"></span></li>
+                          <li><p>Physical Science and Engineering</p><span class="iconify" data-icon="dashicons:arrow-left-alt2" style="font-size: 18px;" data-rotate="180deg"></span></li>
+                          <li><p>Social Sciences</p><span class="iconify" data-icon="dashicons:arrow-left-alt2" style="font-size: 18px;" data-rotate="180deg"></span></li>
+                          <li><p>Arts and Humanities</p><span class="iconify" data-icon="dashicons:arrow-left-alt2" style="font-size: 18px;" data-rotate="180deg"></span></li>
+                          <li><p>Math and Logic</p><span class="iconify" data-icon="dashicons:arrow-left-alt2" style="font-size: 18px;" data-rotate="180deg"></span></li>
+                      </ul>
+                      <button>Browse all subjects</button>
+                  </div>
+              </div>
+          </div>
+          <input id="input_of_navbar" type="text" placeholder="What do you want to learn?">
+          <button id="search"><span class="iconify" data-icon="eva:search-outline" data-width="20"></span></button>
+          <p><a href="">Online Degrees</a></p>
+          <p><a href="">Find your New Career</a></p>
+          <p><a href="">For Enterprise</a></p>
+          <p><a href="">For Universities</a></p>
+          <p><a id="log_in_text" href="">Log In</a></p>
+          <button id="join_for_free">Join for Free</button>
+      </div>
+
+      <div id="bgcolor">
+          <div class="box">
+               <div class="profile_box">
+                    <p>Edit my profile</p>
+                    <button><a href="">View Profile</a></button>
+               </div>
+               <div class="intro">
+                    <p class="text1">Introduction</p>
+                    <p>Let the Coursera community of other learners and instructors recognize you.</p>
+               </div>
+               <div class="formdiv">
+                    <form action="">
+                         <div class="flex">
+                              <h4>Full Name</h4>
+                              <input type="text" id="name">
+                         </div>
+                         <div class="flex">
+                              <h4>Profile Photo</h4>
+                              <div class="imgupload">
+                                   <button class="btn">Upload Photo</button>
+                                   <p>Maximum size of 1MB. JPG, GIF, or PNG.</p>
+                              </div>
+                         </div>
+                    </form>
+               </div>
+               <hr class="line">
+               <div class="intro">
+                    <p class="text1">Work Experience and Education</p>
+                    <p>Tell us about your experience and education to get a personalized learning experience with course recommendations.</p>
+               </div>
+               <div class="formdiv">
+                    <table>
+                         <tr>
+                              <td> Employment Status</td>
+                              <td><select name="" id="select_value">select your current Status
+                                   <option value="">select your current Status</option>
+                                   <option value="">Employed full time(35 or more hour per week</option>
+                                   <option value="">Employed part time(35 or more hour per week</option>
+                                   <option value="">Self-Employed full time(35 or more hour per week</option>
+                                   <option value="">Self-Employed part time(35 or more hour per week</option>
+                                   <option value="">Homemaker, taking care of a family member</option>
+                                   <option value="">Umemployed and looking for work</option>
+                                   <option value="">Umemployed and not looking for work</option>
+                                   <option value="">Retired</option>
+                                   <option value="">Not looking for work</option>
+                              </select></td>
+                         </tr>
+                         <tr>
+                              <td> Industry</td>
+                              <td><input type="text" class="name" placeholder="If employed tell us what you work"></td>
+                         </tr>
+                         <tr>
+                              <td> Employer</td>
+                              <td><input type="text" class="name"placeholder="If employed tell us where you work"></td>
+                         </tr>
+                         <tr>
+                              <td> Occupation</td>
+                              <td><input type="text" class="name"placeholder="If employed tell us about your occupation"></td>
+                         </tr>
+                         <tr>
+                              <td> Experience Level</td>
+                              <td><select name="" id="select_value">
+                                   <option value="">Select your revelant experience level</option>
+                                   <option value="">Junior Entry level</option>
+                                   <option value="">Mid-Level (2+ experience)</option>
+                                   <option value="">Lead / Maneger</option>
+                                   <option value="">Senior Maneger / Director</option>
+                                   <option value="">Exectutive</option>
+                                   <option value="">Not applicable</option>
+                              </select></td>
+                         </tr>
+                         <tr>
+                              <td> Is it your current employer?</td>
+                              <td><input type="checkbox" class="check"></td>
+                         </tr>
+                         <tr>
+                              <td> Highest Degree</td>
+                              <td><select name="" id="select_value">
+                                   <option value="">Select your Highest level of education</option>
+                                   <option value="">Less than high school diploma</option>
+                                   <option value="">High school diploma</option>
+                                   <option value="">Some college but no Degree</option>
+                                   <option value="">Associate Degree</option>
+                                   <option value="">Bacherlor's Degree</option>
+                                   <option value="">Master's Degree</option>
+                              </select></td>
+                         </tr>
+                         <tr>
+                              <td>Field or Major</td>
+                              <td><input type="text" class="name" placeholder="Enter your field here"></td>
+                         </tr>
+                         <tr>
+                              <td>Are you currently a student?</td>
+                              <td><input type="checkbox" class="check"></td>
+                         </tr>
+                         <tr>
+                              <td>Experience Privacy</td>
+                              <td><select name="" id="select_value">
+                                   <option value="">Only me</option>
+                                   <option value="">The Coursera team</option>
+                                   <option value="">Anyone on the web</option>
+                              </select></td>
+                         </tr>
+                    </table>
+               </div>
+               <div class="intro">
+                    <p class="text1">Career Goals</p>
+                    <p>Tell us what you're looking for next in your career to find new opportunities</p>
+               </div>
+               <div class="formdiv">
+                    <table>
+                         <tr>
+                              <td>Open to new job opportunities?</td>
+                              <td><input type="checkbox" class="check">Yes</td>
+                              <td><input type="checkbox" class="check">No</td>
+                         </tr>
+                         <tr>
+                              <td>Location</td>
+                              <td><input type="text" class="name"placeholder="Tell us the city"></td>
+                         </tr>
+                         <tr>
+                              <td>Skills Wanted</td>
+                              <td><select name="" id="select_value">
+                                   <option value="">Tell us about the skills you want</option>
+                                   <option value="">Project Manegment</option>
+                                   <option value="">Marketing</option>
+                                   <option value="">Business Analaysis</option>
+                                   <option value="">Finance</option>
+                                   <option value="">Leadership</option>
+                                   <option value="">Seals</option>
+                                   <option value="">Accounting</option>
+                                   <option value="">Web development</option>
+                              </select></td>
+                         </tr>
+                         <tr>
+                              <td>Preferred Occupation</td>
+                              <td><input type="text" class="name"placeholder="Tell us the what kind of job you want"></td>
+                         </tr>
+                         <tr>
+                              <td>Industry</td>
+                              <td><input type="text" class="name"placeholder="Tell us the what industry you want"></td>
+                         </tr>
+                         <tr>
+                              <td>Preferred Level</td>
+                              <td><input type="text" class="name"placeholder="Select expeience level"></td>
+                         </tr>
+                    </table>
+               </div>
+               <div class="intro">
+                    <p class="text1">Details About You</p>
+                    <p>Introduce yourself to the Coursera community. Connect with learners like you to grow your network.</p>
+               </div>
+               <div class="formdiv">
+                    <table>
+                         <tr>
+                              <td>Are you currently a student?</td>
+                              <td><input type="textarea" class="name" placeholder="Tell us about yourself"></td>
+                         </tr>
+                         <tr>
+                              <td>Location</td>
+                              <td><input type="text" class="name"placeholder="Tell us the city"></td>
+                         </tr>
+                         <tr>
+                              <td>Top Skills</td>
+                              <td><input type="text" class="name"placeholder="Tell us about your top skills"></td>
+                         </tr>
+                         <tr>
+                              <td>Phone Number</td>
+                              <td><input type="text" class="name"placeholder="Enter number here"></td>
+                         </tr>
+                         <tr>
+                              <td>Details Privacy</td>
+                              <td><input type="text" class="name"placeholder="Only me"></td>
+                         </tr>
+                         
+                    </table>
+               </div>
+               <button class="btn2"><a href="Login.html">Save Profile</a></button>
+          </div>
+      </div>
+</body>
+</html>
