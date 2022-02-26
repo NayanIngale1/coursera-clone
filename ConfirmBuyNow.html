@@ -9,6 +9,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./style/ConfirmBuyNow.css" />
+    <link rel="stylesheet" href="style/footer.css" />
+
     <title>Confirm Buy Now</title>
   </head>
   <body>
@@ -57,11 +59,18 @@
       </p>
     </div>
 
-    
+ <!-- footer part -->
+
+    <div class="footer" id="footer_div"></div>
   </body>
 </html>
-<script>
+<script type="module">
   document.getElementById("buy-now").addEventListener("click", () => {
     window.location.href = "./team.html";
   });
+
+   import { Minifooter } from "../components/footer.js";
+
+  let footerDiv = document.getElementById("footer_div");
+  footerDiv.innerHTML = Minifooter();
 </script>
