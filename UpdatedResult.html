@@ -1,35 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<link rel="stylesheet" href="./style/navbar.css">
-<link rel="stylesheet" href="./style/footer.css">
-<link rel="stylesheet" href="./style/UpdatedResult.css">
-<body>
-      <!-- navbar -->
-      <div id="navbar"></div>
+  </head>
+  <link rel="stylesheet" href="./style/navbar.css" />
+  <link rel="stylesheet" href="./style/footer.css" />
+  <link rel="stylesheet" href="./style/UpdatedResult.css" />
+  <body>
+    <!-- navbar -->
+    <div id="navbar"></div>
 
-      <!-- ----- slider---- -->
-      <div id="topSlider"></div>
+    <!-- ----- slider---- -->
+    <div id="topSlider"></div>
 
     <!-- mainBody -->
     <div id="mainBody">
-        <div id="FilterData"></div>
-        <div id="searchResult">
-            <h1 id="head_of_search"></h1>
-            
+      <div id="FilterData">
+        <h1>Filter by</h1>
+        <div class="filter-section">
+          <h2>Subject</h2>
+          <div class="fitler-option">
+            <label>
+              <input class="filter-checkbox" type="checkbox" value="" />Arts and
+              Humanities
+            </label>
+            <label>
+              <input
+                class="filter-checkbox"
+                type="checkbox"
+                value=""
+              />Buisiness
+            </label>
+            <label>
+              <input class="filter-checkbox" type="checkbox" value="" />Computer
+              Science
+            </label>
+            <label>
+              <input class="filter-checkbox" type="checkbox" value="" />
+              Data Science
+            </label>
+            <label>
+              <input class="filter-checkbox" type="checkbox" value="" />Health
+            </label>
+            <label>
+              <input class="filter-checkbox" type="checkbox" value="" />
+              Information Technology
+            </label>
+            <label>
+              <input class="filter-checkbox" type="checkbox" value="" />Language
+              Learning
+            </label>
+            <label>
+              <input class="filter-checkbox" type="checkbox" value="" />
+              Math and Logic
+            </label>
+            <label>
+              <input class="filter-checkbox" type="checkbox" value="" />
+              Personal Development
+            </label>
+            <label>
+              <input class="filter-checkbox" type="checkbox" value="" />
+              Physical Science and Engineering
+            </label>
+            <label>
+              <input class="filter-checkbox" type="checkbox" value="" />
+              Social Sciences
+            </label>
+          </div>
         </div>
+        <div class="filter-section">
+          <h2>Language</h2>
+          <div class="fitler-option">
+            <label>
+              <input class="filter-checkbox" type="checkbox" value="" />English
+            </label>
+            <label>
+              <input class="filter-checkbox" type="checkbox" value="" />Arabic
+            </label>
+            <label>
+              <input class="filter-checkbox" type="checkbox" value="" />Hindi
+            </label>
+            <label>
+              <input class="filter-checkbox" type="checkbox" value="" />
+              French
+            </label>
+            <label>
+              <input class="filter-checkbox" type="checkbox" value="" />German
+            </label>
+            <label>
+              <input class="filter-checkbox" type="checkbox" value="" />
+              Greek
+            </label>
+            <label>
+              <input class="filter-checkbox" type="checkbox" value="" />Chinese
+              (China)
+            </label>
+            <label>
+              <input class="filter-checkbox" type="checkbox" value="" />
+              Indonesian
+            </label>
+            <label>
+              <input class="filter-checkbox" type="checkbox" value="" />
+              Italian
+            </label>
+            <label>
+              <input class="filter-checkbox" type="checkbox" value="" />
+              Japanese
+            </label>
+            <label>
+              <input class="filter-checkbox" type="checkbox" value="" />
+              Russian
+            </label>
+          </div>
+        </div>
+        <div class="filter-section">
+          <h2>Duration</h2>
+          <div class="fitler-option">
+            <label>
+              <input class="filter-checkbox" type="checkbox" value="" />Less
+              Than 2 Hours
+            </label>
+            <label>
+              <input class="filter-checkbox" type="checkbox" value="" />1-4
+              Weeks
+            </label>
+            <label>
+              <input class="filter-checkbox" type="checkbox" value="" />
+              1-3 Months
+            </label>
+            <label>
+              <input class="filter-checkbox" type="checkbox" value="" />
+              3+ Months
+            </label>
+          </div>
+        </div>
+        <div class="filter-section">
+          <h2>Level</h2>
+          <div class="fitler-option">
+            <label>
+              <input class="filter-checkbox" type="checkbox" value="" />Beginner
+            </label>
+            <label>
+              <input
+                class="filter-checkbox"
+                type="checkbox"
+                value=""
+              />Intermediate
+            </label>
+            <label>
+              <input class="filter-checkbox" type="checkbox" value="" />Advanced
+            </label>
+            <label>
+              <input class="filter-checkbox" type="checkbox" value="" />Mixed
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div id="searchResult">
+        <h1 id="head_of_search"></h1>
+      </div>
     </div>
     <!-- nextPage -->
     <div id="nextPage"></div>
-       <!-- footer part -->
+    <!-- footer part -->
 
     <div id="footer_div"></div>
-</body>
+  </body>
 </html>
 <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
 <script src="./script/navbar.js" type="module"></script>
