@@ -4,6 +4,12 @@
   const formSteps = document.querySelectorAll(".form-step");
   const progressSteps = document.querySelectorAll(".progress-step");
 
+  import { Minifooter } from "../components/footer.js";
+
+  let footerDiv = document.getElementById("footer_div");
+  footerDiv.innerHTML = Minifooter();
+
+
   let formStepsNum = 0;
 
   nextBtns.forEach((btn) => {
