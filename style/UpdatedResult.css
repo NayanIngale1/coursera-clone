@@ -54,10 +54,10 @@ body {
   width: 5px;
 }
 .fitler-option::-webkit-scrollbar-thumb {
-  background-color: #c4c4c4;
+  background-color: royalblue;
 }
 .fitler-option::-webkit-scrollbar-track {
-  background-color: blue;
+  background-color: white;
 }
 input.filter-checkbox {
   width: 20px;
