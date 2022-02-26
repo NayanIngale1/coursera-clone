@@ -385,37 +385,6 @@
    
 // ----------------------Authentication---------------
 
-let Register = async ()=>{
-        try {
-            let register_data = {
-                name: document.getElementById("name").value,
-                email:  document.getElementById("email").value,
-                password:  document.getElementById("password").value,
-                username:  document.getElementById("name").value,
-                mobile: `9981${Math.round(Math.random()*9)}7${Math.round(Math.random()*9)}${Math.round(Math.random()*9)}${Math.round(Math.random()*9)}0`,
-                description: `9981${Math.round(Math.random()*9)}7${Math.round(Math.random()*9)}${Math.round(Math.random()*9)}${Math.round(Math.random()*9)}0`
-            } 
-            register_data = JSON.stringify(register_data);
-            let res = await fetch("https://masai-api-mocker.herokuapp.com/auth/register",{
-                method:"POST",
-                body:register_data,
-                headers:{
-                    "Content-Type": "application/json"
-                },
-            });
-            let data = await res.json();
-            console.log(data);
-    window.location.href = "./login.html"
-
-        }
-        catch (err) {
-            console.log(err);
-        }
-    }
-
-    document.querySelector(".join_btn").addEventListener("click",Register);
- 
-
     </script>
 
     <script type="module">
@@ -430,5 +399,27 @@ let Register = async ()=>{
         let hide_me_also = document.querySelector("#bell_icon");
         hide_me_also.style.display = "none";
         
+
+
+        document.querySelector(".join_btn").addEventListener("click",signUp);
+    var userData = JSON.parse(localStorage.getItem("database")) || [];
+    function signUp(event){
+    event.preventDefault();
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var password = document.querySelector("#password").value;
+    var userDetails = {
+        userName: name,
+        userEmail: email,
+        userPassword: password,
+    };
+    userData.push(userDetails);
+    console.log(userData);
+
+    localStorage.setItem("database",JSON.stringify(userData));
+
+    window.location.href="./login.html"
+    // alert("Sign Up Successfully")
+}
 
     </script>
