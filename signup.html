@@ -12,269 +12,316 @@
 <link rel="stylesheet" href="./style/footer.css">
   <link rel="icon" href="./components/icons/image.png">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">  
- <style>
-.btn_show_div{
-    border: 1px solid black;
-    background-color: #0056d2;
-    padding: 5px;
-    text-decoration: none;
-    cursor: pointer;
-    border: 0px;
-}
-#text{
-    color: white;
-}
-.show-modal:hover,
-.show-modal:focus{
-    color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-    outline: none;
-}
-.modal-dialog{
-    width: 400px;
-    margin: 70px auto 0;
-}
-.modal-dialog{ transform: scale(0.5); }
-.modal-dialog{ transform: scale(1); }
-.modal-dialog .modal-content{
-    text-align: center;
-    border: none;
-}
-.modal-content .close{
-    color: #fff;
-    background: linear-gradient(to right, #33a3ff, #0675cf, #4cd5ff);
-    font-size: 25px;
-    font-weight: 400;
-    text-shadow: none;
-    line-height: 27px;
-    height: 25px;
-    width: 25px;
-    border-radius: 50%;
-    overflow: hidden;
-    opacity: 1;
-    position: absolute;
-    left: auto;
-    right: 8px;
-    top: 8px;
-    z-index: 1;
-    transition: all 0.3s;
-}
-.modal-content .close:hover{
-    color: #fff;
-    box-shadow: 0 0 5px rgba(0,0,0,0.5);
-}
-.close:focus{ outline: none; }
-.modal-body{ padding: 60px 40px 40px !important; }
-.modal-body .title{
-    color: black;
-    font-size: 33px;
-    font-weight: 100;
-    letter-spacing: 1px;
-    margin: 0 0 10px;
-}
-.modal-body .description{
-    color: gray;
-    font-size: 16px;
-    margin: 0 0 0px;
-}
-.modal-body .form-group{
-    text-align: left;
-    margin-bottom: 20px;
-    position: relative;
-}
-.modal-body .input-icon{
-    color: #777;
-    font-size: 18px;
-    transform: translateY(-50%);
-    position: absolute;
-    top: 50%;
-    left: 20px;
-}
-.modal-body .form-control{
-    font-size: 17px;
-    height: 45px;
-    width: 100%;
-    padding: 6px 0 6px 50px;
-    margin: 0 auto;
-    border: 2px solid #eee;
-    border-radius: 5px;
-    box-shadow: none;
-    outline: none;
-}
-.form-control::placeholder{
-    color: #AEAFB1;
-}
-.form-group.checkbox{
-    width: 130px;
-    margin-top: 0;
-    display: inline-block;
-}
-.form-group.checkbox label{
-    color: #9A9EA9;
-    font-weight: normal;
-}
-.form-group.checkbox input[type=checkbox]{
-    margin-left: 0;
-}
-.modal-body .forgot-pass{
-    color: #7F7FD5;
-    font-size: 13px;
-    text-align: right;
-    width: calc(100% - 135px);
-    margin: 2px 0;
-    display: inline-block;
-    vertical-align: top;
-    transition: all 0.3s ease 0s;
-}
-.forgot-pass:hover{
-    color: #9A9EA9;
-    text-decoration: underline;
-}
-.modal-content .modal-body .btn{
-    color: #fff;
-    background: #0056d2;
-    font-size: 16px;
-    font-weight: 500;
-    letter-spacing: 1px;
-    /* text-transform: uppercase; */
-    line-height: 38px;
-    width: 100%;
-    height: 40px;
-    padding: 0;
-    border: none;
-    border-radius: 5px;
-    border: none;
-    display: inline-block;
-    transition: all 0.6s ease 0s;
-}
-.modal-content .modal-body .btn:hover{
-    color: #fff;
-    letter-spacing: 2px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-.img{
-     border: 1px solid black;
-     height: 41px;
-     display: flex;
-     justify-content: space-between;
-     cursor: pointer;
-     margin-bottom: 20px;
-     border-radius: 5px;
-}
-.google_img{
-     /* border: 1px solid blue; */
-     height: 21px;
-     margin: 10px 30px;
-     /* width: 20px; */
-}
-.google_text{
-     /* border: 1px solid teal; */
-     font-size: 16px;
-     /* margin: 10px 10px; */
-     padding: 10px 30px 10px 0px;
-     width: 90%;
-}
-.flex{
-     display: flex;
-     margin: auto;
-}
-.para{
-     color: gray;
-     font-size: 12px;
-}
-.para > a{
-     color: gray;
-     text-decoration: underline;
-}
-#container{
-          border: 1px solid gray;
-          width: 100%;
-          height: 50px;
-          display: flex;
-          justify-content: space-between;
-     }
-     #left{
-          /* border: 1px solid red; */
-          width: 40%;
-          display: flex;
-     }
-.logo{
-     margin: 13px 20px;
-}
-.btn_div{
-     /* border: 1px solid red; */
-     width: 100px;
-     margin: 10px 24px;
-     text-align: center;
-}
-.btn_div > button{
-     background-color: #0056d2;
-     color: white;
-     text-decoration: none;
-     border: 0px;
-     width: 100%;
-     padding: 5px 20px;
-     font-size: 16px;
-}
-.input_div{
-     /* border: 1px solid green; */
-     width: 45%;
-     display: flex;
-     
-}
-.input_div > input{
-     width: 100%;
-     height: 30px;
-     margin: 5px 20px ;
-}
-.input_div > button{
-     background-color: #0056d2;
-     text-decoration: none;
-     width: 40px;
-     margin-right: -100px;
-     height: 33px;
-     /* margin: 7px 0px 7px 0px; */
-     margin-top: 5px;
-     border: 0px;
-     cursor: pointer;
-}
-#right{
-     /* border: 1px solid black; */
-     width: 40%;
-     display: flex;
-     justify-content: space-evenly;
-}
-#right > div > a{
-     text-decoration: none;
-     color: black;
-}
-#right > div{
-     margin-top: 15px;
-}
-.join_btn{
-    background-color: #0056d2;
-    text-decoration: none;
-    font-size: 18px;
-    border: 0px ;
-    display: block;
-    margin: auto;
-    margin-top: 20px;
-    cursor: pointer;
-    color: white;
-    padding: 12px 30px;
-}
-.modal-content .modal-body .btn:focus{ outline: none; }
-@media only screen and (max-width: 480px){
-    .modal-dialog{ width: 95% !important; }
-    .modal-content .modal-body{
-        padding: 60px 20px 40px !important;
+  <style>
+    .btn_show_div{
+        border: 1px solid black;
+        background-color: #0056d2;
+        padding: 5px;
+        text-decoration: none;
+        cursor: pointer;
+        border: 0px;
     }
-}
-
-  </style>
+    #text{
+        color: white;
+    }
+    .show-modal:hover,
+    .show-modal:focus{
+        color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+        outline: none;
+    }
+    .modal-dialog{
+        position: fixed;
+        top: -60px;
+        left: 500px;
+        height: 700px;
+        overflow-y: scroll;
+        width: 450px;
+        margin: 70px auto 0;
+    }
+    .modal-dialog{ transform: scale(0.5); }
+    .modal-dialog{ transform: scale(1); }
+    .modal-dialog .modal-content{
+        text-align: center;
+        border: none;
+    }
+    .modal-content .close{
+        color: #fff;
+        background: linear-gradient(to right, #33a3ff, #0675cf, #4cd5ff);
+        font-size: 25px;
+        font-weight: 400;
+        text-shadow: none;
+        line-height: 27px;
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
+        overflow: hidden;
+        opacity: 1;
+        position: absolute;
+        left: auto;
+        right: 8px;
+        top: 8px;
+        z-index: 1;
+        transition: all 0.3s;
+    }
+    .modal-content .close:hover{
+        color: #fff;
+        box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    }
+    .close:focus{ outline: none; }
+    .modal-body{ padding: 60px 40px 40px !important; }
+    .modal-body .title{
+        color: black;
+        font-size: 33px;
+        font-weight: 100;
+        letter-spacing: 1px;
+        margin: 0 0 10px;
+    }
+    .modal-body .description{
+        color: gray;
+        font-size: 16px;
+    width: 100%;
+    text-align: center;
+    }
+    .modal-body .form-group{
+        text-align: left;
+        margin-bottom: 20px;
+        position: relative;
+    }
+    .modal-body .input-icon{
+        color: #777;
+        font-size: 18px;
+        transform: translateY(-50%);
+        position: absolute;
+        top: 50%;
+        left: 20px;
+    }
+    .modal-body .form-control{
+        font-size: 17px;
+        height: 45px;
+        width: 100%;
+        padding: 6px 0 6px 50px;
+        margin: 0 auto;
+        border: 2px solid #eee;
+        border-radius: 5px;
+        box-shadow: none;
+        outline: none;
+    }
+    .form-control::placeholder{
+        color: #AEAFB1;
+    }
+    .form-group.checkbox{
+        width: 130px;
+        margin-top: 0;
+        display: inline-block;
+    }
+    .form-group.checkbox label{
+        color: #9A9EA9;
+        font-weight: normal;
+    }
+    .form-group.checkbox input[type=checkbox]{
+        margin-left: 0;
+    }
+    .modal-body .forgot-pass{
+        color: #7F7FD5;
+        font-size: 13px;
+        text-align: right;
+        width: calc(100% - 135px);
+        margin: 2px 0;
+        display: inline-block;
+        vertical-align: top;
+        transition: all 0.3s ease 0s;
+    }
+    .forgot-pass:hover{
+        color: #9A9EA9;
+        text-decoration: underline;
+    }
+    .modal-content .modal-body .btn{
+        color: #fff;
+        background: #0056d2;
+        font-size: 16px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        /* text-transform: uppercase; */
+        line-height: 38px;
+        width: 100%;
+        height: 40px;
+        padding: 0;
+        border: none;
+        border-radius: 5px;
+        border: none;
+        display: inline-block;
+        transition: all 0.6s ease 0s;
+    }
+    .modal-content .modal-body .btn:hover{
+        color: #fff;
+        letter-spacing: 2px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+    .img{
+         border: 1px solid black;
+         line-height: 24px;
+         padding: 12px 16px 12px 0px;
+         height: 50px;
+         font-weight: 700;
+         color:rgb(29, 33, 39);
+         display: flex;
+         justify-content: space-around;
+         /* align-items: center; */
+         font-size: 14px;
+         cursor: pointer;
+         margin-bottom: 20px;
+         border-radius: 5px;
+    }
+    .img:hover{
+        color: #0056d2;
+        background-color: rgb(243, 248, 255);
+    }
+    .img img {
+         height: 20px;
+    }
+    .google_text{
+        margin-left: -20px;
+    }
+    .flex{
+         display: flex;
+         margin: auto;
+    }
+    .para{
+         color: gray;
+         font-size: 12px;
+         width: 100%;
+    }
+    .para > a{
+         color: gray;
+         text-decoration: underline;
+    }
+    #container{
+              border: 1px solid gray;
+              width: 100%;
+              height: 50px;
+              display: flex;
+              justify-content: space-between;
+         }
+         #left{
+              /* border: 1px solid red; */
+              width: 40%;
+              display: flex;
+         }
+    .logo{
+         margin: 13px 20px;
+    }
+    .btn_div{
+         /* border: 1px solid red; */
+         width: 100px;
+         margin: 10px 24px;
+         text-align: center;
+    }
+    .btn_div > button{
+         background-color: #0056d2;
+         color: white;
+         text-decoration: none;
+         border: 0px;
+         width: 100%;
+         padding: 5px 20px;
+         font-size: 16px;
+    }
+    .input_div{
+         /* border: 1px solid green; */
+         width: 45%;
+         display: flex;
+         
+    }
+    .input_div > input{
+         width: 100%;
+         height: 30px;
+         margin: 5px 20px ;
+    }
+    .input_div > button{
+         background-color: #0056d2;
+         text-decoration: none;
+         width: 40px;
+         margin-right: -100px;
+         height: 33px;
+         /* margin: 7px 0px 7px 0px; */
+         margin-top: 5px;
+         border: 0px;
+         cursor: pointer;
+    }
+    #right{
+         /* border: 1px solid black; */
+         width: 40%;
+         display: flex;
+         justify-content: space-evenly;
+    }
+    #right > div > a{
+         text-decoration: none;
+         color: black;
+    }
+    #right > div{
+         margin-top: 15px;
+    }
+    .join_btn{
+        background-color: #0056d2;
+        text-decoration: none;
+        font-size: 18px;
+        border: 0px ;
+        display: block;
+        margin: auto;
+        margin-top: 20px;
+        cursor: pointer;
+        color: white;
+        padding: 12px 30px;
+    }
+    .modal-content .modal-body .btn:focus{ outline: none; }
+    @media only screen and (max-width: 480px){
+        .modal-dialog{ width: 95% !important; }
+        .modal-content .modal-body{
+            padding: 60px 20px 40px !important;
+        }
+    }
+    
+      </style>
 </head>
 <body>
                 <div id="navbar_parent"></div>
+                <!-- hi -->
+             
+                <div id="main">
+                    <div id="first">
+                        <div id="left-right"><h1>Learn Without Limits</h1>
+                        <p style=" font-size:20px;width:600px; margin:20px 0px">
+                            Open your door to more with world-class Professional Certificates and degrees
+                            <div>
+                                <button id="join">Join for free</button>
+                                <button id="try">Try Courrsera for Business</button>
+                            </div>
+                        </p>
+                        </div>
+                        <div id="right">
+                            <img src=" ./components/icons/IN_HERO_C_NOV21.png" alt="">
+                        </div>
+                    </div>
+                    <div id="second">              
+                        <h1>We collaborate with <a href="#">200+ leading universities and companies</a></h1>
+                        <div>
+                        <a href="#"><img src="./components/icons/IIT_Bombay.png" alt=""></a>
+                        <a href="#"><img src="./components/icons/Indian_Institute_of_Technology_Roorkee_logo.png" alt=""></a>
+                        <a href="#"><img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/6intvCoriH8oDkbGSSlqm5/ceedf032a54cbc1fb7d2ab53a5b291a0/1200px-IIM_Calcutta_Logo.svg.png?auto=format%2Ccompress&dpr=1&w=&h=37" alt=""></a>
+                        <a href="#"><img src="./components/icons/google.png" alt=""></a>
+                        <a href="#"><img src="./components/icons/ISB_transparent_logo.png" alt=""></a>
+                        <a href="#"><img src="./components/icons/stanford.png" alt=""></a>
+                        <a href="#"><img src="./components/icons/meta.png" alt=""></a>
+                        <a href="#"><img src="./components/icons/umich.jfif" alt=""></a>
+                        <a href="#"><img src="./components/icons/1200px-Amazon_Web_Services_Logo.svg.png" alt=""></a>
+                        <a href="#"><img src="./components/icons/ibm.png" alt=""></a>
+                    </div>
+                    </div>
+            
+            
+               
+
+                    <!-- bye -->
                 <div id="footer_parent"></div>
                 <!-- till here -->
                 <!-- Modal -->
@@ -307,11 +354,11 @@
                                     
                                 <hr>
                                 <div class="img">
-                                   <svg class="google_img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 488 512"><path d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"/></svg>
-                                   <p class="google_text"><strong>Continue with Google</strong></p>
+                                    <img src="./components/icons/download.jfif" alt="">
+                                    <p class="google_text"><strong>Continue with Google</strong></p>
                                 </div>
                                 <div class="img">
-                                   <svg class="google_img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><<path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+                                    <img src="./components/icons/facebook.jpg" alt="">
                                    <p class="google_text"><strong>Continue with Facebook</strong></p>
                                 </div>
                                 <div class="flex">
