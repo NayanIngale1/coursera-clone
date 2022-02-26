@@ -88,9 +88,10 @@ input.filter-checkbox {
   display: flex;
   height: 150px;
 }
-.boxSearch img {
+.boxSearch img{
   width: 150px;
   margin-right: 15px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .boxSearch .left_data {
   width: 750px;
