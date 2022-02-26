@@ -9,6 +9,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./style/ContactSales.css" />
+    <link rel="stylesheet" href="style/footer.css" />
+
     <title>Contact Sales</title>
   </head>
   <body>
@@ -541,10 +543,19 @@
         </div>
       </div>
     </div>
+
+    <!-- footer part -->
+
+    <div class="footer" id="footer_div"></div>
   </body>
 </html>
-<script>
+<script type="module">
   document.getElementById("submit").addEventListener("click", () => {
     window.location.href = "ConfirmBuyNow.html";
   });
+
+  import { Minifooter } from "../components/footer.js";
+
+  let footerDiv = document.getElementById("footer_div");
+  footerDiv.innerHTML = Minifooter();
 </script>
