@@ -9,6 +9,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./style/ForBusinessEnterprises.css" />
+    <link rel="stylesheet" href="style/footer.css" />
+
     <title>For Enterprises</title>
   </head>
   <body>
@@ -24,7 +26,7 @@
     <!-- navbar top  -->
     <div class="top-nav">
       <div class="logo-for-business">
-        <a href="forEnterPrises.html">
+        <a href="ForBusinessEnterprises.html">
           <img
             src="https://www.coursera.org/business/wp-content/themes/c4b-2.0.5/images/logos/c4b-h-blue.svg"
             alt=""
@@ -32,7 +34,7 @@
       </div>
       <div class="nav-items">
         <ul>
-          <a href="forEnterPrises.html"><li>Home</li></a>
+          <a href="index.html"><li>Home</li></a>
           <hr />
           <li>Product</li>
           <hr />
@@ -307,9 +309,13 @@
         </div>
       </div>
     </div>
+
+    <!-- footer part -->
+
+    <div class="footer" id="footer_div"></div>
   </body>
 </html>
-<script>
+<script type="module">
   const clear = document.getElementById("clear");
   clear.addEventListener("click", () => {
     // console.log("hello");
@@ -324,4 +330,9 @@
       window.location.href = "ContactSales.html";
     });
   });
+
+  import { Minifooter } from "../components/footer.js";
+
+  let footerDiv = document.getElementById("footer_div");
+  footerDiv.innerHTML = Minifooter();
 </script>
