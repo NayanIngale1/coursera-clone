@@ -65,7 +65,7 @@ headBanner.innerHTML = `<div class="info-part">
         <p class="m-bold">
           7 day free trial | Less than 6 months at your own pace
         </p>
-        <button><a href="#">Start up for free</a></button>
+        <button id="start_course"><a href="#">Start up for free</a></button>
       </div>
       <div class="imgDiv">
         <p>Offered by</p>
@@ -89,4 +89,10 @@ aboutCourse.innerHTML = `<h1>About ${name} Professional Certificate</h1>
         </p>`;
 
 
+        let start_course_btn = document.getElementById("start_course");
+start_course_btn.addEventListener("click", () => {
+  
+
+          start_course_btn.innerText = "Welcome To Course"
+        })
      
