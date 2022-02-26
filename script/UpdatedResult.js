@@ -67,7 +67,10 @@ const append_data = (photoUrl,name,partners_name,certificates)=>{
 
     let bigcontainer = document.createElement("div");
     bigcontainer.setAttribute("class", "just_for_border")
-    
+    bigcontainer.addEventListener("click",()=>{
+        window.location.href="../coursePage.html"
+    })
+
     let div1container = document.createElement("div");
     div1container.setAttribute("class", "boxSearch")
 

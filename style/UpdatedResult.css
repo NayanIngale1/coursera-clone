@@ -211,6 +211,7 @@ input.filter-checkbox {
 }
 .just_for_border:hover h2 {
   text-decoration: underline;
+  cursor: pointer;
 }
 .boxSearch {
   background-color: white;
@@ -271,7 +272,7 @@ input.filter-checkbox {
   font-size: 16px;
   line-height: 21px;
   font-weight: 400;
-  margin: 48px 0px;
+  margin: 48px 100px 48px auto;
   width: 74%;
   position: absolute;
   right: 0;
