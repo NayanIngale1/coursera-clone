@@ -5,6 +5,14 @@ navBar.innerHTML = navbar();
 let footerDiv = document.getElementById("footer_div");
 footerDiv.innerHTML = Minifooter();
 
+let hide_me = document.querySelector("#log_in_text");
+hide_me.style.display = "none";
+
+let hide_me_also = document.querySelector("#join_for_free");
+hide_me_also.style.display = "none";
+
+
+
 const faqs = document.querySelectorAll(".faq");
 faqs.forEach((faq) => {
   faq.addEventListener("click", () => {
@@ -43,7 +51,6 @@ window.addEventListener("scroll", () => {
 });
 
 const courseData = JSON.parse(localStorage.getItem("courseData"));
-
 let { name, description, partnerLogo } = courseData;
 
 let headBanner = document.getElementById("head-banner");
@@ -80,3 +87,6 @@ aboutCourse.innerHTML = `<h1>About ${name} Professional Certificate</h1>
           series of hands-on labs in the IBM Cloud that will give you practical
           skills with applicability to real jobs, including:
         </p>`;
+
+
+     

@@ -4,7 +4,7 @@ const footer = ()=>{
         <h2>Start or advance your career</h2>
         <p><a href="">Google Data Analyst</a></p>
         <p><a href="">Google Project Management</a></p>
-        <p><a href=""></a>Google UX Design</p>
+        <p><a href="">Google UX Design</p></a>
         <p><a href="">Google IT Support</a></p>
         <p><a href="">IBM Data Science</a></p>
         <p><a href="">IBM Data Analyst</a></p>

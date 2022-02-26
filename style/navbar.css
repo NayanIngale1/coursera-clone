@@ -53,7 +53,7 @@
         border: 0;
         border-radius: 0;
         width: 60px;
-        margin-right:3%;
+        margin-right:0%;
     }
     #join_for_free{
         border: 0;
@@ -86,6 +86,33 @@
         left: 50px;
         z-index: 5;
 
+    }
+    #bell_icon{
+        border-right: 1px solid rgba(128, 128, 128, 0.625);
+        height: 40px;
+        width: 40px;
+        margin-left: 0px;
+    }
+    #user_div_data{
+        height: 100%;
+        padding: 0 10px;
+        margin-right: -100px;
+        width: 250px;
+        display: flex;
+        align-items: center;
+    }
+    #user_div_data:hover{
+        background-color: rgba(128, 128, 128, 0.625);
+    }
+    #user_div_data img{
+        width: 40px;
+    }
+    #parent_user{
+        display: flex;
+        align-items: center;
+    }
+    #parent_user p{
+        margin: 0 5px;
     }
     #explore:hover #explore_option {
         display: block;

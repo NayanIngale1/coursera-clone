@@ -13,3 +13,9 @@ faqs.forEach((faq) => {
   });
 });
 
+let hide_me = document.querySelector("#log_in_text");
+hide_me.style.display = "none";
+
+let hide_me_also = document.querySelector("#join_for_free");
+hide_me_also.style.display = "none";
+

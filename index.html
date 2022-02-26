@@ -8,7 +8,7 @@
     <link rel="icon" href="./components/icons/image.png">
 </head>
 <link rel="stylesheet" href="./style/index.css">
-<link rel="stylesheet" href="./style/navbar.css">
+<link rel="stylesheet" href="./style/indexNavbar.css">
 <link rel="stylesheet" href="./style/footer.css">
 <link rel="preconnect" href="https://fonts.gstatic.com">
    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;900&display=swap" rel="stylesheet">
@@ -436,6 +436,9 @@
     import {footer,Minifooter} from "./components/footer.js";
     document.querySelector("#footer_parent").innerHTML = footer();
 
+    let name_of_user = localStorage.getItem("User_name");
+    let user_Name = document.querySelector("#user_name");
+    user_Name.innerText = name_of_user;
 let input_of_navbar = document.querySelector("#input_of_navbar");
 let input_debouncing = document.querySelector("#input_debouncing");
 let input_and_body = document.querySelector("body");

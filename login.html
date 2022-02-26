@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Log in</title>
   <link rel="stylesheet" href="./style/index.css">
-  <link rel="stylesheet" href="./style/navbar.css">
+  <link rel="stylesheet" href="./style/navbarForAjinkya.css">
   <link rel="stylesheet" href="./style/footer.css">
     <link rel="icon" href="./components/icons/image.png">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">  
@@ -275,11 +275,7 @@
  
                 <div id="navbar_parent"></div>
 
-                <div id="user_div_data">
-                    <img src="./components/icons/profilepage.png" alt="">
-                    <p id="user_name">Hello Jay Sanodiya</p>
-                    <span class="iconify" data-icon="dashicons:arrow-down-alt2" style="color: black;"></span>
-                </div>
+                
 <!-- hi -->
              
 <div id="main">
@@ -336,7 +332,7 @@
                                 <input type="email" id="email" class="form-control" placeholder="name@gmail.com">
 
                                 <h5> <strong>Password</strong> </h5>
-                                <input type="password" id="password" class="form-control" placeholder="Create Password">
+                                <input type="password" id="password" class="form-control" placeholder="Enter Password">
 
                                 <button class="btn">Login</button>
                             </div> 
@@ -394,6 +390,7 @@
         flag = false;
         for(var i = 0; i < regdUsers.length; i++){
             if(regdUsers[i].userEmail == email && regdUsers[i].userPassword == password){
+                localStorage.setItem("User_name",regdUsers[i].userName);
                 window.location.href = "./index.html";
                 flag = true;
                 break;
@@ -404,9 +401,9 @@
         }else{
             alert("Your Email or Password is Invalid");
         }
-
-        
     }
+
+    
 </script>
 
 <script type="module">
@@ -415,5 +412,11 @@
      import {footer,Minifooter} from "./components/footer.js";
      document.querySelector("#footer_parent").innerHTML = footer();
  
+        let hide_me = document.querySelector("#user_div_data");
+        hide_me.style.display = "none";
+
+        let hide_me_also = document.querySelector("#bell_icon");
+        hide_me_also.style.display = "none";
+        
  
  </script>

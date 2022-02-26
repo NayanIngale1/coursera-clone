@@ -5,6 +5,12 @@ navBar.innerHTML = navbar();
 let footerDiv = document.getElementById("footer_div");
 footerDiv.innerHTML = footer();
 
+let hide_me = document.querySelector("#log_in_text");
+hide_me.style.display = "none";
+
+let hide_me_also = document.querySelector("#join_for_free");
+hide_me_also.style.display = "none";
+
 
         let input_term = JSON.parse(localStorage.getItem("query"));
     let counting ;
@@ -108,3 +114,21 @@ const append_data = (photoUrl,name,partners_name,certificates)=>{
 }
 
 
+//-------------------------slideshow---------------->
+document.getElementById("1dots").style.opacity=1
+const productContainers = [...document.querySelectorAll('.product-container')];
+const nxtBtn = [...document.querySelectorAll('.nxt-btn')];
+const preBtn = [...document.querySelectorAll('.pre-btn')];
+
+productContainers.forEach((item, i) => {
+    let containerDimensions = item.getBoundingClientRect();
+    let containerWidth = containerDimensions.width;
+
+    nxtBtn[i].addEventListener('click', () => {
+        item.scrollLeft += containerWidth;
+    })
+
+    preBtn[i].addEventListener('click', () => {
+        item.scrollLeft -= containerWidth;
+    })
+})
