@@ -6,11 +6,11 @@ let footerDiv = document.getElementById("footer_div");
 footerDiv.innerHTML = footer();
 
 
-
+        let input_term = JSON.parse(localStorage.getItem("query"));
+    let counting ;
 const search_data =async ()=>{
     try {
-        let input_term = JSON.parse(localStorage.getItem("query"));
-        let res = await fetch(`https://api.coursera.org/api/courses.v1?q=search&query=${input_term}&includes=photoUrl,partnerIds,shortName,location&fields=partnerIds ,photoUrl`);
+        let res = await fetch(`https://api.coursera.org/api/courses.v1?limit=30&q=search&query=${input_term}&includes=instructorIds,photoUrl,partnerIds,description,largeIcon,shortName,location&fields=instructorIds,partnerIds ,location,photoUrl,description,partnerLogo,certificates,startDate,workload,specializations,domainTypes,primaryLanguages`);
         let data = await res.json();
         console.log(data);
         filter_my_data(data);
@@ -20,19 +20,21 @@ const search_data =async ()=>{
 }
 search_data();
 const filter_my_data = (data)=>{
+    counting = data.elements.length;
     let i=0;
     data.elements.forEach((el)=>{
         let {
         name,
         partnerIds,
-        photoUrl
+        photoUrl,
+        certificates
     } = el;
         
     let id = data.linked["partners.v1"].filter((ll)=>{
         return ll.id==partnerIds[0];
     });
     let partners_name = id[0].name;
-    append_data(photoUrl,name,partners_name);
+    append_data(photoUrl,name,partners_name,certificates);
     });
     
 }
@@ -52,7 +54,10 @@ const filter_my_data = (data)=>{
 //         i++;
 //     }
 
-const append_data = (photoUrl,name,partners_name)=>{
+const append_data = (photoUrl,name,partners_name,certificates)=>{
+
+    let heading = document.querySelector("#head_of_search");
+    heading.innerHTML = `${Math.round(Math.random()*7)*307} total results for "${input_term}"`;
 
     let bigcontainer = document.createElement("div");
     bigcontainer.setAttribute("class", "just_for_border")
@@ -73,7 +78,7 @@ const append_data = (photoUrl,name,partners_name)=>{
     partners.innerHTML = partners_name;
 
     let speciallisation = document.createElement("h4");
-    speciallisation.innerHTML = "Specilization";
+    speciallisation.innerHTML = certificates[1];
 
     let rating_div = document.createElement("div");
     rating_div.setAttribute("class", "rating")

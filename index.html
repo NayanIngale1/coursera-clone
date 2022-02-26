@@ -12,7 +12,7 @@
 <link rel="stylesheet" href="./style/footer.css">
 <link rel="preconnect" href="https://fonts.gstatic.com">
    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;900&display=swap" rel="stylesheet">
-   <link rel="stylesheet" href="./Components/slidestyle.css">
+   <link rel="stylesheet" href="./style/slidestyle.css">
 <body>
     <div id="navbar_parent"></div>
     <div id="main">
@@ -429,6 +429,7 @@
 </body>
 </html>
 <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
+<script src="./script/slide.js"></script>
 <script type="module">
     import navbar from "./components/navbar.js";
     document.querySelector("#navbar_parent").innerHTML = navbar();
@@ -532,7 +533,7 @@ const append_debouncing_data = (photoUrl,name,partners_name)=>{
 
     div1.addEventListener("click",()=>{
     localStorage.setItem("query",JSON.stringify(name));
-    window.location.href="./ResultPage.html";
+    window.location.href="./UpdatedResult.html";
 });
 
     div3.append(p1,p2);
@@ -556,7 +557,7 @@ const append_debouncing_data_2 = (names)=>{
 
         div1.addEventListener("click",()=>{
     localStorage.setItem("query",JSON.stringify(el));
-    window.location.href="./ResultPage.html";
+    window.location.href="./UpdatedResult.html";
 });
 
         div1.append(img,p1);
@@ -891,7 +892,7 @@ querySearch.addEventListener("click",()=>{
     console.log("hello query")
     let query = document.querySelector("#input_of_navbar").value;
     localStorage.setItem("query",JSON.stringify(query));
-    window.location.href="./ResultPage.html";
+    window.location.href="./UpdatedResult.html";
 })
 
  

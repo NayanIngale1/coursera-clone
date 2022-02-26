@@ -70,7 +70,10 @@
   cursor: pointer;
   z-index: 8;
 }
-
+.pre-btn img,
+.nxt-btn img{
+  width: 35%;
+}
 .pre-btn {
   left: 0;
   transform: rotate(180deg);

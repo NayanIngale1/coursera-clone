@@ -88,7 +88,8 @@ body{
     align-items: center;
 }
 .left_data .rating img{
-    height: 30px;
+    height: auto;
+    width: 80px;
 }
 .left_data h5{
     line-height: 20px;
