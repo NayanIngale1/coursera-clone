@@ -1,0 +1,246 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Source Sans Pro", "Open Sans", sans-serif;
+}
+#footer_parent {
+    
+    background-color: rgb(245,245,245);
+}
+.p_tag_of_navbar{
+  width:280px;
+}
+#main{
+    margin-top: 70px;
+  background-color: white;
+    
+  width:100%;
+  height:auto;
+   
+}
+#main #first{
+    
+    display: flex;
+    margin-left:100px;
+}
+
+#main h1{
+    
+  font-size:80px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+  
+  
+}
+#main h1,p{
+    
+  width:550px;
+}
+#main p{
+    
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+#main #left{
+    
+   width:600px
+}
+#main #first>div{
+    
+   margin:40px
+}
+#main #join{
+    
+   background-color: blue;
+   border: 3px solid blue;
+   color:white; 
+   padding:15px 40px;
+   border-radius: 5px;
+   font-size:20px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+#main #try{
+    
+  background-color:white;
+   border:3px solid blue;
+   color:blue; 
+   
+   padding:18px 40px;
+   border-radius: 5px;
+   margin-left: 5px;
+  
+   font-size: 15px;
+   font-weight: bold;
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+#main #second{
+    
+   background-color: #F5F5F5;
+   
+   height:300px;
+}
+#main #second>div{
+    
+   width:100%;
+   display:flex;
+   align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+#main #second>h1>a{
+    
+   text-decoration:none;
+}
+#main #second>h1>a:hover{
+   text-decoration:underline
+}
+#main #second>h1{
+    
+    
+   font-size: 28px;
+   width: 100%;
+   text-align: center;
+   padding-top: 70px;
+}
+#main #second>div>a>img{
+    
+  margin-left: 40px;
+}
+#main .third>h1{
+    
+  font-size:40px;
+   width: 100%;
+ 
+}
+#main .third{
+    
+  height:700px
+}
+#main .third>P{
+    
+   width: 100%;
+}
+#main #slide{
+    
+   background-color: white;
+}
+#main .third{
+   margin: auto;
+   padding: 50px;
+    text-align: left;
+   
+}
+#main #innermainfromthird{
+  background-image:url("components/icons/PDFtoJPG.me-1.jpg");
+  background-repeat: no-repeat;
+}
+#main  a{
+    
+   text-decoration: none;
+   
+}
+#main  a:hover{
+   text-decoration: underline;
+}
+
+
+
+
+#main #seven{
+    width: 100%;
+  display: grid;
+  justify-content: center;
+   margin: auto;
+  grid-template-columns: repeat(4,320px);
+  grid-template-rows: auto;
+  
+}
+#main #seven img{
+    
+  width:100px;
+  margin-right: 10px;
+}
+#main #seven h1,p{
+    
+  width: 200px;
+  
+}
+
+#main #seven>div{
+    
+  background-color:white;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  height:100px;
+  margin: 10px;
+  cursor: pointer;
+  display: flex;
+  margin-right:20px
+}
+#main #seven>div:hover{
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+#main #eight{
+    font-size: 14px;
+    line-height: 21px;
+    
+    font-weight: 400;
+  margin-top: 200px;
+  height:500px;
+  background-color: rgb(235, 243, 255);
+  display: flex;
+}
+#main #eight>img{
+  margin: 0px 50px 0 7%;
+}
+#main #nine{
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  
+}
+#main #nine>h1{
+    color: rgb(31, 31, 31);
+    margin: auto;
+    line-height: 52px;
+  font-size: 44px;
+}
+#main  #nine>p{
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: 400;
+    color: 1f1f1f;
+}
+#main>#ten{
+  display: flex;
+  background-color: #F9F7EF;
+  justify-content: center;
+  height:500px
+}
+#main>#ten>#nineright>div{
+  display: grid;
+  grid-template-columns: repeat(3,100px);
+  grid-template-rows: repeat(2,60px);
+    
+}
+#main>#ten>#nineright{
+  margin-top: 100px;
+  margin-left:50px
+}
+#main>#ten>#nineright>div>img{
+  width: 50px;
+}
+#main #eleven{
+  margin-top: 100px;
+  height:500px;
+  background-color:white;
+  display: flex;
+}
+#main #eleven>img{
+  width:430px;
+  height:300px;
+  margin-top: 50px;
+  margin-left: 9%;
+  margin-right: 100px;
+}
+#main >#innermainfromthird>div{
+  margin-top: 50px;
+}

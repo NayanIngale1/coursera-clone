@@ -1,0 +1,428 @@
+
+body {
+  
+    /* box-sizing: border-box; */
+    font-family: "Source Sans Pro", "Open Sans", sans-serif;
+}
+
+
+#imagecontainer {
+    width: 100%;
+    height: 464px;
+    /* border: 1px solid black; */
+    display: flex;
+
+
+}
+
+#content {
+    width: 62%;
+    height: 100%;
+    background-color: lavender;
+    /* border: 1px solid red; */
+    /* padding-left: 5%; */
+}
+
+#groupimage {
+    width: 38%;
+    height: 100%;
+    margin-right: 0;
+    opacity: .9;
+    /* border: 1px solid yellow; */
+    background-image: url("../components/icons/n2.jpg");
+    background-size: cover;
+}
+
+#upskill {
+    padding: 7% 7% 4% 7%;
+    /* border: 1px solid green; */
+
+    color: rgb(55, 58, 60);
+    background-color: rgba(0, 0, 0, 0);
+    font-family: "OpenSans";
+    font-size: 48px;
+    line-height: 64px;
+    vertical-align: baseline;
+    letter-spacing: normal;
+    word-spacing: 0px;
+
+    font-weight: 700;
+    text-decoration: none solid rgb(55, 58, 60);
+    margin: 0% 7%;
+    text-indent: 0px;
+
+}
+
+
+#subheading2 {
+    padding: 1% 12% 2% 12%;
+    margin: 0% 7%;
+    font-size: 24px;
+    /* color:rgb(63, 63, 63);
+
+margin: 0px;
+padding: 0px;
+
+font-weight: 400;
+
+text-decoration: none solid rgb(63, 63, 63);
+
+} */
+
+    font-weight: 400;
+    /* border: 1px solid green; */
+    margin: 0 3%;
+}
+
+#buttonprice {
+    display: flex;
+    /* margin-top: 3%; */
+    /* border: 1px solid black; */
+    margin: 1% 5% 1% 15%;
+
+}
+
+#buttonBuy {
+ 
+    padding: 20px 50px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
+    background: blue;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: 300ms ease-in-out;
+}
+
+#buttonBuy:hover {
+    background-color: rgb(0, 0, 204);
+  }
+
+#head3 {
+    font-size: 24px;
+    line-height: 32px;
+    vertical-align: baseline;
+    letter-spacing: normal;
+    font-weight: 700;
+    margin-bottom: 1%;
+}
+
+#heading3 {
+    margin-left: 2%;
+}
+
+
+#navbar {
+
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#nav2 {
+    display: flex;
+    /* border: 1px solid black; */
+
+}
+
+#nav1 img {
+    height: 40%;
+    font-weight: 400px;
+    /* border: 1px solid blue; */
+    margin: 10px;
+}
+
+#nav2 p a{
+    padding: 3px 30px;
+    text-decoration: none;
+}
+
+#nav2 button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
+    background: blue;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: 300ms ease-in-out;
+}
+
+#nav2 button:hover{
+    background-color: rgb(0, 0, 204);
+}
+
+
+
+
+
+
+
+
+#logocontainer {
+    width: 100%;
+    height: 130px;
+    /* border: 1px solid black; */
+    margin-top: 1%;
+}
+
+#techcomp {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+#imagecomp {
+    /* border: 1px solid black; */
+    padding: 2% 11%;
+
+}
+
+#logocontainer img {
+    margin: 0 2%;
+    /* border: 1px solid black; */
+
+}
+
+
+
+
+
+
+#container4 {
+    height: 470px;
+    width: 100%;
+    border: 0px solid black;
+    background-color: whitesmoke;
+    /* margin-top: 2%; */
+}
+
+#innerbox {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    
+}
+
+#innerbox>div {
+    /* border: 1px solid black; */
+    text-align: center;
+    padding: 4%;
+    margin: 4% 0;
+}
+
+
+#headag h3{
+    padding-top: 50px;
+   margin-bottom: -20px;
+    
+    /* letter-spacing: 0; */
+    line-height: 1.5rem;
+    font-family: "Source Sans Pro", Arial, sans-serif;
+    /* font-weight: 400; */
+    
+    
+    color: #222222;
+    text-align: center;
+    font-size: 2.125rem;
+    line-height: 2.625rem;
+    font-weight: bold;
+    /* border: 1px solid black; */
+
+
+}
+
+
+
+
+
+.hy {
+
+    font-size: 24px;
+    line-height: 32px;
+
+    word-spacing: 0px;
+    padding: 0 9%;
+    font-weight: 400;
+}
+
+
+
+
+
+
+
+
+#container5 {
+    width: 100%;
+    height: 230px;
+/* 
+    margin-top: 7%; */
+  
+    /* margin-bottom: 12%; */
+
+   
+}
+
+#container5 input {
+
+    width: 50%;
+
+    margin-left: 24%;
+    margin-top: 3%;
+    height: 40px;
+    padding: 0 15px;
+
+
+
+}
+
+
+.head10 {
+
+    font-family: "OpenSans-Bold", OpenSans, Arial, sans-serif;
+    font-size: 34px;
+    line-height: 42px;
+    font-weight: 700;
+    text-align: center;
+    /* border: 1px solid black; */
+    margin-top: 7%;
+
+}
+
+#popular {
+    display: flex;
+    padding: 2%;
+    justify-content: center;
+}
+
+#popular p {
+    border: 1px solid white;
+    padding-top:10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: whitesmoke;
+    border-radius: 30px;
+    margin:auto 6px;
+    color: rgb(33, 99, 178);
+    font-size: 17px;
+    height: 30px;
+}
+
+#popular p:first-child{
+    color: black;
+    font-weight: 300;
+    background-color: white;
+}
+
+
+#container7 {
+    width: 100%;
+    height: 650px;
+
+    border: 1px solid white;
+
+    margin-top: 6%;
+    margin: auto;
+    background-color: lavender;
+}
+
+#container7 h1{
+text-align: center;
+margin-top: 7%;
+font-size: 35px;
+font-family: "OpenSans-Bold", OpenSans, Arial, sans-serif;
+    
+}
+
+
+#flex {
+    display: flex;
+    /* border: 3px solid blue; */
+    width: 100%;
+    height: 84%;
+}
+
+#flex1 {
+    /* border: 1px solid yellow; */
+    width: 40%;
+    height: 100%;
+    padding: 3% 2% 3% 10%;
+}
+
+#flex2 {
+    /* border: 1px dashed green; */
+    width: 49%;
+    height: 100%;
+}
+
+#flex2 h3{
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: 400;
+    padding: 13% 19% 2% 3%;
+}
+
+#flex2 p{
+
+    font-size: 19px;
+    line-height: 30px;
+    font-weight: 400;
+    padding: 2% 17% 13% 3%;
+    /* text-align: center; */
+}
+
+
+
+
+/* FAQ  */
+#faq-section {
+    max-width: 70%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .faq {
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    padding: 2rem;
+    margin-top: 1rem;
+    cursor: pointer;
+  }
+  .question {
+    display: flex;
+    align-items: center;
+  }
+  .question p {
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+  .question i {
+    font-size: 1.2rem;
+    color: blue;
+    margin-right: 1rem;
+  }
+  .answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+  }
+  .answer p {
+    padding-top: 2rem;
+    line-height: 1.6rem;
+    font-size: 1.2rem;
+  }
+  .faq.active .answer {
+    max-height: 300px;
+  }
+  .faq.active i {
+    transform: rotate(90deg);
+  }
+  .faq i {
+    transition: transform 0.5s ease-in-out;
+  }

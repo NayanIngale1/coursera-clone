@@ -1,0 +1,391 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Source+Sans+Pro:wght@400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", "Open Sans", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+.top-notification {
+  background-color: #ffbf00;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+#clear {
+  position: relative;
+  top: 2%;
+  right: -25%;
+  cursor: pointer;
+}
+/* Nav bar  */
+.top-nav {
+  display: flex;
+  padding: 10px 50px;
+  justify-content: space-between;
+  border-bottom: 2px solid #c3c3c3;
+  align-items: center;
+}
+.logo-for-business {
+  width: 300px;
+  /* border: solid 1px; */
+  cursor: pointer;
+}
+
+.logo-for-business img {
+  width: 100%;
+}
+.nav-items {
+  display: flex;
+  align-items: center;
+}
+.nav-items ul {
+  display: flex;
+  align-items: center;
+}
+.nav-items ul li {
+  list-style-type: none;
+  margin: 0px 20px;
+  transition: 300ms ease-in-out;
+  cursor: pointer;
+}
+.nav-items ul li:hover {
+  color: blue;
+}
+.nav-items ul hr {
+  background: black;
+  height: 20px;
+  font-weight: 700;
+  width: 3px;
+}
+.nav-items button {
+  border: 0;
+  outline: 0;
+  padding: 10px 20px;
+  color: white;
+  background-color: blue;
+  cursor: pointer;
+}
+
+/* style for business-banner */
+.business-banner {
+  padding: 1.5% 13%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10%;
+}
+
+.business-info h1 {
+  font-size: 2.5rem;
+  margin-top: 15%;
+  font-weight: 600;
+}
+.business-info p {
+  margin: 30px 0px;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+}
+.business-banner .business-img img {
+  width: 90%;
+  margin: auto;
+}
+.business-info button {
+  padding: 20px 70px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #fff;
+  background: blue;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  transition: 300ms ease-in-out;
+}
+.business-info button:hover {
+  background-color: rgb(0, 0, 204);
+}
+.business-info a {
+  color: blue;
+}
+
+/* discover */
+.discover {
+  padding: 25px;
+  font-size: 1.5rem;
+  text-align: center;
+  background: #ebf3ff;
+}
+
+/* access-courses */
+.access-courses {
+  padding: 4% 13%;
+  text-align: center;
+}
+
+.universities-img {
+  display: flex;
+  margin: 30px 0px;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+.universities-img img {
+  width: 80px;
+}
+
+/* company-uses */
+.company-uses {
+  text-align: center;
+  padding: 2% 13%;
+}
+.company-uses .uses-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
+.uses-item {
+  padding: 10%;
+}
+.uses-item p {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* high-impact */
+
+.high-impact {
+  padding: 2% 13%;
+}
+.high-impact h1 {
+  margin: auto;
+  width: fit-content;
+}
+.high-impact-cards {
+  padding: 5% 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+.high-impact-card {
+  border: 1px solid #c3c3c3;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+.high-impact-card-info {
+  padding: 15px;
+}
+.high-impact-card-info p:last-child {
+  color: blue;
+  font-weight: 700;
+}
+.high-impact-card img {
+  width: 100%;
+}
+.high-impact-card p {
+  margin-top: 2rem;
+}
+
+/* Companies that innovate */
+.companies {
+  padding: 4% 13%;
+  text-align: center;
+}
+.compamies-imgs {
+  display: flex;
+  margin: 30px 0px;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+.compamies-imgs img {
+  width: 150px;
+  height: auto;
+}
+.compamies-imgs img:nth-child(4) {
+  width: 50px;
+}
+.companies > img {
+  margin: 20px auto;
+}
+
+/* start-skill */
+.start-skill {
+  text-align: center;
+  background: #382d8b;
+  color: #fff;
+  padding: 3%;
+}
+.start-skill p {
+  margin: 2rem;
+  font-size: 1.3rem;
+}
+.start-skill button {
+  padding: 20px 100px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #382d8b;
+  background: #fff;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  transition: 300ms ease-in-out;
+}
+.start-skill button:hover {
+  background-color: #eeebeb;
+}
+
+/* .explore-reso */
+.explore-reso {
+  padding: 3% 13%;
+}
+.explore-reso > h1 {
+  margin: 2.5rem auto;
+  width: fit-content;
+}
+.explore-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.explore-card img {
+  width: 100%;
+}
+.explore-card {
+  border: 1px solid #f1f1f1;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+.explore-card-info {
+  padding: 2rem;
+}
+.explore-card-info h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.explore-card .explore-card-info p {
+  margin: 2.5rem 0px;
+  font-size: 1rem;
+}
+.explore-card-info p:last-child {
+  margin: 0;
+  color: blue;
+  font-weight: 700;
+}
+
+/* Media queries */
+@media only screen and (max-width: 1200px) {
+  #clear {
+    right: -10%;
+  }
+  .business-banner {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 50px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #clear {
+    right: -0%;
+  }
+  .top-nav {
+    padding: 10px 20px;
+  }
+
+  .nav-items {
+    display: none;
+  }
+  .logo-for-business {
+    min-width: 200px;
+  }
+  .business-banner,
+  .companies {
+    padding: 4% 5%;
+    text-align: center;
+  }
+
+  .business-info h1 {
+    font-size: 2rem;
+  }
+  .access-courses {
+    padding: 4% 5%;
+    text-align: center;
+  }
+  .access-courses,
+  .company-uses,
+  .uses-items,
+  .explore-reso {
+    padding: 4% 5%;
+    text-align: center;
+  }
+
+  .company-uses .uses-items,
+  .high-impact-cards,
+  .explore-items,
+  .business-banner {
+    place-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+  }
+  .companies img {
+    width: 100%;
+  }
+  .business-banner {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 50px;
+  }
+}
+@media only screen and (max-width: 420px) {
+  #clear {
+    right: -0%;
+  }
+  .top-nav {
+    padding: 10px 20px;
+  }
+
+  .nav-items {
+    display: none;
+  }
+  .logo-for-business {
+    min-width: 200px;
+  }
+  .business-banner,
+  .companies {
+    padding: 4% 5%;
+    text-align: center;
+  }
+
+  .business-info h1 {
+    font-size: 2rem;
+  }
+  .access-courses {
+    padding: 4% 5%;
+    text-align: center;
+  }
+  .access-courses,
+  .company-uses,
+  .uses-items,
+  .explore-reso {
+    padding: 4% 5%;
+    text-align: center;
+  }
+
+  .company-uses .uses-items,
+  .high-impact-cards,
+  .explore-items,
+  .business-banner {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 50px;
+  }
+  .companies img {
+    width: 100%;
+  }
+}
