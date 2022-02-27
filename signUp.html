@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Coursera l Sign Up Page</title>
+     <link rel="stylesheet" href="signUp.css">
+     <link rel="icon" href="./components/icons/image.png">
+</head>
+<body>
+     <div id="main_div">
+          <div id="block">
+               <div id="flex">
+                    <div id="text">
+                         <h1>Sign Up</h1>
+                         <div id="p_tag">
+                              <p>Learn on your own time from top</p>
+                              <p>universities and businesses.</p>
+                         </div>
+                    </div>
+                    <div>
+                         <a href="signUp.html"><svg class="cross" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg></a> 
+                    </div>
+               </div>
+               <div class="form_div">
+                    <form>
+                         <div class="broder">
+
+                              <h4> <strong>FULL NAME</strong></h4>
+                              <input type="text" id="name" class="control" placeholder="Enter your full name">
+
+                         </div>
+
+                         <div class="broder">
+
+                              <h4> <strong>EMAIL</strong> </h4>
+                              <input type="email" id="email" class="control" placeholder="name@gmail.com">
+
+                         </div>
+
+                         <div class="broder">
+
+                              <h5> <strong>Password</strong> </h5>
+                              <input type="password" id="password" class="control" placeholder="Create Password">
+                              <p>Between 8 and 72 characters</p>
+                              <br>
+                              
+                              <button class="join_btn">Join for Free</button>
+                         </div>
+                    </form>
+                    
+                    <div class="img">
+                         <svg class="google_img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 488 512"><path d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"/></svg>
+                         <p class="google_text"><strong>Continue with Google</strong></p>
+                      </div>
+                      <div class="img">
+                         <svg class="google_img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><<path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+                         <p class="google_text"><strong>Continue with Facebook</strong></p>
+                      </div>
+                      <div class="flex">
+                           <p>Already on Coursera?</p>
+                           <a href="login.html">Login</a>
+                      </div>
+                      <br>
+                      <hr>
+                      <div class="text_para">
+                         <p class="para">I accept Coursera's <a href="">Terms of Use</a>  and <a href="">Privacy Notice</a> . Having trouble logging in? <a href="">Learner help center</a> </p>
+                      <p class="para">This site is protected by reCAPTCHA Enterprise and the Google <a href="">Privacy Policy</a>  and <a href="">Terms of Service</a>  apply.</p>
+                      </div>
+                  </div>
+               </div>
+          </div>
+     </div>
+</body>
+</html>
+
+<script>
+
+
+document.querySelector(".join_btn").addEventListener("click",signUp);
+var userData = JSON.parse(localStorage.getItem("database")) || [];
+function signUp(event){
+    event.preventDefault();
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var password = document.querySelector("#password").value;
+
+    
+
+    var userDetails = {
+        userName: name,
+        userEmail: email,
+        userPassword: password,
+    };
+    userData.push(userDetails);
+    console.log(userData);
+
+    localStorage.setItem("database",JSON.stringify(userData));
+    alert("Sign Up Successfully")
+    window.location.href = "Login.html"
+}
+
+</script>
