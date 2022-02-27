@@ -16,7 +16,7 @@ let counting;
 const search_data = async () => {
   try {
     let res = await fetch(
-      `https://api.coursera.org/api/courses.v1?limit=30&q=search&query=${input_term}&includes=instructorIds,photoUrl,partnerIds,description,largeIcon,shortName,location&fields=instructorIds,partnerIds ,location,photoUrl,description,partnerLogo,certificates,startDate,workload,specializations,domainTypes,primaryLanguages`
+      `https://api.coursera.org/api/courses.v1?limit=50&q=search&query=${input_term}&includes=instructorIds,photoUrl,partnerIds,description,largeIcon,shortName,location&fields=instructorIds,partnerIds ,location,photoUrl,description,partnerLogo,certificates,startDate,workload,specializations,domainTypes,primaryLanguages`
     );
     let data = await res.json();
     console.log(data);
@@ -63,6 +63,7 @@ const filter_my_data = (data) => {
 //         i++;
 //     }
 
+
 const append_data = (
   photoUrl,
   name,
@@ -104,7 +105,7 @@ const append_data = (
   partners.innerHTML = partners_name;
 
   let speciallisation = document.createElement("h4");
-  speciallisation.innerHTML = certificates[1];
+  speciallisation.innerHTML = "Specialization";
 
   let rating_div = document.createElement("div");
   rating_div.setAttribute("class", "rating");
@@ -129,8 +130,11 @@ const append_data = (
   document.getElementById("searchResult").append(bigcontainer);
 };
 
+
+
+
+
 //-------------------------slideshow---------------->
-document.getElementById("1dots").style.opacity = 1;
 const productContainers = [...document.querySelectorAll(".product-container")];
 const nxtBtn = [...document.querySelectorAll(".nxt-btn")];
 const preBtn = [...document.querySelectorAll(".pre-btn")];
@@ -147,3 +151,4 @@ productContainers.forEach((item, i) => {
     item.scrollLeft -= containerWidth;
   });
 });
+

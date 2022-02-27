@@ -83,12 +83,12 @@ const navbar = ()=>{
     <p><a href="../ForBusinessEnterprises.html">For Enterprise</a></p>
     <p><a href="">For Universities</a></p>
     <p><a href="../login.html" id="log_in_text">Log In</a></p>
+    <a href="../signup.html"><button id="join_for_free">Join for Free</button></a>
     <span id="bell_icon" class="iconify" data-icon="ei:bell" style="color: black;"></span>
     <div id="user_div_data">
                 <img src="./components/icons/profilepage.png" alt="">
                 <div id="parent_user"><p id="user_name"></p>
                 </div>
-    <a href="../signup.html"><button id="join_for_free">Join for Free</button></a>
 </div>
 <div id="navbar_goals_subject">
     <div class="navbar_goal_header">

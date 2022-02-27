@@ -14,9 +14,8 @@
     margin: auto 5px;
 }
 #jnavbar button {
+    border-color:rgb(1, 86, 184);
     height: 41px;
-    color: white;
-    background-color:rgb(1, 86, 184) ;
 }
 #jnavbar input {
     padding: 1px 5px;
@@ -33,28 +32,36 @@
     color: rgb(55, 58, 60);
     text-decoration: none;
 }
+#jnavbar a {
+    text-decoration: none;
+}
 #jnavbar p a:hover{
     color: rgb(42, 115, 204);
     text-decoration: underline;
 }
 #explore_button{
-    border-color:rgb(1, 86, 184);
+    background-color:rgb(1, 86, 184) ;
     width: 100px;
     margin: auto 7px;
     padding:0 13px;
     font-weight: bold;
+    color: white;
 }
 #explore_button:hover{
     background-color: white;
     color: rgb(1, 86, 184);
 }
 #search{
+    background-color:rgb(1, 86, 184) ;
+    color: white;
     border: 0;
     border-radius: 0;
     width: 60px;
     margin-right:2%;
 }
 #join_for_free{
+    color: white;
+    background-color:rgb(1, 86, 184) ;
     border: 0;
     width: 150px;
     margin: auto 0 auto -50px;
