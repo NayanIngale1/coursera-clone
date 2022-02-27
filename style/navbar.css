@@ -27,7 +27,7 @@
         font-size: medium;
     }
     #jnavbar p a{
-        margin:auto 5px;
+        margin:auto 0px;
         padding: 0;
         font-size: 14px;
         font-weight: lighter;
@@ -96,7 +96,7 @@
     #user_div_data{
         height: 100%;
         padding: 0 10px;
-        margin-right: -100px;
+        margin-right: -150px;
         width: 250px;
         display: flex;
         align-items: center;
@@ -120,18 +120,18 @@
     #explore_option .left_explore_option ul {
         width: 90%;
         padding: 0;
+
     }
     #explore_option .left_explore_option ul li{
         width: 97%;
         padding:0 10px;
         list-style: none;
-        line-height: 30px;
+        line-height: 50px;
     }
     #explore_option .left_explore_option ul li:hover{
         background-color: white;
         color: rgb(129, 129, 231);
         cursor: context-menu;
-        line-height: 30px;
         box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
     }
     #explore_option .left_explore_option ul li:first-child{
@@ -143,11 +143,11 @@
     #explore_option .left_explore_option ul li:first-child:hover {
         background-color: rgb(242, 242, 246);
         cursor: auto;
-        line-height: 30px;
         box-shadow: none;
     }
     #explore_option .left_explore_option ul li p {
         margin: 0;
+        line-height: 30px;
     }
     #explore_option .left_explore_option button {
         border-color:rgb(1, 86, 184);

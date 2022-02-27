@@ -83,22 +83,21 @@ text-decoration: none solid rgb(63, 63, 63);
 }
 
 #buttonBuy {
+ 
+    padding: 20px 50px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
+    background: blue;
     border: 0;
     outline: 0;
-    background-color: blue;
-    color: white;
-    height: 72px;
-    width: 170px;
-    font-family: "OpenSans";
-    font-size: 23px;
-    border-radius: 3px;
-    line-height: 24px;
-    font-weight: 700;
-    text-align: center;
-
+    cursor: pointer;
+    transition: 300ms ease-in-out;
 }
 
-
+#buttonBuy:hover {
+    background-color: rgb(0, 0, 204);
+  }
 
 #head3 {
     font-size: 24px;
@@ -133,7 +132,6 @@ text-decoration: none solid rgb(63, 63, 63);
     font-weight: 400px;
     /* border: 1px solid blue; */
     margin: 10px;
-
 }
 
 #nav2 p a{
@@ -143,15 +141,20 @@ text-decoration: none solid rgb(63, 63, 63);
 
 #nav2 button {
     padding: 10px 20px;
+    margin: 10px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
+    background: blue;
     border: 0;
     outline: 0;
-    background-color: blue;
-    color: white;
-    margin: 10px;
-    font-weight: bolder;
+    cursor: pointer;
+    transition: 300ms ease-in-out;
 }
 
-
+#nav2 button:hover{
+    background-color: rgb(0, 0, 204);
+}
 
 
 
@@ -293,26 +296,27 @@ text-decoration: none solid rgb(63, 63, 63);
 
 #popular {
     display: flex;
-    text-align: center;
-    /* border: 1px solid black; */
-    padding: 2% 20%;
-
+    padding: 2%;
+    justify-content: center;
 }
 
-#popular>div {
+#popular p {
     border: 1px solid white;
-    padding: 3px 4px;
+    padding-top:10px;
+    padding-left: 15px;
+    padding-right: 15px;
     background-color: whitesmoke;
-    border-radius: 10px;
-    margin-left: 3px;
+    border-radius: 30px;
+    margin:auto 6px;
     color: rgb(33, 99, 178);
     font-size: 17px;
-
+    height: 30px;
 }
 
-#pop {
+#popular p:first-child{
     color: black;
     font-weight: 300;
+    background-color: white;
 }
 
 

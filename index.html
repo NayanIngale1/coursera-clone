@@ -21,8 +21,8 @@
             <p style=" font-size:20px;width:600px; margin:20px 0px">
                 Open your door to more with world-class Professional Certificates and degrees
                 <div>
-                    <button id="join">Join for free</button>
-                    <button id="try">Try Courrsera for Business</button>
+                    <button id="join" id="join_for_free">Join for free</button>
+                    <button id="try">Try Coursera for Business</button>
                 </div>
             </p>
             </div>
@@ -436,9 +436,56 @@
     import {footer,Minifooter} from "./components/footer.js";
     document.querySelector("#footer_parent").innerHTML = footer();
 
+    
+        let hide_me = document.querySelector("#user_div_data");
+        hide_me.style.display = "none";
+
+        let hide_me_also = document.querySelector("#bell_icon");
+        hide_me_also.style.display = "none";
+        
+        let show_me_also = document.querySelector("#log_in_text");
+        show_me_also.style.display = "block";
+
+        let show_me = document.querySelector("#join_for_free");
+        show_me.style.display = "block";
+        console.log("ajinkya")
+        show_me.addEventListener("click",()=>{
+            window.location.href="./signup.html"
+            window.location.reload();
+        })
+
+        show_me.addEventListener("click",()=>{
+            window.locationhref = "./signup.html"
+        })
+
+
+        let flag_for_profile = localStorage.getItem("flag_for_profile");
+        console.log(flag_for_profile);
+        if(flag_for_profile)
+        {
+
+            let hide_me = document.querySelector("#user_div_data");
+            hide_me.style.display = "block";
+
+            let hide_me_also = document.querySelector("#bell_icon");
+            hide_me_also.style.display = "block";
+
+            let show_me = document.querySelector("#join_for_free");
+            show_me.style.display = "none";
+
+            let show_me_also = document.querySelector("#log_in_text");
+            show_me_also.style.display = "none";
+
+            localStorage.setItem("flag_for_profile",false);
+        }
+
+
+
+
     let name_of_user = localStorage.getItem("User_name");
     let user_Name = document.querySelector("#user_name");
     user_Name.innerText = name_of_user;
+
 let input_of_navbar = document.querySelector("#input_of_navbar");
 let input_debouncing = document.querySelector("#input_debouncing");
 let input_and_body = document.querySelector("body");

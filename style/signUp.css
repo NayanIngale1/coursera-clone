@@ -1,0 +1,121 @@
+* {
+    margin: 0px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  #main_div {
+    border: 1px solid #cbdef8;
+    height: 930px;
+    background-color: #cbdef8;
+  }
+  #block {
+    border: 1px solid black;
+    position: sticky;
+    width: 400px;
+    height: 650px;
+    margin: auto;
+    margin-top: 10px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: scroll;
+  }
+  #flex {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 20px auto;
+  }
+  .cross {
+    /* border: 1px solid teal; */
+    height: 30px;
+    display: flex;
+    margin: 0px 20px 0 0;
+  }
+  #text {
+    /* border: 1px solid green; */
+    width: 100%;
+    text-align: center;
+  }
+  #p_tag {
+    margin-top: 10px;
+  }
+  .form_div {
+    /* border: 1px solid black; */
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+  }
+  .broder {
+    /* border: 1px solid blue; */
+    width: 100%;
+    margin-top: 20px;
+  }
+  .control {
+    font-size: 13px;
+    height: 30px;
+    width: 90%;
+    padding: 6px 0 6px 10px;
+    margin: 20px 0px 0px 0px;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: none;
+    outline: none;
+  }
+  .join_btn {
+    background-color: #0056d2;
+    text-decoration: none;
+    width: 90%;
+    font-size: 18px;
+    border: 0px;
+    display: block;
+    margin: auto;
+    margin: 5% 5% 10% 5%;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    padding: 12px 30px;
+  }
+  .img {
+    border: 1px solid black;
+    height: 41px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    margin-bottom: 20px;
+    border-radius: 5px;
+  }
+  .google_img {
+    /* border: 1px solid blue; */
+    height: 21px;
+    margin: 10px 30px;
+    /* width: 20px; */
+  }
+  .google_text {
+    /* border: 1px solid teal; */
+    font-size: 16px;
+    /* margin: 10px 10px; */
+    padding: 10px 30px 10px 0px;
+    width: 90%;
+  }
+  .flex {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    font-size: 13px;
+  }
+  .flex > a {
+    color: #0056d2;
+  }
+  .text_para {
+    /* border: 1px solid black; */
+    width: 100%;
+    margin: 20px 0px 20px 0;
+    text-align: center;
+  }
+  .para {
+    color: gray;
+    font-size: 12px;
+  }
+  .para > a {
+    color: gray;
+    text-decoration: underline;
+  }

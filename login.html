@@ -1,440 +1,106 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Log in</title>
-  <link rel="stylesheet" href="./style/index.css">
-  <link rel="stylesheet" href="./style/navbarForAjinkya.css">
-  <link rel="stylesheet" href="./style/footer.css">
-    <link rel="icon" href="./components/icons/image.png">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">  
- <style>
-.text{
-    color: #0056d2;
-}
-.show-modal:hover,
-.show-modal:focus{
-    color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-    outline: none;
-}
-.modal-dialog{
-    position: fixed;
-    top: -60px;
-    left: 500px;
-    height: 700px;
-    overflow-y: scroll;
-    width: 450px;
-    margin: 70px auto 0;
-}
-.modal-dialog{ transform: scale(0.5); }
-.modal-dialog{ transform: scale(1); }
-.modal-dialog .modal-content{
-    text-align: center;
-    border: none;
-}
-.modal-content .close{
-    color: #fff;
-    background: linear-gradient(to right, #33a3ff, #0675cf, #4cd5ff);
-    font-size: 25px;
-    font-weight: 400;
-    text-shadow: none;
-    line-height: 27px;
-    height: 25px;
-    width: 25px;
-    border-radius: 50%;
-    overflow: hidden;
-    opacity: 1;
-    position: absolute;
-    left: auto;
-    right: 8px;
-    top: 8px;
-    z-index: 1;
-    transition: all 0.3s;
-}
-.modal-content .close:hover{
-    color: #fff;
-    box-shadow: 0 0 5px rgba(0,0,0,0.5);
-}
-.close:focus{ outline: none; }
-.modal-body{ padding: 60px 40px 40px !important; }
-.modal-body .title{
-    color: rgb(31, 31, 31);
-    font-size: 34px;
-    line-height: 42px;
-    font-weight: 500;
-    font-weight: 100;
-    letter-spacing: 1px;
-    margin: 0 0 10px;
-}
-.modal-body .description{
-    color: gray;
-    font-size: 16px;
-    margin: 0 0 0px;
-}
-.modal-body .form-group{
-    text-align: left;
-    margin-bottom: 20px;
-    position: relative;
-}
-.modal-body .input-icon{
-    color: #777;
-    font-size: 18px;
-    transform: translateY(-50%);
-    position: absolute;
-    top: 50%;
-    left: 20px;
-}
-.modal-body .form-control{
-    font-size: 17px;
-    height: 45px;
-    width: 100%;
-    padding: 6px 0 6px 50px;
-    margin: 0 auto;
-    border: 2px solid #eee;
-    border-radius: 5px;
-    box-shadow: none;
-    outline: none;
-}
-.form-control::placeholder{
-    color: #AEAFB1;
-}
-.form-group.checkbox{
-    width: 130px;
-    margin-top: 0;
-    display: inline-block;
-}
-.form-group.checkbox label{
-    color: #9A9EA9;
-    font-weight: normal;
-}
-.form-group.checkbox input[type=checkbox]{
-    margin-left: 0;
-}
-.modal-body .forgot-pass{
-    color: #7F7FD5;
-    font-size: 13px;
-    text-align: right;
-    width: calc(100% - 135px);
-    display: inline-block;
-    vertical-align: top;
-    transition: all 0.3s ease 0s;
-}
-.forgot-pass:hover{
-    color: #9A9EA9;
-    text-decoration: underline;
-}
-.modal-content .modal-body .btn{
-    color: #fff;
-    background: #0056d2;
-    font-size: 16px;
-    font-weight: 500;
-    letter-spacing: 1px;
-    /* text-transform: uppercase; */
-    line-height: 38px;
-    width: 100%;
-    height: 40px;
-    padding: 0;
-    border: none;
-    border-radius: 5px;
-    border: none;
-    display: inline-block;
-    transition: all 0.6s ease 0s;
-}
-.modal-content .modal-body .btn:hover{
-    color: #fff;
-    letter-spacing: 2px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-.img{
-     border: 1px solid black;
-     line-height: 24px;
-     padding: 12px 16px 12px 0px;
-     height: 50px;
-     font-weight: 700;
-     color:rgb(29, 33, 39);
-     display: flex;
-     justify-content: space-around;
-     /* align-items: center; */
-     font-size: 14px;
-     cursor: pointer;
-     margin-bottom: 20px;
-     border-radius: 5px;
-}
-.img:hover{
-    color: #0056d2;
-    background-color: rgb(243, 248, 255);
-}
-.img img {
-     height: 20px;
-}
-.google_text{
-    margin-left: -20px;
-}
-.flex{
-     display: flex;
-     margin: auto;
-}
-.para{
-    color: gray;
-    font-size: 12px;
-    width: 100%;
-    text-align: center;
-}
-.para > a{
-     color: gray;
-     text-decoration: underline;
-}
-#container{
-
-          border: 1px solid gray;
-          width: 100%;
-          height: 50px;
-          display: flex;
-          justify-content: space-between;
-     }
-     #left{
-          /* border: 1px solid red; */
-          width: 40%;
-          display: flex;
-     }
-.logo{
-     margin: 13px 20px;
-}
-#email{
-    margin-bottom: 30px;
-}
-#password{
-    margin-bottom: 30px;
-}
-.btn_div{
-     /* border: 1px solid red; */
-     width: 100px;
-     margin: 10px 24px;
-     text-align: center;
-}
-.btn_div > button{
-     background-color: #0056d2;
-     color: white;
-     text-decoration: none;
-     border: 0px;
-     width: 100%;
-     padding: 5px 20px;
-     font-size: 16px;
-}
-.input_div{
-     /* border: 1px solid green; */
-     width: 45%;
-     display: flex;  
-}
-.input_div > input{
-     width: 100%;
-     height: 30px;
-     margin: 5px 20px ;
-}
-.input_div > button{
-     background-color: #0056d2;
-     text-decoration: none;
-     width: 40px;
-     margin-right: -100px;
-     height: 33px;
-     /* margin: 7px 0px 7px 0px; */
-     margin-top: 5px;
-     border: 0px;
-     cursor: pointer;
-}
-#right{
-     /* border: 1px solid black; */
-     width: 40%;
-     display: flex;
-     justify-content: space-evenly;
-}
-#right > div > a{
-     text-decoration: none;
-     color: black;
-}
-#right > div{
-     margin-top: 10px;
-}
-.modal-content .modal-body .btn:focus{ outline: none; }
-@media only screen and (max-width: 480px){
-    .modal-dialog{ width: 95% !important; }
-    .modal-content .modal-body{
-        padding: 60px 20px 40px !important;
-    }
-}
-
-
-  </style>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Coursera | Log In Page</title>
+     <link rel="icon" href="./components/icons/image.png">
+     <link rel="stylesheet" href="./style/log_in.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
- 
-                <div id="navbar_parent"></div>
+     <div id="main_div">
+          <div id="block">
+               <div id="flex">
+                    <div id="text">
+                         <h1>Welcome Back</h1>
 
-                
-<!-- hi -->
-             
-<div id="main">
-    <div id="first">
-        <div id="left-right"><h1>Learn Without Limits</h1>
-        <p style=" font-size:20px;width:600px; margin:20px 0px">
-            Open your door to more with world-class Professional Certificates and degrees
-            <div>
-                <button id="join">Join for free</button>
-                <button id="try">Try Courrsera for Business</button>
-            </div>
-        </p>
-        </div>
-        <div id="right">
-            <img src=" ./components/icons/IN_HERO_C_NOV21.png" alt="">
-        </div>
-    </div>
-    <div id="second">              
-        <h1>We collaborate with <a href="#">200+ leading universities and companies</a></h1>
-        <div>
-        <a href="#"><img src="./components/icons/IIT_Bombay.png" alt=""></a>
-        <a href="#"><img src="./components/icons/Indian_Institute_of_Technology_Roorkee_logo.png" alt=""></a>
-        <a href="#"><img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/6intvCoriH8oDkbGSSlqm5/ceedf032a54cbc1fb7d2ab53a5b291a0/1200px-IIM_Calcutta_Logo.svg.png?auto=format%2Ccompress&dpr=1&w=&h=37" alt=""></a>
-        <a href="#"><img src="./components/icons/google.png" alt=""></a>
-        <a href="#"><img src="./components/icons/ISB_transparent_logo.png" alt=""></a>
-        <a href="#"><img src="./components/icons/stanford.png" alt=""></a>
-        <a href="#"><img src="./components/icons/meta.png" alt=""></a>
-        <a href="#"><img src="./components/icons/umich.jfif" alt=""></a>
-        <a href="#"><img src="./components/icons/1200px-Amazon_Web_Services_Logo.svg.png" alt=""></a>
-        <a href="#"><img src="./components/icons/ibm.png" alt=""></a>
-    </div>
-    </div>
-
-
-
-
-    <!-- bye -->
-
-
-                <div id="footer_parent"></div>
-
-
-        <!-- Modal -->
-        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content clearfix">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-                    <div class="modal-body">
-                        <h3 class="title">Welcome back</h3>
-                        <div class="form-group">
-
-                             <form action="" id="loginform">
-                                <h5> <strong>EMAIL</strong> </h5>
-                                <input type="email" id="email" class="form-control" placeholder="name@gmail.com">
-
-                                <h5> <strong>Password</strong> </h5>
-                                <input type="password" id="password" class="form-control" placeholder="Enter Password">
-
-                                <button class="btn">Login</button>
-                            </div> 
-                             </form>
-                            
-                            <!-- <a href=""><div class="btn">Login</div></a> -->
-                            
-                            <!-- <span class="input-icon"><i class="fa fa-user"></i></span> -->
-                        <hr>
-                        <div class="img">
-                            <img src="./components/icons/download.jfif" alt="">
-                            <p class="google_text"><strong>Continue with Google</strong></p>
-                        </div>
-                        <div class="img">
-                            <img src="./components/icons/facebook.jpg" alt="">
-                           <p class="google_text"><strong>Continue with Facebook</strong></p>
-                        </div>
-                        <div class="img">
-                           <img src="./components/icons/apple.jpg" alt="">
-                           <p class="google_text"><strong>Continue with Apple</strong></p>
-                        </div>
-                        <div class="flex">
-                             <p>Already on Coursera?</p>
-                             <a href="signup.html">SignUp</a>
-                        </div>
-                        <hr>
-                        <p class="para">Having trouble logging in? <a href="">Learner help center</a> </p>
-                        <p class="para">This site is protected by reCAPTCHA Enterprise and the Google <a href="">Privacy Policy</a>  and <a href="">Terms of Service</a>  apply.</p>
                     </div>
-                </div>
-            </div>
-        </div>
+                    <div>
+                         <a href="signUp.html"><svg class="cross" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg></a> 
+                    </div>
+               </div>
+               <div class="form_div">
+                    <form>
 
+                         <div class="broder">
 
-            </div>
-      
-<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
- 
+                              <h4> <strong>EMAIL</strong> </h4>
+                              <input type="email" id="email" class="control" placeholder="name@gmail.com">
+
+                         </div>
+
+                         <div class="broder">
+
+                              <h5> <strong>Password</strong> </h5>
+                              <input type="password" id="password" class="control" placeholder="Create Password">
+                              <br>
+                              
+                              <button class="btn">Login</button>
+                         </div>
+                    </form>
+                    
+                    <div class="img">
+                          <img class="google_img" src="./components/icons/download.jfif" alt="">
+                         <p class="google_text"><strong>Continue with Google</strong></p>
+                      </div>
+                      <div class="img">
+                          <img class="google_img" src="./components/icons/facebook.jpg" alt="">
+                         <p class="google_text"><strong>Continue with Facebook</strong></p>
+                      </div>
+                      <div class="img">
+                        <img class="google_img" src="./components/icons/apple.jpg" alt="">
+                         <p class="google_text"><strong>Continue with Apple</strong></p>
+                      </div>
+                    <p class="para">Having trouble logging in? <a href="">Learner help center</a> </p>
+                    <p class="para">This site is protected by reCAPTCHA Enterprise and the Google <a href="">Privacy Policy</a>  and <a href="">Terms of Service</a>  apply.</p>
+                    </div>
+                  </div>
+               </div>
+          </div>
+     </div>
 </body>
 </html>
 
-<script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
-
 <script>
-    document.querySelector(".btn").addEventListener("click", Login);
- 
-// ---------------------authentication login-------
+         document.querySelector(".btn").addEventListener("click", signIn);
+    var regdUsers = JSON.parse(localStorage.getItem("database"));
+    function signIn(event){
+        event.preventDefault();
 
-let Login =async ()=>{
-       try {
-        let login_data = {
-            username:  document.getElementById("login-username").value,
-            password:  document.getElementById("login-password").value,
-        };
-        let login_data_json = JSON.stringify(login_data);
-        let res = await fetch("https://masai-api-mocker.herokuapp.com/auth/login",{
-            method:"POST",
-            body:login_data_json,
-            headers:{
-                    "Content-Type": "application/json"
-                },
-        })
-        let data = await res.json();
-        console.log(data);
-    getUser(login_data.username, data.token);
+        var email = document.querySelector("#email").value;
+        var password = document.querySelector("#password").value;
+
+        
+
+        flag = false;
+        for(var i = 0; i < regdUsers.length; i++){
+            if(regdUsers[i].userEmail == email && regdUsers[i].userPassword == password){
+                window.location.href = "hi.html";
+                console.log(email);
+                flag = true;
+                localStorage.setItem("User_name",regdUsers[i].userName);
+                break;
+            } 
+        }
+        if(flag){
+            alert("Successfully Login");
+            let flag_for_profile = localStorage.setItem("flag_for_profile",true);
                 window.location.href = "./index.html";
-    }
-        catch (error) {
-           console.log(error)
-           alert("Your Email or Password is Invalid");
-       }
-    }
-    
-    let getUser = async (username,token) =>{
-        try {
-            let res = await fetch(`https://masai-api-mocker.herokuapp.com/user/${username}`,{
-                headers:{
-                    "Content-Type": "application/json",
-                    Authorization : `Bearer ${token}`
-                },
-
-            })
-            let data = await res.json();
-            console.log(data);
-            localStorage.setItem("User_name",data.name);
-        } catch (error) {
-            console.log(error);
+        }else{
+            alert("Your Email or Password is Invalid");
         }
     }
 </script>
 
-<script type="module">
-     import navbar from "./components/navbar.js";
-     document.querySelector("#navbar_parent").innerHTML = navbar();
-     import {footer,Minifooter} from "./components/footer.js";
-     document.querySelector("#footer_parent").innerHTML = footer();
- 
-        let hide_me = document.querySelector("#user_div_data");
-        hide_me.style.display = "none";
 
-        let hide_me_also = document.querySelector("#bell_icon");
-        hide_me_also.style.display = "none";
-        
- 
- </script>
+
+
+
+
+
+
+
+
+
