@@ -1,14 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+     <!DOCTYPE html>
+     <html lang="en">
+     <head>
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Coursera | Sign Up Page</title>
      <link rel="icon" href="./components/icons/image.png">
      <link rel="stylesheet" href="./style/signUp.css">
-</head>
-<body>
+     </head>
+     <body>
      <div id="main_div">
           <div id="block">
                <div id="flex">
@@ -51,59 +51,57 @@
                     </form>
                     
                     <div class="img">
-                        <img class="google_img" src="./components/icons/download.jfif" alt="">
+                         <img class="google_img" src="./components/icons/download.jfif" alt="">
                          <p class="google_text"><strong>Continue with Google</strong></p>
-                      </div>
-                      <div class="img">
-                        <img class="google_img" src="./components/icons/facebook.jpg" alt="">
+                         </div>
+                         <div class="img">
+                         <img class="google_img" src="./components/icons/facebook.jpg" alt="">
                          <p class="google_text"><strong>Continue with Facebook</strong></p>
-                      </div>
-                      <div class="flex">
-                           <p>Already on Coursera?</p>
-                           <a href="./login.html">Login</a>
-                      </div>
-                      <br>
-                      <hr>
-                      <div class="text_para">
+                         </div>
+                         <div class="flex">
+                              <p>Already on Coursera?</p>
+                              <a href="./login.html">Login</a>
+                         </div>
+                         <br>
+                         <hr>
+                         <div class="text_para">
                          <p class="para">I accept Coursera's <a href="">Terms of Use</a>  and <a href="">Privacy Notice</a> . Having trouble logging in? <a href="">Learner help center</a> </p>
-                      <p class="para">This site is protected by reCAPTCHA Enterprise and the Google <a href="">Privacy Policy</a>  and <a href="">Terms of Service</a>  apply.</p>
-                      </div>
-                  </div>
+                         <p class="para">This site is protected by reCAPTCHA Enterprise and the Google <a href="">Privacy Policy</a>  and <a href="">Terms of Service</a>  apply.</p>
+                         </div>
+                    </div>
                </div>
           </div>
-     
-</body>
-</html>
 
-<script>
+     </body>
+     </html>
 
-
-document.querySelector(".join_btn").addEventListener("click",signUp);
-var userData = JSON.parse(localStorage.getItem("database")) || [];
-function signUp(event){
-    event.preventDefault();
-    var name = document.getElementById("name").value;
-    var email = document.getElementById("email").value;
-    var password = document.querySelector("#password").value;
-
-    
-
-    var userDetails = {
-        userName: name,
-        userEmail: email,
-        userPassword: password,
-    };
-    userData.push(userDetails);
-    console.log(userData);
-
-    localStorage.setItem("database",JSON.stringify(userData));
-    alert("Sign Up Successfully")
-    window.location.href = "Login.html"
-}
-
-</script>
+     <script>
 
 
+     document.querySelector(".join_btn").addEventListener("click",signUp);
+     var userData = JSON.parse(localStorage.getItem("database")) || [];
+     function signUp(event){
+     event.preventDefault();
+     var name = document.getElementById("name").value;
+     var email = document.getElementById("email").value;
+     var password = document.querySelector("#password").value;
+
+
+
+     var userDetails = {
+          userName: name,
+          userEmail: email,
+          userPassword: password,
+     };
+     userData.push(userDetails);
+     console.log(userData);
+
+     localStorage.setItem("database",JSON.stringify(userData));
+     alert("Sign Up Successfully")
+     window.location.href = "Login.html"
+     }
+
+     </script>
 
 
 
@@ -118,40 +116,42 @@ function signUp(event){
 
 
 
-<!-- 
-    <script type="module">
-        import navbar from "./components/navbar.js";
-        document.querySelector("#navbar_parent").innerHTML = navbar();
-        import {footer,Minifooter} from "./components/footer.js";
-        document.querySelector("#footer_parent").innerHTML = footer();
-
-        let hide_me = document.querySelector("#user_div_data");
-        hide_me.style.display = "none";
-
-        let hide_me_also = document.querySelector("#bell_icon");
-        hide_me_also.style.display = "none";
-        
 
 
-        document.querySelector(".join_btn").addEventListener("click",signUp);
-    var userData = JSON.parse(localStorage.getItem("database")) || [];
-    function signUp(event){
-    event.preventDefault();
-    var name = document.getElementById("name").value;
-    var email = document.getElementById("email").value;
-    var password = document.querySelector("#password").value;
-    var userDetails = {
-        userName: name,
-        userEmail: email,
-        userPassword: password,
-    };
-    userData.push(userDetails);
-    console.log(userData);
+     <!-- 
+     <script type="module">
+          import navbar from "./components/navbar.js";
+          document.querySelector("#navbar_parent").innerHTML = navbar();
+          import {footer,Minifooter} from "./components/footer.js";
+          document.querySelector("#footer_parent").innerHTML = footer();
 
-    localStorage.setItem("database",JSON.stringify(userData));
+          let hide_me = document.querySelector("#user_div_data");
+          hide_me.style.display = "none";
 
-    window.location.href="./login.html"
-    // alert("Sign Up Successfully")
-}
+          let hide_me_also = document.querySelector("#bell_icon");
+          hide_me_also.style.display = "none";
+          
 
-    </script> -->
+
+          document.querySelector(".join_btn").addEventListener("click",signUp);
+     var userData = JSON.parse(localStorage.getItem("database")) || [];
+     function signUp(event){
+     event.preventDefault();
+     var name = document.getElementById("name").value;
+     var email = document.getElementById("email").value;
+     var password = document.querySelector("#password").value;
+     var userDetails = {
+          userName: name,
+          userEmail: email,
+          userPassword: password,
+     };
+     userData.push(userDetails);
+     console.log(userData);
+
+     localStorage.setItem("database",JSON.stringify(userData));
+
+     window.location.href="./login.html"
+     // alert("Sign Up Successfully")
+     }
+
+     </script> -->
